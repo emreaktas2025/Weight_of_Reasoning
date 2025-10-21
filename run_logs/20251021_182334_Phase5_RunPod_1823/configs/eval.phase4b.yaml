@@ -1,0 +1,28 @@
+seed: 1337
+
+models:
+  - configs/models/pythia-70m.yaml
+  - configs/models/pythia-410m.yaml
+  - configs/models/llama3-1b.yaml
+
+datasets:
+  reasoning:
+    gsm8k: {n_cpu: 30, n_gpu: 100}  # Reduced for faster runtime
+  control:
+    wiki: {n_cpu: 30, n_gpu: 100}
+
+patchout:
+  k_percent: [5, 10, 20]
+  max_time_per_model_min: 6  # Budget per model
+
+runtime:
+  cpu_time_limit_min: 20
+  gpu_time_limit_min: 8
+
+output_dir: reports/phase4b
+plots_dir: reports/plots_phase4b
+splits_dir: reports/splits
+
+# Circuit and threshold reuse
+circuit_heads_json: reports/circuits/heads.json
+control_thresholds_npz: reports/control_thresholds_phase3.npz

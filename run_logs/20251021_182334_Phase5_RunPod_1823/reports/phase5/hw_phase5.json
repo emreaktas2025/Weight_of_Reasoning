@@ -1,0 +1,12 @@
+{
+  "device": "cuda",
+  "dtype": "float16",
+  "use_gpu": true,
+  "max_new_tokens": 128,
+  "batch_size": 8,
+  "num_workers": 4,
+  "gpu_memory_gb": 23.5164794921875,
+  "torch_version": "2.2.2+cu121",
+  "cuda_available": true,
+  "cuda_version": "12.1"
+}

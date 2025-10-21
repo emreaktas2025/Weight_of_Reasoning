@@ -1,0 +1,128 @@
+
+================================================================================
+Weight of Reasoning - Phase 5 Evaluation Run
+================================================================================
+Start Time: 2025-10-21 16:38:17
+Log File: logs/run_phase5_20251021_163817.txt
+================================================================================
+
+[2025-10-21 16:38:17] ================================================================================
+[2025-10-21 16:38:17] Phase 5 NeurIPS Evaluation Pipeline
+[2025-10-21 16:38:17] ================================================================================
+[2025-10-21 16:38:17] 
+=== Configuration ===
+[2025-10-21 16:38:17]   seed: 1337
+[2025-10-21 16:38:17]   models: ['configs/models/pythia-70m.yaml', 'configs/models/pythia-410m.yaml', 'configs/models/llama3-1b.yaml']
+[2025-10-21 16:38:17]   datasets: {'reasoning': {'gsm8k': {'n_cpu': 50, 'n_gpu': 200}, 'strategyqa': {'n_cpu': 30, 'n_gpu': 100}}, 'control': {'wiki': {'n_cpu': 50, 'n_gpu': 200}}, 'optional': {'math': {'n_cpu': 20, 'n_gpu': 50}}}
+[2025-10-21 16:38:17]   robustness: {'seeds': [42, 1337, 999], 'temperatures': [0.0, 0.2], 'metric_ablations': ['AE', 'APE', 'APL', 'CUD', 'SIB', 'FL']}
+[2025-10-21 16:38:17]   baselines: {'features': ['token_len', 'avg_logprob', 'perplexity', 'cot_len'], 'model': 'logistic_regression'}
+[2025-10-21 16:38:17]   patchout: {'k_percent': [5, 10, 20], 'max_time_per_model_min': 10}
+[2025-10-21 16:38:17]   runtime: {'cpu_time_limit_min': 60, 'gpu_time_limit_min': 30, 'use_gpu': True, 'torch_dtype': 'bfloat16', 'max_ablation_samples': 10, 'parallel_workers': 2}
+[2025-10-21 16:38:17]   cache_dir: cache/activations
+[2025-10-21 16:38:17]   output_dir: reports/phase5
+[2025-10-21 16:38:17]   plots_dir: reports/figs_paper
+[2025-10-21 16:38:17]   splits_dir: reports/splits
+[2025-10-21 16:38:17]   circuit_heads_json: reports/circuits/heads.json
+[2025-10-21 16:38:17]   control_thresholds_npz: reports/control_thresholds_phase3.npz
+[2025-10-21 16:38:17] 
+[2025-10-21 16:38:17] HuggingFace auth: Success
+[2025-10-21 16:38:17] 
+=== Hardware Configuration ===
+[2025-10-21 16:38:17]   Device: cuda
+[2025-10-21 16:38:17]   Device Name: N/A
+[2025-10-21 16:38:17]   GPU Memory: 23.5 GB
+[2025-10-21 16:38:17]   Dtype: float16
+[2025-10-21 16:38:17]   Batch Size: 8
+[2025-10-21 16:38:17] 
+[2025-10-21 16:38:17] Fast mode enabled - using reduced sample sizes
+[2025-10-21 16:38:17] 
+=== Loading Datasets ===
+[2025-10-21 16:38:21]   Loaded gsm8k: 10 samples
+[2025-10-21 16:38:22]   Loaded strategyqa: 5 samples
+[2025-10-21 16:38:25]   Loaded wiki: 5 samples
+[2025-10-21 16:38:25] Total samples loaded: 20
+[2025-10-21 16:38:25] 
+=== Processing Models ===
+[2025-10-21 16:38:25] 
+Processing model: configs/models/pythia-70m.yaml
+[2025-10-21 16:38:25] Loading model: EleutherAI/pythia-70m-deduped
+[2025-10-21 16:38:27] 
+================================================================================
+[2025-10-21 16:38:27] Processing Model: pythia-70m
+[2025-10-21 16:38:27] Parameters: 70,463,616
+[2025-10-21 16:38:27] ================================================================================
+[2025-10-21 16:38:27] Computing circuit heads and thresholds...
+[2025-10-21 16:38:30] Computing baseline metrics...
+[2025-10-21 16:38:42] Saved metrics to reports/phase5/pythia-70m_metrics.csv
+[2025-10-21 16:38:42] Evaluating baseline predictors...
+[2025-10-21 16:38:42] 
+=== Baseline Comparison ===
+[2025-10-21 16:38:42]   AUROC (baseline): 0.9333
+[2025-10-21 16:38:42]   AUROC (REV): 0.0000
+[2025-10-21 16:38:42]   AUROC (combined): 1.0000
+[2025-10-21 16:38:42]   ΔAUC: 0.0667
+[2025-10-21 16:38:42]   Samples: 20
+[2025-10-21 16:38:42]   pythia-70m runtime: 17.3s (0.29 min)
+[2025-10-21 16:38:42] ✅ pythia-70m completed successfully
+[2025-10-21 16:38:42] 
+Processing model: configs/models/pythia-410m.yaml
+[2025-10-21 16:38:42] Loading model: EleutherAI/pythia-410m-deduped
+[2025-10-21 16:38:50] 
+================================================================================
+[2025-10-21 16:38:50] Processing Model: pythia-410m
+[2025-10-21 16:38:50] Parameters: 405,283,968
+[2025-10-21 16:38:50] ================================================================================
+[2025-10-21 16:38:50] Computing circuit heads and thresholds...
+[2025-10-21 16:39:18] Computing baseline metrics...
+[2025-10-21 16:40:11] Saved metrics to reports/phase5/pythia-410m_metrics.csv
+[2025-10-21 16:40:11] Evaluating baseline predictors...
+[2025-10-21 16:40:11] 
+=== Baseline Comparison ===
+[2025-10-21 16:40:11]   AUROC (baseline): 0.6267
+[2025-10-21 16:40:11]   AUROC (REV): 0.7467
+[2025-10-21 16:40:11]   AUROC (combined): 0.6933
+[2025-10-21 16:40:11]   ΔAUC: 0.0667
+[2025-10-21 16:40:11]   Samples: 20
+[2025-10-21 16:40:11]   pythia-410m runtime: 88.6s (1.48 min)
+[2025-10-21 16:40:11] ✅ pythia-410m completed successfully
+[2025-10-21 16:40:11] 
+Processing model: configs/models/llama3-1b.yaml
+[2025-10-21 16:40:11] Loading model: meta-llama/Llama-3.2-1B
+[2025-10-21 16:40:25] 
+================================================================================
+[2025-10-21 16:40:25] Processing Model: llama3-1b
+[2025-10-21 16:40:25] Parameters: 1,498,789,120
+[2025-10-21 16:40:25] ================================================================================
+[2025-10-21 16:40:25] Computing circuit heads and thresholds...
+[2025-10-21 16:40:49] Computing baseline metrics...
+[2025-10-21 16:41:21] Saved metrics to reports/phase5/llama3-1b_metrics.csv
+[2025-10-21 16:41:21] Evaluating baseline predictors...
+[2025-10-21 16:41:21] 
+=== Baseline Comparison ===
+[2025-10-21 16:41:21]   AUROC (baseline): 0.6533
+[2025-10-21 16:41:21]   AUROC (REV): 0.6133
+[2025-10-21 16:41:21]   AUROC (combined): 0.7467
+[2025-10-21 16:41:21]   ΔAUC: 0.0933
+[2025-10-21 16:41:21]   Samples: 20
+[2025-10-21 16:41:21]   llama3-1b runtime: 70.3s (1.17 min)
+[2025-10-21 16:41:21] ✅ llama3-1b completed successfully
+[2025-10-21 16:41:21] 
+=== Validating Success Criteria ===
+[2025-10-21 16:41:21] 
+=== Success Criteria Validation ===
+[2025-10-21 16:41:21]   ✅ PASS: REV improves baseline by >=0.05 AUC on >=2 datasets
+[2025-10-21 16:41:21]   ✅ PASS: Multiple models evaluated (scaling)
+[2025-10-21 16:41:21]   ✅ PASS: REV shows medium+ effect size (d>0.5)
+[2025-10-21 16:41:21] 
+Overall: ✅ ALL CRITERIA PASSED
+[2025-10-21 16:41:21] 
+=== Phase 5 Evaluation Complete ===
+[2025-10-21 16:41:21] Total runtime: 184.10 seconds (3.07 minutes)
+[2025-10-21 16:41:21] Models processed: 3
+[2025-10-21 16:41:21] Results saved to: reports/phase5
+
+================================================================================
+Evaluation Complete
+Total Runtime: 184.1s (3.07 min)
+End Time: 2025-10-21 16:41:21
+================================================================================

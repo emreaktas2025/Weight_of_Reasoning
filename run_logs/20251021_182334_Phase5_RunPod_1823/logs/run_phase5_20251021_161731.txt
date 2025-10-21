@@ -1,0 +1,77 @@
+
+================================================================================
+Weight of Reasoning - Phase 5 Evaluation Run
+================================================================================
+Start Time: 2025-10-21 16:17:31
+Log File: logs/run_phase5_20251021_161731.txt
+================================================================================
+
+[2025-10-21 16:17:31] ================================================================================
+[2025-10-21 16:17:31] Phase 5 NeurIPS Evaluation Pipeline
+[2025-10-21 16:17:31] ================================================================================
+[2025-10-21 16:17:31] 
+=== Configuration ===
+[2025-10-21 16:17:31]   seed: 1337
+[2025-10-21 16:17:31]   models: ['configs/models/pythia-70m.yaml', 'configs/models/pythia-410m.yaml', 'configs/models/llama3-1b.yaml']
+[2025-10-21 16:17:31]   datasets: {'reasoning': {'gsm8k': {'n_cpu': 50, 'n_gpu': 200}, 'strategyqa': {'n_cpu': 30, 'n_gpu': 100}}, 'control': {'wiki': {'n_cpu': 50, 'n_gpu': 200}}, 'optional': {'math': {'n_cpu': 20, 'n_gpu': 50}}}
+[2025-10-21 16:17:31]   robustness: {'seeds': [42, 1337, 999], 'temperatures': [0.0, 0.2], 'metric_ablations': ['AE', 'APE', 'APL', 'CUD', 'SIB', 'FL']}
+[2025-10-21 16:17:31]   baselines: {'features': ['token_len', 'avg_logprob', 'perplexity', 'cot_len'], 'model': 'logistic_regression'}
+[2025-10-21 16:17:31]   patchout: {'k_percent': [5, 10, 20], 'max_time_per_model_min': 10}
+[2025-10-21 16:17:31]   runtime: {'cpu_time_limit_min': 60, 'gpu_time_limit_min': 30, 'use_gpu': True, 'torch_dtype': 'bfloat16', 'max_ablation_samples': 10, 'parallel_workers': 2}
+[2025-10-21 16:17:31]   cache_dir: cache/activations
+[2025-10-21 16:17:31]   output_dir: reports/phase5
+[2025-10-21 16:17:31]   plots_dir: reports/figs_paper
+[2025-10-21 16:17:31]   splits_dir: reports/splits
+[2025-10-21 16:17:31]   circuit_heads_json: reports/circuits/heads.json
+[2025-10-21 16:17:31]   control_thresholds_npz: reports/control_thresholds_phase3.npz
+[2025-10-21 16:17:31] 
+[2025-10-21 16:17:31] HuggingFace auth: Success
+[2025-10-21 16:17:31] 
+=== Hardware Configuration ===
+[2025-10-21 16:17:31]   Device: cuda
+[2025-10-21 16:17:31]   Device Name: N/A
+[2025-10-21 16:17:31]   GPU Memory: 23.5 GB
+[2025-10-21 16:17:31]   Dtype: float16
+[2025-10-21 16:17:31]   Batch Size: 8
+[2025-10-21 16:17:31] 
+[2025-10-21 16:17:31] Fast mode enabled - using reduced sample sizes
+[2025-10-21 16:17:31] 
+=== Loading Datasets ===
+[2025-10-21 16:17:32]   Loaded gsm8k: 5 samples
+[2025-10-21 16:17:32]   Loaded strategyqa: 5 samples
+[2025-10-21 16:17:33]   Loaded wiki: 5 samples
+[2025-10-21 16:17:33] Total samples loaded: 15
+[2025-10-21 16:17:33] 
+=== Processing Models ===
+[2025-10-21 16:17:33] 
+Processing model: configs/models/pythia-70m.yaml
+[2025-10-21 16:17:33] Loading model: EleutherAI/pythia-70m-deduped
+[2025-10-21 16:17:33] ❌ Failed to process configs/models/pythia-70m.yaml: Can't load the configuration of 'EleutherAI/pythia-70m-deduped'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'EleutherAI/pythia-70m-deduped' is the correct path to a directory containing a config.json file
+[2025-10-21 16:17:33] 
+Processing model: configs/models/pythia-410m.yaml
+[2025-10-21 16:17:33] Loading model: EleutherAI/pythia-410m-deduped
+[2025-10-21 16:17:33] ❌ Failed to process configs/models/pythia-410m.yaml: Can't load the configuration of 'EleutherAI/pythia-410m-deduped'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'EleutherAI/pythia-410m-deduped' is the correct path to a directory containing a config.json file
+[2025-10-21 16:17:33] 
+Processing model: configs/models/llama3-1b.yaml
+[2025-10-21 16:17:33] Loading model: meta-llama/Llama-3.2-1B
+[2025-10-21 16:17:33] ❌ Failed to process configs/models/llama3-1b.yaml: Fast download using 'hf_transfer' is enabled (HF_HUB_ENABLE_HF_TRANSFER=1) but 'hf_transfer' package is not available in your environment. Try `pip install hf_transfer`.
+[2025-10-21 16:17:33] 
+=== Validating Success Criteria ===
+[2025-10-21 16:17:33] 
+=== Success Criteria Validation ===
+[2025-10-21 16:17:33]   ❌ FAIL: REV improves baseline by >=0.05 AUC on >=2 datasets
+[2025-10-21 16:17:33]   ❌ FAIL: Multiple models evaluated (scaling)
+[2025-10-21 16:17:33]   ❌ FAIL: REV shows medium+ effect size (d>0.5)
+[2025-10-21 16:17:33] 
+Overall: ❌ SOME CRITERIA FAILED
+[2025-10-21 16:17:33] 
+=== Phase 5 Evaluation Complete ===
+[2025-10-21 16:17:33] Total runtime: 2.32 seconds (0.04 minutes)
+[2025-10-21 16:17:33] Models processed: 0
+[2025-10-21 16:17:33] Results saved to: reports/phase5
+
+================================================================================
+Evaluation Complete
+Total Runtime: 2.3s (0.04 min)
+End Time: 2025-10-21 16:17:33
+================================================================================

@@ -1,0 +1,123 @@
+{
+  "run_id": "20251021_180640_pythia-70m",
+  "timestamp": "2025-10-21 18:06:40",
+  "timestamp_unix": 1761070000,
+  "config_hash": "99ca15e4",
+  "config": {
+    "model_name": "EleutherAI/pythia-70m-deduped",
+    "device": "cuda",
+    "dtype": "float16",
+    "max_new_tokens": 128,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": 1337,
+    "save_activations": true,
+    "act_dir": "cache/activations"
+  },
+  "results": {
+    "n_params": 70463616,
+    "n_reasoning": 15,
+    "n_control": 5,
+    "means": {
+      "AE_reasoning": 0.8753529487412854,
+      "AE_control": 2.346617132867133,
+      "APE_reasoning": 0.3760601367960846,
+      "APE_control": 0.21068026402953208,
+      "APL_reasoning": 0.2333333333333333,
+      "APL_control": 0.6333333333333333,
+      "CUD_reasoning": 0.37037037037037035,
+      "CUD_control": 0.711111111111111,
+      "SIB_reasoning": 0.6937054053492722,
+      "SIB_control": 0.0,
+      "FL_reasoning": 0.4717096100054554,
+      "FL_control": 0.5172221235795453,
+      "REV_reasoning": -0.16908219890893159,
+      "REV_control": 0.507246596726797
+    },
+    "stds": {
+      "AE_reasoning": 0.20155788620662154,
+      "AE_control": 0.3149760265901268,
+      "APE_reasoning": 0.05817854536516255,
+      "APE_control": 0.012167196419421846,
+      "APL_reasoning": 0.22537446792760443,
+      "APL_control": 0.18257418583505539,
+      "CUD_reasoning": 0.10843334143872593,
+      "CUD_control": 0.09938079899999067,
+      "SIB_reasoning": 0.42336830291976835,
+      "SIB_control": 0.0,
+      "FL_reasoning": 0.015903448320561907,
+      "FL_control": 0.010053095214174922,
+      "REV_reasoning": 0.1811610989916167,
+      "REV_control": 0.20013496647724804
+    },
+    "cohens_d": {
+      "AE": -5.564126226235744,
+      "APE": 3.934949114878356,
+      "APL": -1.9503265328928026,
+      "CUD": -3.2761766334148295,
+      "SIB": 2.317243841285828,
+      "FL": -3.421005423439211,
+      "REV": -3.5431416341435242
+    },
+    "auroc_REV": 0.0,
+    "dataset_metrics": {},
+    "partial_corr": {
+      "AE": {
+        "r": -0.9347219352662747,
+        "p": 1.3491955080376882e-08
+      },
+      "APE": {
+        "r": 0.791996498195947,
+        "p": 8.9582999496271e-05
+      },
+      "APL": {
+        "r": -0.4742419146842957,
+        "p": 0.04676889331745678
+      },
+      "CUD": {
+        "r": -0.7834470468084161,
+        "p": 0.00012009722453098874
+      },
+      "SIB": {
+        "r": 0.5065159181244033,
+        "p": 0.03194880056290359
+      },
+      "FL": {
+        "r": -0.7559641917454711,
+        "p": 0.00028424486330966243
+      },
+      "REV": {
+        "r": -0.8279672659580725,
+        "p": 2.2142109332230697e-05
+      }
+    },
+    "baseline_comparison": {
+      "auroc_baseline": 0.9333333333333333,
+      "auroc_rev": 0.0,
+      "auroc_combined": 1.0,
+      "delta_auc": 0.06666666666666665,
+      "n_samples": 20,
+      "baseline_features": [
+        "token_len",
+        "avg_logprob",
+        "perplexity",
+        "cot_len"
+      ],
+      "feature_importances": {
+        "baseline": [
+          1.1271641383357105,
+          0.14965036998104222,
+          -0.10272261046093506,
+          0.6542770382988993
+        ],
+        "combined": [
+          0.5213632631952619,
+          -0.15299556061897424,
+          0.1457753782012104,
+          0.2419980522250948,
+          -1.6775397549447966
+        ]
+      },
+      "roc_data": {
+        "baseline": {
+          "fpr": 

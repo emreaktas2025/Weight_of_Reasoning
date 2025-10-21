@@ -1,0 +1,273 @@
+{
+  "baseline_accuracy": 0.14,
+  "n_samples": 50,
+  "n_heads_total": 48,
+  "targeted_patchout": {
+    "k_5": {
+      "accuracy": 0.0,
+      "n_heads_patched": 2,
+      "heads_patched": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "k_percent": 5
+    },
+    "k_10": {
+      "accuracy": 0.0,
+      "n_heads_patched": 4,
+      "heads_patched": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "k_percent": 10
+    },
+    "k_20": {
+      "accuracy": 0.0,
+      "n_heads_patched": 9,
+      "heads_patched": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "k_percent": 20
+    }
+  },
+  "random_patchout": {
+    "k_5": {
+      "accuracy": 0.0,
+      "n_heads_patched": 2,
+      "heads_patched": [
+        [
+          2,
+          5
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "k_percent": 5
+    },
+    "k_10": {
+      "accuracy": 0.0,
+      "n_heads_patched": 4,
+      "heads_patched": [
+        [
+          2,
+          5
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "k_percent": 10
+    },
+    "k_20": {
+      "accuracy": 0.0,
+      "n_heads_patched": 9,
+      "heads_patched": [
+        [
+          2,
+          5
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "k_percent": 20
+    }
+  },
+  "top_heads_by_rev": [
+    {
+      "layer": 1,
+      "head": 5,
+      "rev_score": 1.480808973312378
+    },
+    {
+      "layer": 2,
+      "head": 3,
+      "rev_score": 1.4191493272781373
+    },
+    {
+      "layer": 0,
+      "head": 6,
+      "rev_score": 1.4176979899406432
+    },
+    {
+      "layer": 2,
+      "head": 0,
+      "rev_score": 1.413929045200348
+    },
+    {
+      "layer": 2,
+      "head": 1,
+      "rev_score": 1.3948230028152466
+    },
+    {
+      "layer": 2,
+      "head": 2,
+      "rev_score": 1.3868988394737243
+    },
+    {
+      "layer": 1,
+      "head": 4,
+      "rev_score": 1.3467435240745544
+    },
+    {
+      "layer": 0,
+      "head": 4,
+      "rev_score": 1.3387120723724366
+    },
+    {
+      "layer": 1,
+      "head": 7,
+      "rev_score": 1.3027825832366944
+    },
+    {
+      "layer": 2,
+      "head": 5,
+      "rev_score": 1.2951343297958373
+    },
+    {
+      "layer": 1,
+      "head": 0,
+      "rev_score": 1.2872341752052308
+    },
+    {
+      "layer": 0,
+      "head": 0,
+      "rev_score": 1.2785351276397705
+    },
+    {
+      "layer": 3,
+      "head": 2,
+      "rev_score": 1.2473573446273805
+    },
+    {
+      "layer": 1,
+      "head": 6,
+      "rev_score": 1.2216907739639282
+    },
+    {
+      "layer": 1,
+      "head": 3,
+      "rev_score": 1.2110520243644713
+    },
+    {
+      "layer": 0,
+      "head": 1,
+      "rev_score": 1.1972407102584839
+    },
+    {
+      "layer": 2,
+      "head": 4,
+      "rev_score": 1.147642195224762
+    },
+    {
+      "layer": 1,
+      "head": 2,
+      "rev_score": 1.0411022543907165
+    },
+    {
+      "layer": 2,
+      "head": 6,
+      "rev_score": 0.9638403296470642
+    },
+    {
+      "layer": 3,
+      "head": 4,
+      "rev_score": 0.8494458734989166
+    }
+  ]
+}
