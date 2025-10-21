@@ -16,6 +16,16 @@ def set_seed(seed: int = 1337) -> None:
     if torch.cuda.is_available():
         torch.cuda.manual_seed(seed)
         torch.cuda.manual_seed_all(seed)
+    
+    # Enable deterministic algorithms for full reproducibility
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    try:
+        torch.use_deterministic_algorithms(True)
+    except Exception:
+        pass  # Not all PyTorch versions support this
+    os.environ["CUBLAS_WORKSPACE_CONFIG"] = ":4096:8"
+    print("[Reproducibility] Deterministic PyTorch algorithms enabled.")
 
 
 def ensure_dir(path: str) -> None:

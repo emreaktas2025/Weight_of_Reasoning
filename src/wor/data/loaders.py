@@ -226,6 +226,30 @@ def create_minimal_control_fallback(dataset_name: str, n: int) -> List[Dict[str,
     return data
 
 
+def load_dataset_from_manifest(manifest_path: str) -> Optional[List[Dict[str, Any]]]:
+    """
+    Load exact split from saved manifest (for perfect reproduction).
+    
+    Args:
+        manifest_path: Path to manifest CSV file
+        
+    Returns:
+        List of dataset samples, or None if manifest doesn't exist
+    """
+    if not os.path.exists(manifest_path):
+        return None
+    
+    try:
+        import pandas as pd
+        df = pd.read_csv(manifest_path)
+        data = df.to_dict('records')
+        print(f"Loaded manifest with {len(data)} samples from {manifest_path}")
+        return data
+    except Exception as e:
+        print(f"Error loading manifest from {manifest_path}: {e}")
+        return None
+
+
 def save_dataset_manifest(data: List[Dict[str, Any]], dataset_name: str, output_dir: str) -> None:
     """
     Save dataset manifest to CSV for reproducibility.

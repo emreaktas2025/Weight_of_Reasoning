@@ -18,7 +18,7 @@ from ..utils.hf_auth import ensure_hf_auth
 from ..utils.logging import create_run_logger
 from ..data.loaders import (
     load_reasoning_dataset, load_control_dataset, load_math_dataset,
-    save_dataset_manifest, validate_dataset_labels
+    save_dataset_manifest, load_dataset_from_manifest, validate_dataset_labels
 )
 from ..metrics.activation_energy import activation_energy
 from ..metrics.attention_entropy import attention_process_entropy
@@ -123,6 +123,12 @@ def compute_baseline_metrics_phase5(
     
     # Create DataFrame and compute REV scores
     df = pd.DataFrame(rows)
+    
+    # ID alignment sanity checks
+    assert len(df) == len(all_data), f"Sample count mismatch: df={len(df)} vs data={len(all_data)}"
+    assert list(df['id']) == [item['id'] for item in all_data], "ID order mismatch between df and all_data"
+    print(f"[OK] DataFrame ID alignment verified for {len(df)} samples.")
+    
     rev_scores = compute_rev_scores(df)
     df['REV'] = rev_scores
     
@@ -166,6 +172,14 @@ def compute_model_summary_phase5(
     # Compute AUROC for REV
     try:
         valid_mask = df['REV'].notna() & df['label_num'].notna()
+        
+        # Debug logging for AUROC computation
+        n_total = int(valid_mask.sum())
+        n_pos = int((df.loc[valid_mask, 'label_num'] == 1).sum())
+        n_neg = int((df.loc[valid_mask, 'label_num'] == 0).sum())
+        rev_min, rev_max = float(df['REV'].min()), float(df['REV'].max())
+        print(f"[AUROC Debug] N={n_total}, pos={n_pos}, neg={n_neg}, REV_range=[{rev_min:.3f}, {rev_max:.3f}]")
+        
         if valid_mask.sum() > 0 and len(df.loc[valid_mask, 'label_num'].unique()) >= 2:
             auroc_rev = roc_auc_score(df.loc[valid_mask, 'label_num'], df.loc[valid_mask, 'REV'])
         else:
@@ -265,20 +279,32 @@ def run_phase5_evaluation(cfg_path: str, fast: bool = False) -> None:
     for dataset_name, n in optimal_sizes["reasoning"].items():
         loader = reasoning_loaders.get(dataset_name, load_reasoning_dataset)
         try:
-            data = loader(dataset_name, n, cfg.get("seed", 1337))
+            # Try loading from manifest first (for exact reproducibility)
+            manifest_path = os.path.join(cfg.get("splits_dir", "reports/splits"), f"{dataset_name}_manifest.csv")
+            data = load_dataset_from_manifest(manifest_path)
+            
+            # If manifest doesn't exist, generate new split
+            if data is None:
+                data = loader(dataset_name, n, cfg.get("seed", 1337))
+                save_dataset_manifest(data, dataset_name, cfg.get("splits_dir", "reports/splits"))
+            
             if validate_dataset_labels(data, "reasoning"):
                 all_data.extend(data)
-                save_dataset_manifest(data, dataset_name, cfg.get("splits_dir", "reports/splits"))
                 logger.log_dataset_info(dataset_name, len(data))
         except Exception as e:
             logger.log(f"Failed to load {dataset_name}: {e}")
     
     # Load control dataset
     control_n = optimal_sizes["control"]["wiki"]
-    control_data = load_control_dataset("wiki", control_n, cfg.get("seed", 1337))
+    manifest_path = os.path.join(cfg.get("splits_dir", "reports/splits"), "wiki_manifest.csv")
+    control_data = load_dataset_from_manifest(manifest_path)
+    
+    if control_data is None:
+        control_data = load_control_dataset("wiki", control_n, cfg.get("seed", 1337))
+        save_dataset_manifest(control_data, "wiki", cfg.get("splits_dir", "reports/splits"))
+    
     if validate_dataset_labels(control_data, "control"):
         all_data.extend(control_data)
-        save_dataset_manifest(control_data, "wiki", cfg.get("splits_dir", "reports/splits"))
         logger.log_dataset_info("wiki", len(control_data))
     
     logger.log(f"Total samples loaded: {len(all_data)}")
