@@ -162,7 +162,7 @@ def evaluate_induction_accuracy(
     
     for item in data:
         try:
-            result = runner.generate(item["prompt"], max_new_tokens=1)
+            result = runner.generate(item["prompt"])
             generated_text = result["generated_text"].strip()
             
             # Extract first token as prediction

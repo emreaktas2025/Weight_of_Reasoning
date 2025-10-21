@@ -12,6 +12,7 @@ from pathlib import Path
 
 from ..core.runner import ModelRunner
 from ..core.utils import set_seed, ensure_dir, save_json
+from ..core.experiment_logger import log_experiment
 from ..utils.hw import detect_hw, log_hw_config, get_optimal_dataset_sizes, get_model_config_with_hw
 from ..utils.hf_auth import ensure_hf_auth
 from ..utils.logging import create_run_logger
@@ -368,6 +369,14 @@ def run_phase5_evaluation(cfg_path: str, fast: bool = False) -> None:
             # Save individual model summary
             summary_path = os.path.join(cfg["output_dir"], f"{model_name}_summary.json")
             save_json(summary_path, summary)
+            
+            # Log experiment for reproducibility
+            log_experiment(
+                config=model_cfg,
+                results=summary,
+                output_dir=os.path.join(cfg["output_dir"], "tracking"),
+                experiment_name=model_name
+            )
             
             model_runtime = time.time() - model_start_time
             logger.log_runtime(f"{model_name}", model_runtime)
