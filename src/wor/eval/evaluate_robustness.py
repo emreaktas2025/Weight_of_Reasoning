@@ -253,10 +253,53 @@ def run_robustness_evaluation(cfg_path: str, fast: bool = False) -> None:
     
     logger.log(f"Total samples: {len(all_data)}")
     
-    # Load circuit heads and thresholds
+    # Load or compute circuit heads and thresholds
     circuit_heads = load_circuit_heads(cfg.get("circuit_heads_json", "reports/circuits/heads.json"))
     cud_thresholds = load_cud_thresholds(cfg.get("control_thresholds_npz", "reports/control_thresholds_phase3.npz"))
     apl_thresholds = load_control_thresholds()
+    
+    # If not available, compute them on-the-fly
+    if circuit_heads is None or cud_thresholds is None:
+        logger.log("Circuit heads or CUD thresholds not found - computing on-the-fly...")
+        from ..metrics.circuit_utilization_density import compute_circuit_heads, get_arithmetic_prompts
+        
+        # Initialize a temporary model runner to compute thresholds
+        with open(model_cfg_path, 'r') as f:
+            temp_model_cfg = yaml.safe_load(f)
+        temp_model_cfg = get_model_config_with_hw(temp_model_cfg, hw_config)
+        
+        from ..core.runner import ModelRunner
+        temp_runner = ModelRunner(temp_model_cfg)
+        
+        # Compute circuit heads and thresholds
+        arithmetic_prompts = get_arithmetic_prompts()
+        control_prompts = ["This is a neutral control sentence."] * 10
+        circuit_heads, cud_thresholds = compute_circuit_heads(
+            temp_runner.model, arithmetic_prompts, control_prompts, max_heads=24
+        )
+        logger.log(f"Computed {len(circuit_heads) if circuit_heads else 0} circuit heads")
+        
+        # Clean up temporary runner
+        del temp_runner
+        
+    if apl_thresholds is None:
+        logger.log("APL thresholds not found - computing on-the-fly...")
+        from ..metrics.activation_path_length import compute_control_thresholds
+        
+        # Use the same temporary model approach
+        with open(model_cfg_path, 'r') as f:
+            temp_model_cfg = yaml.safe_load(f)
+        temp_model_cfg = get_model_config_with_hw(temp_model_cfg, hw_config)
+        
+        from ..core.runner import ModelRunner
+        temp_runner = ModelRunner(temp_model_cfg)
+        
+        control_prompts = ["This is a neutral control sentence."] * 10
+        apl_thresholds = compute_control_thresholds(temp_runner.model, control_prompts)
+        logger.log("Computed APL thresholds")
+        
+        # Clean up
+        del temp_runner
     
     # Initialize results
     results = {
