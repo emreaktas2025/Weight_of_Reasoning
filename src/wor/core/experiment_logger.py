@@ -7,8 +7,26 @@ import torch
 import hashlib
 import sys
 import platform
+import numpy as np
 from typing import Dict, Any, Optional
 from pathlib import Path
+
+
+def _convert_to_serializable(obj):
+    """Convert numpy types to Python native types for JSON serialization."""
+    if isinstance(obj, np.ndarray):
+        return obj.tolist()
+    elif isinstance(obj, (np.integer, np.int64, np.int32)):
+        return int(obj)
+    elif isinstance(obj, (np.floating, np.float64, np.float32)):
+        return float(obj)
+    elif isinstance(obj, dict):
+        return {k: _convert_to_serializable(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [_convert_to_serializable(item) for item in obj]
+    elif isinstance(obj, tuple):
+        return tuple(_convert_to_serializable(item) for item in obj)
+    return obj
 
 
 def log_experiment(
@@ -102,6 +120,9 @@ def log_experiment(
         "gpu_info": gpu_info,
         "git_info": git_info,
     }
+    
+    # Convert numpy types to JSON-serializable types
+    experiment_log = _convert_to_serializable(experiment_log)
     
     # Save to JSON file
     log_path = os.path.join(output_dir, f"run_{run_id}.json")

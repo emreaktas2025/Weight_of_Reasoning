@@ -83,15 +83,27 @@ def compute_rev_scores(df: pd.DataFrame, use_robust: bool = False) -> np.ndarray
     # Define the six metrics
     metrics = ['AE', 'APE', 'APL', 'CUD', 'SIB', 'FL']
     
+    # Define which metrics should be NEGATED so that higher values = more reasoning
+    # AE: Control uses MORE energy → negate (lower AE = more reasoning efficiency)
+    # APE: Reasoning has MORE entropy → keep as is
+    # APL: Control has LONGER paths → negate (shorter APL = more reasoning efficiency)
+    # CUD: Reasoning uses MORE circuit heads → keep as is (varies by model)
+    # SIB: Reasoning is MORE stable → keep as is
+    # FL: Control loads MORE features → negate (lower FL = more reasoning sparsity)
+    metrics_to_negate = ['AE', 'APL', 'FL']
+    
     # Check that all required columns exist
     missing_cols = [col for col in metrics if col not in df.columns]
     if missing_cols:
         raise ValueError(f"Missing required columns for REV computation: {missing_cols}")
     
-    # Extract metric values
+    # Extract metric values and apply negation where needed
     metric_values = {}
     for metric in metrics:
-        metric_values[metric] = df[metric].values
+        values = df[metric].values.copy()  # Make a copy to avoid modifying original
+        if metric in metrics_to_negate:
+            values = -values  # Negate so higher = more reasoning
+        metric_values[metric] = values
     
     # Compute z-scores for each metric
     z_scores = {}
@@ -120,15 +132,21 @@ def compute_rev_scores_from_dict(metric_dict: Dict[str, List[float]],
     # Define the six metrics
     metrics = ['AE', 'APE', 'APL', 'CUD', 'SIB', 'FL']
     
+    # Define which metrics should be NEGATED (same as compute_rev_scores)
+    metrics_to_negate = ['AE', 'APL', 'FL']
+    
     # Check that all required keys exist
     missing_keys = [key for key in metrics if key not in metric_dict]
     if missing_keys:
         raise ValueError(f"Missing required keys for REV computation: {missing_keys}")
     
-    # Convert to numpy arrays
+    # Convert to numpy arrays and apply negation where needed
     metric_arrays = {}
     for metric in metrics:
-        metric_arrays[metric] = np.array(metric_dict[metric])
+        values = np.array(metric_dict[metric])
+        if metric in metrics_to_negate:
+            values = -values  # Negate so higher = more reasoning
+        metric_arrays[metric] = values
     
     # Compute z-scores for each metric
     z_scores = {}

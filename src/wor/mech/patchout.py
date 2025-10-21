@@ -413,8 +413,9 @@ def run_patchout_experiment(
 
 def _zero_selected_heads(head_idxs):
     """Hook function to zero out selected attention heads."""
-    def hook(z, hookpoint):
+    def hook(z, hook=None):
         # z: [B, S, H, D]
+        # hook parameter is optional for compatibility with TransformerLens API changes
         z[..., head_idxs, :] = 0
         return z
     return hook
