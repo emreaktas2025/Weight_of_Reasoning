@@ -1,0 +1,6 @@
+id,question,answer,prompt,label
+wiki_fallback_0,Write a short neutral paragraph about the history of pencils.,,Write a short neutral paragraph about the history of pencils.,control
+wiki_fallback_1,Write a short neutral paragraph describing a calm lake.,,Write a short neutral paragraph describing a calm lake.,control
+wiki_fallback_2,Write a short neutral paragraph about how bread is baked.,,Write a short neutral paragraph about how bread is baked.,control
+wiki_fallback_3,Write a short neutral paragraph about library etiquette.,,Write a short neutral paragraph about library etiquette.,control
+wiki_fallback_4,Write a short neutral paragraph about storing winter clothes.,,Write a short neutral paragraph about storing winter clothes.,control

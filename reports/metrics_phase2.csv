@@ -1,0 +1,48 @@
+id,label,token_len,ppl,AE,APE,APL,generated_text
+r1,reasoning,71,2.0209686756134033,1.0595634294592815,0.3099863596782767,0.16666666666666666,"
+
+The best way to get the best of the best is to get the best of the best.
+
+The best way to get the ..."
+r2,reasoning,76,2.165419816970825,1.1211611140858044,0.306223311053657,1.0,"
+
+The train is a train of up and down the road, and it is a train of up and down the road. The train..."
+r3,reasoning,51,1.8115885257720947,1.1354911977594548,0.28322994672754986,0.16666666666666666,"
+
+The price of the item is $80.00.
+
+The price of the item is $80.00.
+
+The price of the item is $80.0..."
+r4,reasoning,32,1.8771512508392334,1.3735027313232422,0.2910915796622677,0.6666666666666666,"
+
+A:
+
+You can use the following code to get the x+3=11 and y=2x:
+x+3=11 and y=2x:
+x+3=11 and y=2x:
+x..."
+r5,reasoning,73,2.0079586505889893,0.9303839756892278,0.31863019868076653,0.16666666666666666,"
+
+The first two are the same. The first two are the same. The first two are the same. The second are..."
+c1,control,50,1.925319790840149,1.877477499154898,0.22998723005995475,0.6666666666666666,"
+
+The following is a list of the most important pencils of the pencils of the pencils of the pencils..."
+c2,control,61,1.7392544746398926,2.67386531829834,0.20267372412901924,0.6666666666666666,"
+
+The lake is a lake, and the lake is a lake. The lake is a lake. The lake is a lake. The lake is a ..."
+c3,control,40,1.925613522529602,2.3026516654274682,0.2148587991681071,0.8333333333333334,"
+
+The following is a list of bread recipes that you can use to make bread.
+
+1.  1.  2.  3.  4.  5.  ..."
+c4,control,67,2.1253514289855957,2.281334963711825,0.2055885388434997,0.8333333333333334,"
+
+The following are the main features of the library:
+
+- The library is a library that is a library ..."
+c5,control,49,2.3320059776306152,2.597512435913086,0.20023909839713122,0.6666666666666666,"
+
+The following are the best-selling books for the most popular books.
+
+The best-selling books for t..."

@@ -1,0 +1,6 @@
+id,question,answer,prompt
+strategyqa_fallback_0,"Solve: John has 7 apples, buys 5, gives 3 to a friend. How many remain? Show steps.",,"Solve: John has 7 apples, buys 5, gives 3 to a friend. How many remain? Show steps."
+strategyqa_fallback_1,"If a train travels 120 km in 2 hours at constant speed, how far in 5 hours? Show steps.",,"If a train travels 120 km in 2 hours at constant speed, how far in 5 hours? Show steps."
+strategyqa_fallback_2,A store discounts a $80 item by 25% then adds 10% tax. Final price? Show steps.,,A store discounts a $80 item by 25% then adds 10% tax. Final price? Show steps.
+strategyqa_fallback_3,"If x+3=11 and y=2x, what is y? Show steps.",,"If x+3=11 and y=2x, what is y? Show steps."
+strategyqa_fallback_4,"There are 12 red and 8 blue marbles. If you take 5 at random without replacement, expected reds? Show steps.",,"There are 12 red and 8 blue marbles. If you take 5 at random without replacement, expected reds? Show steps."

@@ -48,7 +48,7 @@ Thumbs.db
 
 # Project specific
 cache/
-reports/
+!reports/
 !reports/phase5/*.json
 !reports/phase5/*.csv
 !reports/figs_paper/*.png

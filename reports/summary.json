@@ -1,0 +1,14 @@
+{
+  "n_reasoning": 5,
+  "n_control": 5,
+  "AE_mean_reasoning": 1.1240204896634023,
+  "AE_mean_control": 2.3465683765011236,
+  "AE_std_reasoning": 0.14424351231910965,
+  "AE_std_control": 0.2815409511701921,
+  "cohens_d_ae": -5.465446867076691,
+  "APE_mean_reasoning": 0.3018322791605036,
+  "APE_mean_control": 0.2106694781195424,
+  "APE_std_reasoning": 0.012879050338000669,
+  "APE_std_control": 0.010856028719902495,
+  "cohens_d_ape": 7.653941868683654
+}

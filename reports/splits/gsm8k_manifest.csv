@@ -1,0 +1,146 @@
+id,question,answer,prompt,label
+gsm8k_0,"In a yard, the number of tanks is five times the number of trucks. If there are 20 trucks in the yard, calculate the total number of tanks and trucks in the yard.","There are 5*20 = <<5*20=100>>100 tanks in the yard.
+Altogether, there are 100+20 = <<100+20=120>>120 trucks and tanks in the yard.
+#### 140","Solve: In a yard, the number of tanks is five times the number of trucks. If there are 20 trucks in the yard, calculate the total number of tanks and trucks in the yard. Show steps.",reasoning
+gsm8k_1,Elon has 10 more teslas than Sam who has half the number of teslas as Chris. Chris has 6 teslas. How many teslas does Elon have?,"Sam has half the number of Chris: 6/2=<<6/2=3>>3 teslas
+Elon has 10 more than Sam: 10+3=<<10+3=13>>13 teslas
+#### 13",Solve: Elon has 10 more teslas than Sam who has half the number of teslas as Chris. Chris has 6 teslas. How many teslas does Elon have? Show steps.,reasoning
+gsm8k_2,"Flora has been experiencing frequent fractures. Dr. Juan has asked her to strengthen her bones by drinking 105 gallons of milk within 3 weeks. Flora thinks that drinking 3 gallons of milk daily will be enough, but her brother says she'll still need to drink more. To fulfill Dr. Juan’s requirement, how many more gallons must Flora drink daily?","3 weeks translate to 3 * 7 days = <<3*7=21>>21 days.
+To meet Dr. Juan’s recommendation would mean drinking 105/21 = <<105/21=5>>5 gallons daily.
+This means that Flora must drink 5 -3 = <<5-3=2>>2 more gallons daily.
+#### 2","Solve: Flora has been experiencing frequent fractures. Dr. Juan has asked her to strengthen her bones by drinking 105 gallons of milk within 3 weeks. Flora thinks that drinking 3 gallons of milk daily will be enough, but her brother says she'll still need to drink more. To fulfill Dr. Juan’s requirement, how many more gallons must Flora drink daily? Show steps.",reasoning
+gsm8k_3,Each dandelion produces 300 seeds. 1/3rd of the seeds land in water and die. 1/6 of the starting number are eaten by insects. Half the remainder sprout and are immediately eaten. How many dandelions survive long enough to flower?,"First find the number of seeds that land in water: 300 seeds * 1/3 = <<300*1/3=100>>100 seeds
+Then find the number of seeds that are eaten: 300 seeds * 1/6 = <<300*1/6=50>>50 seeds
+Subtract the number of seeds that are destroyed to find the number that sprout: 300 seeds - 100 seeds - 50 seeds = <<300-100-50=150>>150 seeds
+Then divide that number by 2 to find the number of sprouts that survive: 150 seeds / 2 = <<150/2=75>>75 seeds
+#### 75",Solve: Each dandelion produces 300 seeds. 1/3rd of the seeds land in water and die. 1/6 of the starting number are eaten by insects. Half the remainder sprout and are immediately eaten. How many dandelions survive long enough to flower? Show steps.,reasoning
+gsm8k_4,"Cameron drives at twice the speed of his brother, Chase.  But Danielle drives at three times the speed of Cameron.  If it takes Danielle 30 minutes to travel from Granville to Salisbury, how long, in minutes, will it take Chase to travel from Granville to Salisbury?","If Danielle drives at three times the speed of Cameron, it will take Cameron 30*3=<<30*3=90>>90 minutes for Cameron to travel the same distance.
+And since Cameron drives at twice the speed of his brother, Chase, it will take Chase 90*2=<<90*2=180>>180 minutes to travel from Granville to Salisbury.
+#### 180","Solve: Cameron drives at twice the speed of his brother, Chase.  But Danielle drives at three times the speed of Cameron.  If it takes Danielle 30 minutes to travel from Granville to Salisbury, how long, in minutes, will it take Chase to travel from Granville to Salisbury? Show steps.",reasoning
+gsm8k_5,"Cloud 9 Diving Company has taken individual bookings worth $12,000 and group bookings worth $16,000. Some people have cancelled at the last minute. $1600 has had to be returned to them. How much money has the sky diving company taken altogether?","Cloud 9 earned $12,000 + $16,000 = $<<12000+16000=28000>>28,000 from bookings.
+After returning money due to cancellations, they had a final total of $28,000 - $1600 = $<<28000-1600=26400>>26,400.
+#### 26400","Solve: Cloud 9 Diving Company has taken individual bookings worth $12,000 and group bookings worth $16,000. Some people have cancelled at the last minute. $1600 has had to be returned to them. How much money has the sky diving company taken altogether? Show steps.",reasoning
+gsm8k_6,"Tabitha adds 1 serving of honey per cup of tea in the evening.  She usually has 2 cups of tea before bed.  She buys her honey in a 16-ounce container.  If there are 6 servings of honey per ounce, how many nights will she be able to enjoy honey in her tea before bed?","She has 1 serving of honey per cup of tea and she has 2 teas at night so she needs a total of 1*2 = <<1*2=2>>2 servings per night
+There are 6 servings in 1 ounce and she has a 16-ounce jar of honey so that's 6*16 = <<6*16=96>>96 servings of honey
+Her jar has 96 servings and she has 2 servings a night so 1 jar will last her 96/2 = <<96/2=48>>48 nights
+#### 48","Solve: Tabitha adds 1 serving of honey per cup of tea in the evening.  She usually has 2 cups of tea before bed.  She buys her honey in a 16-ounce container.  If there are 6 servings of honey per ounce, how many nights will she be able to enjoy honey in her tea before bed? Show steps.",reasoning
+gsm8k_7,"Violet is planning a hike through the desert with her dog. Violet needs 800 ml of water per hour hiked and her dog needs 400 ml of water per hour. If Violet can carry 4.8 L of water, how many hours can she and her dog spend hiking?","First find the total amount of water Violet and her dog consume per hour: 800 ml + 400 ml = <<800+400=1200>>1200 ml
+Then divide that amount by 1000 ml/L to convert it to liters: 1200 ml / 1000 ml/L = <<1200/1000=1.2>>1.2 L
+Then divide Violet's carrying capacity by the amount of water they drink per hour to find how many hours she can hike: 4.8 L / 1.2 L/hour = 4 hours
+#### 4","Solve: Violet is planning a hike through the desert with her dog. Violet needs 800 ml of water per hour hiked and her dog needs 400 ml of water per hour. If Violet can carry 4.8 L of water, how many hours can she and her dog spend hiking? Show steps.",reasoning
+gsm8k_8,"Josh has 18 yards of ribbon that is to be used equally to 6 gifts. If each gift will use 2 yards of ribbon, how many yards of ribbon will be left?","The 6 gifts will use 6 x 2 = <<6*2=12>>12 yards of ribbon.
+So, 18 - 12 = <<18-12=6>>6 yards of ribbon will be left.
+#### 6","Solve: Josh has 18 yards of ribbon that is to be used equally to 6 gifts. If each gift will use 2 yards of ribbon, how many yards of ribbon will be left? Show steps.",reasoning
+gsm8k_9,Pearl wants to order 5 monogrammed Christmas stockings for each of her 5 grandchildren and her own 4 children.  The stockings are $20.00 each and currently 10% off.  The monogramming will costs $5.00 per stocking.  How much will the stockings costs?,"She has 5 grandchildren 4 children so she needs 5+4 = <<5+4=9>>9 stockings
+The stockings are $20.00 each and currently 10% off so that's 20*.10 = $<<20*.10=2.00>>2.00 off
+The stockings are $20.00 with a $2.00 discount so they are each 20-2 = $<<20-2=18.00>>18.00
+The stockings are now $18.00 and she needs 9 so that's $<<18*9=162>>162.00
+She also wants to monogram each stocking at $5.00 per stocking so that's 9*5 = $<<9*5=45.00>>45.00
+The stockings are $162.00 and the monogramming will cost $45.00 so the stockings will cost 162+45 = $<<162+45=207.00>>207.00
+#### 1035",Solve: Pearl wants to order 5 monogrammed Christmas stockings for each of her 5 grandchildren and her own 4 children.  The stockings are $20.00 each and currently 10% off.  The monogramming will costs $5.00 per stocking.  How much will the stockings costs? Show steps.,reasoning
+gsm8k_10,"My brother and I have thirty minutes to go to school, without being late. It takes us 15 minutes to arrive at the school gate, and another 6 minutes to get to the school building. How much time do we have to get to our room, without being late?","The total time we spent going to school is 15 minutes + 6 minutes = <<15+6=21>>21 minutes.
+We have 30 minutes - 21 minutes = <<30-21=9>>9 minutes left not to be late.
+#### 9","Solve: My brother and I have thirty minutes to go to school, without being late. It takes us 15 minutes to arrive at the school gate, and another 6 minutes to get to the school building. How much time do we have to get to our room, without being late? Show steps.",reasoning
+gsm8k_11,An office has 90 workers. 2/3rds of them are men and the rest are women. The company hires 10 new employees and 100% of them are women. What is the total percentage of women in the company now?,"1/3rd of the workers before the new hires were women because 1 - (2/3) = 1/3
+There were 30 women working for the company before the new hires
+There are now 40 women working for the company because 30 + 10 = <<30+10=40>>40
+There are 100 people working for the company because 90 + 10 = <<90+10=100>>100
+The proportion of women working in the company is .4 because 40 / 100 = <<40/100=.4>>.4
+The percentage of women working in the company is now 40 because .4 x 100 = <<.4*100=40>>40
+#### 40",Solve: An office has 90 workers. 2/3rds of them are men and the rest are women. The company hires 10 new employees and 100% of them are women. What is the total percentage of women in the company now? Show steps.,reasoning
+gsm8k_12,"Riku has 25 times more stickers than Kristoff. If Kristoff has 85 stickers, how many stickers does Riku have?","If Kristoff has 85 stickers, Riku has 25 * 85 stickers = <<85*25=2125>>2125 more stickers.
+The total number of stickers Riku has is 2125 stickers + 85 stickers = <<2125+85=2210>>2210 stickers
+#### 2210","Solve: Riku has 25 times more stickers than Kristoff. If Kristoff has 85 stickers, how many stickers does Riku have? Show steps.",reasoning
+gsm8k_13,"Jame's buys 100 head of cattle for $40,000.  It cost 20% more than that to feed them.  They each weigh 1000 pounds and sell for $2 per pound.  How much profit did he make?","It cost .2*40000=$<<.2*40000=8000>>8000 more to feed than buy them
+So the total cost to feed them was 40000+8000=$<<40000+8000=48000>>48,000
+So in total it cost 48000+40000=$<<48000+40000=88000>>88,000
+Each cow sells for 2*1000=$<<2*1000=2000>>2000
+So he sells them for 2000*100=$<<2000*100=200000>>200,000
+So he makes a profit of 200,000-88,000=$<<200000-88000=112000>>112,000
+#### 112000","Solve: Jame's buys 100 head of cattle for $40,000.  It cost 20% more than that to feed them.  They each weigh 1000 pounds and sell for $2 per pound.  How much profit did he make? Show steps.",reasoning
+gsm8k_14,"Betty is growing parsnips in her vegetable garden. When the parsnips are grown, they are harvested and bundled into boxes that can hold up to 20 parsnips each. Each harvest, three-quarters of the boxes are full, and the remaining boxes are half-full. She gets an average of 20 boxes each harvest. How many parsnips does Betty grow in an average harvest?","If three-quarters of the boxes are full, then 1 – ¾ = ¼ of the boxes are half-full.
+On average, each harvest therefore has 20 boxes * 0.25 = <<20*0.25=5>>5 boxes that are half-full.
+This leaves 20 total boxes – 5 half-full boxes = <<20-5=15>>15 full boxes.
+Half-full boxes hold 20 parsnips / 2 = <<20/2=10>>10 parsnips each.
+In total, the half-full boxes, therefore, hold 5 boxes * 10 parsnips = <<5*10=50>>50 parsnips.
+The full boxes hold a total of 15 boxes * 20 parsnips = <<15*20=300>>300 parsnips.
+So Betty harvests a total of 50 + 300 = <<50+300=350>>350 parsnips in an average harvest.
+#### 350","Solve: Betty is growing parsnips in her vegetable garden. When the parsnips are grown, they are harvested and bundled into boxes that can hold up to 20 parsnips each. Each harvest, three-quarters of the boxes are full, and the remaining boxes are half-full. She gets an average of 20 boxes each harvest. How many parsnips does Betty grow in an average harvest? Show steps.",reasoning
+gsm8k_15,Nine members of the crafts club are making 2 necklaces each. It takes 50 beads to make each necklace. How many beads will they need in all?,"Two bracelets need 50 x 2 = <<50*2=100>>100 beads.
+So they will need 9 x 100 = <<9*100=900>>900 beads in all.
+#### 900",Solve: Nine members of the crafts club are making 2 necklaces each. It takes 50 beads to make each necklace. How many beads will they need in all? Show steps.,reasoning
+gsm8k_16,"Before getting to work, Jess has a few errands to run. Jess has to walk 11 blocks to the store and 6 blocks to the gallery, before walking the final 8 blocks to arrive at work. If Jess has already walked 5 blocks, how many more blocks must she walk before arriving at work?","Jess needs to walk 11 blocks + 6 blocks + 8 blocks = <<11+6+8=25>>25 blocks total.
+Jess needs to go 25 blocks – 5 = <<25-5=20>>20 blocks to get to work.
+#### 20","Solve: Before getting to work, Jess has a few errands to run. Jess has to walk 11 blocks to the store and 6 blocks to the gallery, before walking the final 8 blocks to arrive at work. If Jess has already walked 5 blocks, how many more blocks must she walk before arriving at work? Show steps.",reasoning
+gsm8k_17,"Martha has 11 butterflies in her collection. She has twice as many blue butterflies as yellow butterflies. The rest of her butterflies are black. If Martha has 5 black butterflies, how many blue butterflies does she have?","Martha has 11-5=<<11-5=6>>6 blue and yellow butterflies.
+Martha has 6/3=<<6/3=2>>2 yellow butterflies.
+Martha has 2*2=<<2*2=4>>4 blue butterflies.
+#### 4","Solve: Martha has 11 butterflies in her collection. She has twice as many blue butterflies as yellow butterflies. The rest of her butterflies are black. If Martha has 5 black butterflies, how many blue butterflies does she have? Show steps.",reasoning
+gsm8k_18,"The Early Bird Dinner offered dinner meals at half off the menu price if you eat between 2-4 pm.  Curtis ordered the Salisbury Steak that costs $16.00 and Rob ordered the Chicken Fried Steak at $18.00.  If they ate at 3 pm, what was the cost of their total bill?","Curtis had the Salisbury steak for $16.00 and Rob had the Chicken Fried Steak at $18.00 so their meal cost 16+18 = $<<16+18=34.00>>34.00
+They ate 3 pm so their meal is half off so their meal cost 34/2 = $17.00
+#### 17","Solve: The Early Bird Dinner offered dinner meals at half off the menu price if you eat between 2-4 pm.  Curtis ordered the Salisbury Steak that costs $16.00 and Rob ordered the Chicken Fried Steak at $18.00.  If they ate at 3 pm, what was the cost of their total bill? Show steps.",reasoning
+gsm8k_19,Hunter saw 5 frogs sitting on top lily pads in the pond. Three more frogs climbed out of the water onto logs floating in the pond. Then two dozen baby frogs hopped onto a big rock jutting out from the pond.  How many frogs did Hunter see in the pond?,"Hunter saw 5 + 3 = <<5+3=8>>8 adult frogs in the pond.
+He saw 2 x 12 = <<2*12=24>>24 baby frogs in the pond.
+Altogether, he saw 8 + 24 = <<8+24=32>>32 frogs in the pond.
+#### 32",Solve: Hunter saw 5 frogs sitting on top lily pads in the pond. Three more frogs climbed out of the water onto logs floating in the pond. Then two dozen baby frogs hopped onto a big rock jutting out from the pond.  How many frogs did Hunter see in the pond? Show steps.,reasoning
+gsm8k_20,"Amaya is watching a movie that she finds kind of boring, so she keeps tuning out and having to rewind it to catch what she missed. She watches 35 minutes before she realizes she needs to rewind the movie to catch something she missed, a process that adds 5 minutes to her total viewing time. She watches the movie for another 45 minutes but has to rewind it again, adding 15 minutes to her total time. Finally, she watches the last 20 minutes uninterrupted. If she added up the duration of the film plus all the times she had to rewind and re-watch parts, how many minutes did it take her to watch the movie?","Amaya watches the movie without rewinding for 20 minutes + 15 minutes + 45 minutes + 20 minutes = <<20+15+45+20=100>>100 minutes duration of the movie.
+However, Amaya also spent extra time re-watching parts she rewound, for 5 minutes + 15 minutes = <<5+15=20>>20 minutes.
+In all, Amaya spent 100 minutes + 20 minutes = <<100+20=120>>120 minutes watching the movie.
+#### 120","Solve: Amaya is watching a movie that she finds kind of boring, so she keeps tuning out and having to rewind it to catch what she missed. She watches 35 minutes before she realizes she needs to rewind the movie to catch something she missed, a process that adds 5 minutes to her total viewing time. She watches the movie for another 45 minutes but has to rewind it again, adding 15 minutes to her total time. Finally, she watches the last 20 minutes uninterrupted. If she added up the duration of the film plus all the times she had to rewind and re-watch parts, how many minutes did it take her to watch the movie? Show steps.",reasoning
+gsm8k_21,Mark has kangaroos and goats.  Kangaroos have two legs and goats have four legs.  If he has 23 kangaroos and three times as many goats as kangaroos what is the total number of legs of all his animals?,"His kangaroos have a total of 23*2=<<23*2=46>>46 legs
+He has 23*3=<<23*3=69>>69 goats
+The goats have 69*4=<<69*4=276>>276 legs
+So in total his animals have 276+46=<<276+46=322>>322 legs
+#### 322",Solve: Mark has kangaroos and goats.  Kangaroos have two legs and goats have four legs.  If he has 23 kangaroos and three times as many goats as kangaroos what is the total number of legs of all his animals? Show steps.,reasoning
+gsm8k_22,Megan pays $16 for a shirt that costs $22 before sales. What is the amount of the discount?,"Let x be the amount of the discount.
+We have, 22 - x = $16
+We change the writing of the equation:
+22 - x + x = 16 + x
+So, 22 = 16 + x
+We then Remove 16 from both sides:
+22 - 16 = 16 + x - 16
+So, 22 - 16 = x
+So, the amount of the discount is x = $<<6=6>>6.
+#### 6",Solve: Megan pays $16 for a shirt that costs $22 before sales. What is the amount of the discount? Show steps.,reasoning
+gsm8k_23,"In a dye-making process, a young lady mixes 3/5th of 20 liters of water with 5/6th of 18 liters of vinegar. How many liters of the mixture are obtained?","3/5th of 20 liters of water is 20*(3/5) = <<20*(3/5)=12>>12 liters
+5/6th of 18 liters of vinegar is 18*(5/6) = <<18*(5/6)=15>>15 liters
+12 liters of water mixed with 15 liters of vinegar gives 12+15 = <<12+15=27>>27-liter mixture
+#### 27","Solve: In a dye-making process, a young lady mixes 3/5th of 20 liters of water with 5/6th of 18 liters of vinegar. How many liters of the mixture are obtained? Show steps.",reasoning
+gsm8k_24,"Val has three times as many dimes as nickels. If she accidentally finds twice as many nickels as she has in her older brother's treasure box, and takes them for herself, what would be the value of money she has, in dollars, if she had 20 nickels before finding the new ones from her brother's treasure box?","If Val currently has 20 nickels and finds twice as many nickels as she has in her older brother's treasure box, she will have 2*20=40 more nickels.
+The total number of nickels she'll have is 40+20=<<40+20=60>>60
+Since nickel is worth $0.05, the value of the nickels Val is having is 60*0.05=$<<60*0.05=3>>3
+Val had three times as many dimes as nickels before she found the 40 new nickels, a total of 3*20=<<3*20=60>>60 dimes
+Since a dime has a value of $0.10, the value of the dimes that Val has is 60*$0.10=$<<60*0.10=6>>6
+Together, the value of the dimes and nickels Val has is worth $6+$3=$<<6+3=9>>9
+#### 9","Solve: Val has three times as many dimes as nickels. If she accidentally finds twice as many nickels as she has in her older brother's treasure box, and takes them for herself, what would be the value of money she has, in dollars, if she had 20 nickels before finding the new ones from her brother's treasure box? Show steps.",reasoning
+gsm8k_25,Carmela has $7 and each of her four cousins has $2. How much will Carmela have to give to each of her cousins so that she and her cousins will have the same amount of money?,"Carmela's four cousins have a total of $2 x 4 = $<<2*4=8>>8.
+The total money they all have is $7 + $8 = $<<7+8=15>>15.
+There will be 1 (Carmela) + 4 (cousins) = <<1+4=5>>5 people who will be sharing equally the money.
+So each of them should get $15/5 = $<<15/5=3>>3.
+Hence, Carmela has to give a total of $7 - $3 = $<<7-3=4>>4 to her 4 cousins.
+Therefore, each of her cousins will get $4/4 = $<<4/4=1>>1.
+#### 1",Solve: Carmela has $7 and each of her four cousins has $2. How much will Carmela have to give to each of her cousins so that she and her cousins will have the same amount of money? Show steps.,reasoning
+gsm8k_26,"The Eat ""N Go Mobile Sausage Sandwich Shop specializes in the sale of spicy sausage sandwiches served on a toasted bun.  Each sausage sandwich comes with four strips of jalapeno pepper, one sausage patty, and a tablespoon of Stephen's famous special sauce.  If a single jalapeno pepper makes 8 slices, and the Sandwich Shop serves a sandwich every 5 minutes, how many jalapeno peppers are required by the Sandwich Shop to serve all customers during an 8-hour day?","If each sandwich comes with 4 strips of pepper, and each pepper makes 8 slices, then each sandwich uses 4/8=<<4/8=0.5>>0.5 pepper.
+If the Sandwich Shop serves a sandwich every 5 minutes, then per hour the Shop serves 60/5=<<60/5=12>>12 sandwiches.
+Thus, per hour, the Shop uses 12*0.5=<<12*0.5=6>>6 jalapeno peppers.
+And in an 8-hour day, the Sandwich Shop uses 8*6=<<8*6=48>>48 jalapeno peppers.
+#### 48","Solve: The Eat ""N Go Mobile Sausage Sandwich Shop specializes in the sale of spicy sausage sandwiches served on a toasted bun.  Each sausage sandwich comes with four strips of jalapeno pepper, one sausage patty, and a tablespoon of Stephen's famous special sauce.  If a single jalapeno pepper makes 8 slices, and the Sandwich Shop serves a sandwich every 5 minutes, how many jalapeno peppers are required by the Sandwich Shop to serve all customers during an 8-hour day? Show steps.",reasoning
+gsm8k_27,"Jack and Jill went up the hill to fetch water to fill a 600 gallon tank. Each bucket is five gallons. Jack is stronger, and is able to carry two buckets of water at a time, but Jill can only manage one. Also, Jack can complete three trips to the well and back in the time it takes Jill to make two trips. How many trips will Jill make before the tank is filled?","Jack is able to carry two 5-gallon buckets of water per trip, or 2 * 5 = 10 gallons of water. Jill can only carry one bucket per trip, or 5 gallons.
+Jack completes 3 trips to the well and back for every 2 trips Jill completes, so in that time they have both together carried 3 Jack trips * 2 buckets per Jack trip * 5 gallons per bucket + 2 Jill trips * 1 bucket per Jill trip * 5 gallons per bucket = 30 gallons + 10 gallons = <<3*2*5+2*1*5=40>>40 gallons of water.
+If you consider these as a single ""group"" of trips, it will take 600 gallons / 40 gallons per ""group"" of trips = <<600/40=15>>15 groups of trips.
+As each of these ""groups"" of trips consists of two Jill trips, Jill will make 15 * 2 = <<15*2=30>>30 trips to the well and back before the tank is filled.
+#### 30","Solve: Jack and Jill went up the hill to fetch water to fill a 600 gallon tank. Each bucket is five gallons. Jack is stronger, and is able to carry two buckets of water at a time, but Jill can only manage one. Also, Jack can complete three trips to the well and back in the time it takes Jill to make two trips. How many trips will Jill make before the tank is filled? Show steps.",reasoning
+gsm8k_28,"Alice had 10 dozens of watermelons. She sold 40% of it yesterday and 1/4 of the remaining today, How many watermelons are left to be sold tomorrow?","Ten dozens of watermelons are equal to 10 x 12 = <<10*12=120>>120 watermelons.
+Yesterday, Alice sold 120 x 40/100 = <<120*40/100=48>>48 watermelons.
+So, there are only 120 - 48 = <<120-48=72>>72 watermelons left for today.
+Today, Alice sold 72 x 1/4 = <<72*1/4=18>>18 watermelons.
+Hence, 72 - 18 = <<72-18=54>>54 watermelons are left to be sold tomorrow.
+#### 54","Solve: Alice had 10 dozens of watermelons. She sold 40% of it yesterday and 1/4 of the remaining today, How many watermelons are left to be sold tomorrow? Show steps.",reasoning
+gsm8k_29,It takes John 13 seconds to run 100 meters.  He only goes 4 meters in the first second.  He then maintains the same speed for the rest of the race.  James is 2 m/s faster at the top speed and he can run the first 10 meters in 2 seconds.  How long does it take James to run 100 meters?,"John runs 100-4=<<100-4=96>>96 meters once he reaches his max speed
+He runs it in 13-1=<<13-1=12>>12 seconds
+So he runs at a speed of 96/12=<<96/12=8>>8 m/s
+So that means James's top speed is 8+2=<<8+2=10>>10 m/s
+He has to run 100-10=<<100-10=90>>90 meters at his top speed
+So he runs that at 90/10=<<90/10=9>>9 seconds
+So he takes 9+2=<<9+2=11>>11 seconds to run 100 meters
+#### 11",Solve: It takes John 13 seconds to run 100 meters.  He only goes 4 meters in the first second.  He then maintains the same speed for the rest of the race.  James is 2 m/s faster at the top speed and he can run the first 10 meters in 2 seconds.  How long does it take James to run 100 meters? Show steps.,reasoning
