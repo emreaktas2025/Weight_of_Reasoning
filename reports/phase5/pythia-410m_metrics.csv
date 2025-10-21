@@ -17,12 +17,12 @@ gsm8k_0,reasoning,gsm8k,78,1.1474609375,1.0380859375,0.2068908106483992,0.791666
 
 **Step ...","There are 5*20 = <<5*20=100>>100 tanks in the yard.
 Altogether, there are 100+20 = <<100+20=120>>120 trucks and tanks in the yard.
-#### 140",0.2852655698894619,1
+#### 140",0.5439706787076125,1
 gsm8k_1,reasoning,gsm8k,109,1.1318359375,1.0537109375,0.20410933199385572,0.7916666666666666,0.625,0.9784289816599573,0.47430419921875,"
 
 Elon has 10 more teslas than Sam who has half the number of teslas as Chris. Chris has 6 teslas. H...","Sam has half the number of Chris: 6/2=<<6/2=3>>3 teslas
 Elon has 10 more than Sam: 10+3=<<10+3=13>>13 teslas
-#### 13",0.22997275286116425,1
+#### 13",0.35248257429856583,1
 gsm8k_2,reasoning,gsm8k,141,1.181640625,1.033203125,0.24752779118752527,0.7916666666666666,0.7083333333333334,0.9790277990198968,0.4614410400390625,"
 
 Step 1: Drink 3 gallons of milk daily.
@@ -32,21 +32,21 @@ Step 2: Drink 3 gallons of milk daily.
 Step 3: Drink 3 ga...","3 weeks translate to 3 * 7 days = <<3*7=21>>21 days.
 To meet Dr. Juan’s recommendation would mean drinking 105/21 = <<105/21=5>>5 gallons daily.
 This means that Flora must drink 5 -3 = <<5-3=2>>2 more gallons daily.
-#### 2",0.43216708182176106,1
+#### 2",0.6382178318878112,1
 gsm8k_3,reasoning,gsm8k,132,1.130859375,1.015625,0.22365957490248714,0.7916666666666666,0.5416666666666666,0.9650218484340513,0.464813232421875,"
 
 1/3rd of the seeds land in water and die. 1/6 of the starting number are eaten by insects. Half th...","First find the number of seeds that land in water: 300 seeds * 1/3 = <<300*1/3=100>>100 seeds
 Then find the number of seeds that are eaten: 300 seeds * 1/6 = <<300*1/6=50>>50 seeds
 Subtract the number of seeds that are destroyed to find the number that sprout: 300 seeds - 100 seeds - 50 seeds = <<300-100-50=150>>150 seeds
 Then divide that number by 2 to find the number of sprouts that survive: 150 seeds / 2 = <<150/2=75>>75 seeds
-#### 75",0.17449100366910722,1
+#### 75",0.3664462258600755,1
 gsm8k_4,reasoning,gsm8k,141,1.41015625,1.0341796875,0.23523318951386168,0.7916666666666666,0.7083333333333334,0.9805042905657064,0.47735595703125,"
 
 The following is a list of the steps that Danielle takes to reach Salisbury.
 
 Danielle drives at t...","If Danielle drives at three times the speed of Cameron, it will take Cameron 30*3=<<30*3=90>>90 minutes for Cameron to travel the same distance.
 And since Cameron drives at twice the speed of his brother, Chase, it will take Chase 90*2=<<90*2=180>>180 minutes to travel from Granville to Salisbury.
-#### 180",0.4357647723799761,1
+#### 180",0.5467505839473935,1
 gsm8k_5,reasoning,gsm8k,107,1.328125,1.0283203125,0.22630595501217302,0.7916666666666666,0.5,0.9326738709626307,0.4500732421875,"
 
 The company has taken $12,000 in bookings.
@@ -55,7 +55,7 @@ The company has taken $16,000 in bookings.
 
 The compan...","Cloud 9 earned $12,000 + $16,000 = $<<12000+16000=28000>>28,000 from bookings.
 After returning money due to cancellations, they had a final total of $28,000 - $1600 = $<<28000-1600=26400>>26,400.
-#### 26400",0.08776765539016407,1
+#### 26400",0.3631451005183906,1
 gsm8k_6,reasoning,gsm8k,148,1.7939453125,1.033203125,0.2430467536271708,0.7916666666666666,0.7083333333333334,0.9801186961465684,0.4565277099609375,"
 
 A:
@@ -67,7 +67,7 @@ The answer is:
 This is the number of cups of tea she will be able to e...","She has 1 serving of honey per cup of tea and she has 2 teas at night so she needs a total of 1*2 = <<1*2=2>>2 servings per night
 There are 6 servings in 1 ounce and she has a 16-ounce jar of honey so that's 6*16 = <<6*16=96>>96 servings of honey
 Her jar has 96 servings and she has 2 servings a night so 1 jar will last her 96/2 = <<96/2=48>>48 nights
-#### 48",0.401721916710364,1
+#### 48",0.6370190549582438,1
 gsm8k_7,reasoning,gsm8k,154,1.646484375,1.0400390625,0.23297522139818658,0.7916666666666666,0.75,0.9695447964098644,0.4651947021484375,"
 
 A:
@@ -75,7 +75,7 @@ A:
 The problem is that you are assuming that the dog is carrying the water.  If the dog is carryi...","First find the total amount of water Violet and her dog consume per hour: 800 ml + 400 ml = <<800+400=1200>>1200 ml
 Then divide that amount by 1000 ml/L to convert it to liters: 1200 ml / 1000 ml/L = <<1200/1000=1.2>>1.2 L
 Then divide Violet's carrying capacity by the amount of water they drink per hour to find how many hours she can hike: 4.8 L / 1.2 L/hour = 4 hours
-#### 4",0.43201631156939097,1
+#### 4",0.613399040663047,1
 gsm8k_8,reasoning,gsm8k,132,1.650390625,1.044921875,0.20600780416257994,0.7916666666666666,0.75,0.972296578591847,0.461212158203125,"
 
 A:
@@ -84,7 +84,7 @@ You can use the following formula to calculate the number of yards of ribbon lef
 
 If you hav...","The 6 gifts will use 6 x 2 = <<6*2=12>>12 yards of ribbon.
 So, 18 - 12 = <<18-12=6>>6 yards of ribbon will be left.
-#### 6",0.32445718999485224,1
+#### 6",0.5278854802714267,1
 gsm8k_9,reasoning,gsm8k,102,1.7333984375,1.033203125,0.22971156932845982,0.7916666666666666,0.5416666666666666,0.9548398748164236,0.46246337890625,"
 
 A:
@@ -103,14 +103,14 @@ The stockings are $20.00 with a $2.00 discount so they are each 20-2 = $<<20-2=1
 The stockings are now $18.00 and she needs 9 so that's $<<18*9=162>>162.00
 She also wants to monogram each stocking at $5.00 per stocking so that's 9*5 = $<<9*5=45.00>>45.00
 The stockings are $162.00 and the monogramming will cost $45.00 so the stockings will cost 162+45 = $<<162+45=207.00>>207.00
-#### 1035",0.18884521339261418,1
+#### 1035",0.3888105348618241,1
 strategyqa_fallback_0,reasoning,strategyqa,100,1.3876953125,1.466032608695652,0.16466314592023285,0.7916666666666666,0.625,0.0,0.5163149626358696,"
 
 A:
 
 You can use the following formula:
 
-$A = 7 \times 5 \times 3 \times 3 \times 3 \times 3 \times...",,-0.055617292534724805,1
+$A = 7 \times 5 \times 3 \times 3 \times 3 \times 3 \times...",,-0.32338150809708727,1
 strategyqa_fallback_1,reasoning,strategyqa,50,1.408203125,1.5681818181818181,0.16630122591565447,0.7916666666666666,0.7916666666666666,0.0,0.5287198153409091,"
 
 A:
@@ -118,12 +118,12 @@ A:
 The answer is:
 $$
 \begin{align}
-\frac{1}{120} \cdot \frac{1}{5} = \frac{1}{120} \cdot \frac{1}...",,0.17819149805215936,1
+\frac{1}{120} \cdot \frac{1}{5} = \frac{1}{120} \cdot \frac{1}...",,-0.19814711412682787,1
 strategyqa_fallback_2,reasoning,strategyqa,101,1.11328125,1.5852272727272727,0.1629285136557436,0.7916666666666666,0.375,0.0,0.5248357599431819,"
 
 A store discounts a $80 item by 25% then adds 10% tax. Final price? Show steps.
 
-A store discounts...",,-0.2766624374230339,1
+A store discounts...",,-0.635677548498096,1
 strategyqa_fallback_3,reasoning,strategyqa,94,1.4365234375,1.8421052631578947,0.15351916091112683,0.7916666666666666,0.7083333333333334,0.0,0.5341539884868421,"
 
 A:
@@ -132,7 +132,7 @@ You can use the following code to find the value of y:
 int y = 0;
 int x = 0;
 int y = 0;
-int x ...",,0.10793042637310042,1
+int x ...",,-0.3939003927587941,1
 strategyqa_fallback_4,reasoning,strategyqa,115,1.6630859375,1.2872596153846154,0.17132039735838944,0.7916666666666666,0.7083333333333334,0.0,0.5141038161057692,"
 
 A:
@@ -141,23 +141,23 @@ The answer is:
 
 $5,000.00
 
-This is the total amount of money you have to spend to get a red ma...",,0.018272603170252134,1
+This is the total amount of money you have to spend to get a red ma...",,-0.17553950023742226,1
 wiki_fallback_0,control,wiki,116,2.7890625,2.6923076923076925,0.12754727983037709,0.7916666666666666,0.375,0.0,0.5721905048076923,"
 
-The first thing I did was to go to the library and look at the history of pencils. I found a lot o...",,-0.07540016100661673,0
+The first thing I did was to go to the library and look at the history of pencils. I found a lot o...",,-1.09274640346829,0
 wiki_fallback_1,control,wiki,117,1.4619140625,3.75625,0.11280737857568902,0.7916666666666666,0.2916666666666667,0.0,0.6044921875,"
 
 The following is a list of the most common neutral paragraphs that I have seen in the past.
 
-The f...",,0.06154489980023677,0
+The f...",,-1.5098609849511726,0
 wiki_fallback_2,control,wiki,125,1.6845703125,3.321022727272727,0.12111980981128084,0.7916666666666666,0.375,0.0,0.5923961292613636,"
 
-The first time I did this, I was a little nervous. I was nervous because I was nervous about the w...",,0.06839588357494501,0
+The first time I did this, I was a little nervous. I was nervous because I was nervous about the w...",,-1.2830131031563787,0
 wiki_fallback_3,control,wiki,104,1.3095703125,3.3323863636363638,0.1202794937650543,0.7916666666666666,0.4583333333333333,0.0,0.6039151278409091,"
 
 The first thing you need to do is to write a short paragraph about library etiquette.
 
-The first t...",,0.18837333374991164,0
+The first t...",,-1.235466117350297,0
 wiki_fallback_4,control,wiki,98,1.34375,3.715625,0.11607479807759091,0.7916666666666666,0.3333333333333333,0.0,0.60986328125,"
 
-I’m not sure if I’m going to be able to do this. I’m not sure if I’m going to be able to do this. ...",,0.12583511189824825,0
+I’m not sure if I’m going to be able to do this. I’m not sure if I’m going to be able to do this. ...",,-1.463727766663358,0

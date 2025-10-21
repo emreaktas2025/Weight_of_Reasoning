@@ -4,7 +4,7 @@
   "n_heads_total": 48,
   "targeted_patchout": {
     "k_5": {
-      "accuracy": 0.0,
+      "accuracy": 0.1,
       "n_heads_patched": 2,
       "heads_patched": [
         [
@@ -42,7 +42,7 @@
       "k_percent": 10
     },
     "k_20": {
-      "accuracy": 0.0,
+      "accuracy": 0.06,
       "n_heads_patched": 9,
       "heads_patched": [
         [
@@ -87,7 +87,7 @@
   },
   "random_patchout": {
     "k_5": {
-      "accuracy": 0.0,
+      "accuracy": 0.7,
       "n_heads_patched": 2,
       "heads_patched": [
         [
@@ -102,7 +102,7 @@
       "k_percent": 5
     },
     "k_10": {
-      "accuracy": 0.0,
+      "accuracy": 0.66,
       "n_heads_patched": 4,
       "heads_patched": [
         [
@@ -125,7 +125,7 @@
       "k_percent": 10
     },
     "k_20": {
-      "accuracy": 0.0,
+      "accuracy": 0.76,
       "n_heads_patched": 9,
       "heads_patched": [
         [

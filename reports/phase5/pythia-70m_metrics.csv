@@ -3,50 +3,50 @@ gsm8k_0,reasoning,gsm8k,144,1.3427734375,0.75439453125,0.3987378543659868,0.1666
 
 The number of tanks is the number of trucks in the yard. If there are 20 trucks in the yard, calcu...","There are 5*20 = <<5*20=100>>100 tanks in the yard.
 Altogether, there are 100+20 = <<100+20=120>>120 trucks and tanks in the yard.
-#### 140",-0.14657420396870094,1
+#### 140",0.4863714710275678,1
 gsm8k_1,reasoning,gsm8k,125,1.4462890625,0.76953125,0.36553769133215314,0.16666666666666666,0.3333333333333333,0.9821120731235006,0.4749755859375,"
 
 The first step is to get the best teslas. The second step is to get the best teslas. The third ste...","Sam has half the number of Chris: 6/2=<<6/2=3>>3 teslas
 Elon has 10 more than Sam: 10+3=<<10+3=13>>13 teslas
-#### 13",-0.16534235884685614,1
+#### 13",0.3873954116578145,1
 gsm8k_2,reasoning,gsm8k,170,1.7978515625,0.744140625,0.4367974934163504,0.16666666666666666,0.3333333333333333,0.9845684778069629,0.460174560546875,"
 
 The first step is to make sure that the water is not contaminated. Flora is not allowed to drink m...","3 weeks translate to 3 * 7 days = <<3*7=21>>21 days.
 To meet Dr. Juan’s recommendation would mean drinking 105/21 = <<105/21=5>>5 gallons daily.
 This means that Flora must drink 5 -3 = <<5-3=2>>2 more gallons daily.
-#### 2",-0.13578357123962748,1
+#### 2",0.6333836848308966,1
 gsm8k_3,reasoning,gsm8k,154,1.443359375,0.7373046875,0.4189863633126035,0.16666666666666666,0.3333333333333333,0.969397300519259,0.454498291015625,"
 
 The first step is to kill the seeds. The second step is to kill the seeds. The third step is to ki...","First find the number of seeds that land in water: 300 seeds * 1/3 = <<300*1/3=100>>100 seeds
 Then find the number of seeds that are eaten: 300 seeds * 1/6 = <<300*1/6=50>>50 seeds
 Subtract the number of seeds that are destroyed to find the number that sprout: 300 seeds - 100 seeds - 50 seeds = <<300-100-50=150>>150 seeds
 Then divide that number by 2 to find the number of sprouts that survive: 150 seeds / 2 = <<150/2=75>>75 seeds
-#### 75",-0.21622689405369414,1
+#### 75",0.6345070152685981,1
 gsm8k_4,reasoning,gsm8k,156,1.517578125,0.7490234375,0.4365376269372675,0.3333333333333333,0.3333333333333333,0.9829570013087059,0.4591064453125,  The car is a car that is driven by Chase.  The car is a car that is driven by Chase.  The car is a...,"If Danielle drives at three times the speed of Cameron, it will take Cameron 30*3=<<30*3=90>>90 minutes for Cameron to travel the same distance.
 And since Cameron drives at twice the speed of his brother, Chase, it will take Chase 90*2=<<90*2=180>>180 minutes to travel from Granville to Salisbury.
-#### 180",-0.03964735513129506,1
+#### 180",0.5350924585263352,1
 gsm8k_5,reasoning,gsm8k,149,1.4873046875,0.74365234375,0.40850648119640204,0.0,0.3333333333333333,0.97712613053972,0.452972412109375,"
 
 The new bookings are a bit short on the price. The new bookings are a bit short on the price. The ...","Cloud 9 earned $12,000 + $16,000 = $<<12000+16000=28000>>28,000 from bookings.
 After returning money due to cancellations, they had a final total of $28,000 - $1600 = $<<28000-1600=26400>>26,400.
-#### 26400",-0.3458866602368678,1
+#### 26400",0.7294496385219832,1
 gsm8k_6,reasoning,gsm8k,156,2.05078125,0.74951171875,0.44445935601982406,0.16666666666666666,0.3333333333333333,0.9845802093116466,0.46160888671875,"  She is also a good cook.  She is also a good cook.  She is also a good cook.
 
 The following table ...","She has 1 serving of honey per cup of tea and she has 2 teas at night so she needs a total of 1*2 = <<1*2=2>>2 servings per night
 There are 6 servings in 1 ounce and she has a 16-ounce jar of honey so that's 6*16 = <<6*16=96>>96 servings of honey
 Her jar has 96 servings and she has 2 servings a night so 1 jar will last her 96/2 = <<96/2=48>>48 nights
-#### 48",-0.10985409862568046,1
+#### 48",0.6368999265584651,1
 gsm8k_7,reasoning,gsm8k,164,1.556640625,0.75244140625,0.41936659182238845,0.16666666666666666,0.2222222222222222,0.9722965779974121,0.467742919921875,"
 
 The next day, Violet will be able to hike to the desert. She will be able to hike to the desert. S...","First find the total amount of water Violet and her dog consume per hour: 800 ml + 400 ml = <<800+400=1200>>1200 ml
 Then divide that amount by 1000 ml/L to convert it to liters: 1200 ml / 1000 ml/L = <<1200/1000=1.2>>1.2 L
 Then divide Violet's carrying capacity by the amount of water they drink per hour to find how many hours she can hike: 4.8 L / 1.2 L/hour = 4 hours
-#### 4",-0.22305782787754722,1
+#### 4",0.43775642203455933,1
 gsm8k_8,reasoning,gsm8k,146,1.51171875,0.75830078125,0.3884372320729527,0.16666666666666666,0.3333333333333333,0.9653296863451675,0.47314453125,"
 
 The first gift will be a gift. The second gift will be a gift. The third gift will be a gift. The ...","The 6 gifts will use 6 x 2 = <<6*2=12>>12 yards of ribbon.
 So, 18 - 12 = <<18-12=6>>6 yards of ribbon will be left.
-#### 6",-0.14276225773272402,1
+#### 6",0.4407515407030524,1
 gsm8k_9,reasoning,gsm8k,106,1.29296875,0.75146484375,0.41422700303442767,0.0,0.3333333333333333,0.9678964240783237,0.45965576171875,"
 
 The stockings are $20.00 each and currently 10% off.  The monogramming will cost $5.00 per stockin...","She has 5 grandchildren 4 children so she needs 5+4 = <<5+4=9>>9 stockings
@@ -55,13 +55,13 @@ The stockings are $20.00 with a $2.00 discount so they are each 20-2 = $<<20-2=1
 The stockings are now $18.00 and she needs 9 so that's $<<18*9=162>>162.00
 She also wants to monogram each stocking at $5.00 per stocking so that's 9*5 = $<<9*5=45.00>>45.00
 The stockings are $162.00 and the monogramming will cost $45.00 so the stockings will cost 162+45 = $<<162+45=207.00>>207.00
-#### 1035",-0.29024890820819366,1
+#### 1035",0.6891660982895581,1
 strategyqa_fallback_0,reasoning,strategyqa,131,1.43359375,1.059782608695652,0.3100242422124789,0.16666666666666666,0.4444444444444444,0.0,0.5105723505434783,"
 
-The first step is to buy a new one. The second step is to buy a new one. The third step is to buy ...",,-0.20392439199608606,1
+The first step is to buy a new one. The second step is to buy a new one. The third step is to buy ...",,-0.28506653058254755,1
 strategyqa_fallback_1,reasoning,strategyqa,135,1.5400390625,1.1214488636363635,0.30621440345216866,0.8333333333333334,0.5555555555555556,0.3235471238662366,0.4792036576704546,"
 
-The train is a train of up and down the road, and it is a train of up and down the road. The train...",,0.22108925124156653,1
+The train is a train of up and down the road, and it is a train of up and down the road. The train...",,-0.2853782683036083,1
 strategyqa_fallback_2,reasoning,strategyqa,80,1.3271484375,1.1356534090909092,0.28328066314522915,0.16666666666666666,0.5555555555555556,0.0,0.4917214133522727,"
 
 The price is $80.
@@ -74,33 +74,33 @@ The price is $80.
 
 The price is $80.
 
-The...",,-0.2628010504480422,1
+The...",,-0.12181690758107493,1
 strategyqa_fallback_3,reasoning,strategyqa,79,1.7392578125,1.3733552631578947,0.29112255844632073,0.6666666666666666,0.5555555555555556,0.3273299410011411,0.4700927734375,"
 
 A:
 
-You can use the following code to show the steps of the x+3=11 and y=2x, which is the same as ...",,0.08964592748455413,1
+You can use the following code to show the steps of the x+3=11 and y=2x, which is the same as ...",,-0.209203633253471,1
 strategyqa_fallback_4,reasoning,strategyqa,146,1.333984375,0.9302884615384616,0.31866649117471596,0.16666666666666666,0.2222222222222222,0.0,0.490478515625,"
 
-The first one is a bit of a bit of a bit of a bit of a bit of a bit of a bit of a bit of a bit of ...",,-0.5648585839947792,1
+The first one is a bit of a bit of a bit of a bit of a bit of a bit of a bit of a bit of a bit of ...",,-0.3051748569335205,1
 wiki_fallback_0,control,wiki,112,1.4697265625,1.8774038461538463,0.2300524825454914,0.6666666666666666,0.6666666666666666,0.0,0.500244140625,"
 
-The first page of the book is a short introduction to the history of pencils. The first page is a ...",,0.29073726436816955,0
+The first page of the book is a short introduction to the history of pencils. The first page is a ...",,-0.6727375428051143,0
 wiki_fallback_1,control,wiki,115,1.3544921875,2.675,0.20267902494246443,0.3333333333333333,0.5555555555555556,0.0,0.52568359375,"
 
-The lake is a lake, and the lake is a lake. The lake is a lake. The lake is a lake. The lake is a ...",,0.3003262264446875,0
+The lake is a lake, and the lake is a lake. The lake is a lake. The lake is a lake. The lake is a ...",,-0.9946200787208946,0
 wiki_fallback_2,control,wiki,83,1.7412109375,2.3025568181818183,0.21486784608314452,0.8333333333333334,0.7777777777777778,0.0,0.5191983309659091,"
 
 The following is a list of bread recipes that you can use to make bread.
 
-1. Preheat oven to 350°F...",,0.7041761937130288,0
+1. Preheat oven to 350°F...",,-0.9373934190769546,0
 wiki_fallback_3,control,wiki,119,1.759765625,2.28125,0.2055739719263499,0.6666666666666666,0.7777777777777778,0.0,0.5174005681818181,"
 
 The following is a list of the most important books that I have read in the past.
 
-The first book ...",,0.56530936165447,0
+The first book ...",,-0.8342341589077545,0
 wiki_fallback_4,control,wiki,86,1.65234375,2.596875,0.20022799465021004,0.6666666666666666,0.7777777777777778,0.0,0.523583984375,"
 
 The following are some of the most important things you can do to keep your clothes safe.
 
-1. Keep...",,0.6756839374536293,0
+1. Keep...",,-0.9651482712539075,0
