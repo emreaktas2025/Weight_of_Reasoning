@@ -1,0 +1,6 @@
+model_cfg: configs/model.tinyllama.yaml
+reasoning_file: data/mini/reasoning.jsonl
+control_file: data/mini/control.jsonl
+out_csv: reports/metrics_phase2.csv
+summary_json: reports/summary_phase2.json
+partial_corr_json: reports/partial_corr.json

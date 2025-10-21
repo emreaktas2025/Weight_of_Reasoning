@@ -1,0 +1,114 @@
+
+================================================================================
+Weight of Reasoning - Phase 5 Evaluation Run
+================================================================================
+Start Time: 2025-10-21 16:42:13
+Log File: logs/run_phase5_robustness_20251021_164213.txt
+================================================================================
+
+[2025-10-21 16:42:13] ================================================================================
+[2025-10-21 16:42:13] Phase 5 Robustness Evaluation
+[2025-10-21 16:42:13] ================================================================================
+[2025-10-21 16:42:13] 
+=== Configuration ===
+[2025-10-21 16:42:13]   seed: 1337
+[2025-10-21 16:42:13]   models: ['configs/models/pythia-70m.yaml', 'configs/models/pythia-410m.yaml', 'configs/models/llama3-1b.yaml']
+[2025-10-21 16:42:13]   datasets: {'reasoning': {'gsm8k': {'n_cpu': 50, 'n_gpu': 200}, 'strategyqa': {'n_cpu': 30, 'n_gpu': 100}}, 'control': {'wiki': {'n_cpu': 50, 'n_gpu': 200}}, 'optional': {'math': {'n_cpu': 20, 'n_gpu': 50}}}
+[2025-10-21 16:42:13]   robustness: {'seeds': [42, 1337, 999], 'temperatures': [0.0, 0.2], 'metric_ablations': ['AE', 'APE', 'APL', 'CUD', 'SIB', 'FL']}
+[2025-10-21 16:42:13]   baselines: {'features': ['token_len', 'avg_logprob', 'perplexity', 'cot_len'], 'model': 'logistic_regression'}
+[2025-10-21 16:42:13]   patchout: {'k_percent': [5, 10, 20], 'max_time_per_model_min': 10}
+[2025-10-21 16:42:13]   runtime: {'cpu_time_limit_min': 60, 'gpu_time_limit_min': 30, 'use_gpu': True, 'torch_dtype': 'bfloat16', 'max_ablation_samples': 10, 'parallel_workers': 2}
+[2025-10-21 16:42:13]   cache_dir: cache/activations
+[2025-10-21 16:42:13]   output_dir: reports/phase5
+[2025-10-21 16:42:13]   plots_dir: reports/figs_paper
+[2025-10-21 16:42:13]   splits_dir: reports/splits
+[2025-10-21 16:42:13]   circuit_heads_json: reports/circuits/heads.json
+[2025-10-21 16:42:13]   control_thresholds_npz: reports/control_thresholds_phase3.npz
+[2025-10-21 16:42:13] 
+[2025-10-21 16:42:13] 
+=== Hardware Configuration ===
+[2025-10-21 16:42:13]   Device: cuda
+[2025-10-21 16:42:13]   Device Name: N/A
+[2025-10-21 16:42:13]   GPU Memory: 23.5 GB
+[2025-10-21 16:42:13]   Dtype: float16
+[2025-10-21 16:42:13]   Batch Size: 8
+[2025-10-21 16:42:13] 
+[2025-10-21 16:42:13] 
+================================================================================
+[2025-10-21 16:42:13] Processing Model: EleutherAI/pythia-70m-deduped
+[2025-10-21 16:42:13] Parameters: 0
+[2025-10-21 16:42:13] ================================================================================
+[2025-10-21 16:42:13] 
+=== Loading Datasets ===
+[2025-10-21 16:42:19] Total samples: 15
+[2025-10-21 16:42:19] 
+=== Evaluating Across Seeds ===
+[2025-10-21 16:42:19] Testing seed 42...
+[2025-10-21 16:42:31] 
+=== Seed 42 Metrics ===
+[2025-10-21 16:42:31]   auroc_rev: 0.0000
+[2025-10-21 16:42:31]   cohens_d: -2.7751
+[2025-10-21 16:42:31]   n_samples: 15
+[2025-10-21 16:42:31]   n_reasoning: 10
+[2025-10-21 16:42:31]   n_control: 5
+[2025-10-21 16:42:31] Testing seed 1337...
+[2025-10-21 16:42:41] 
+=== Seed 1337 Metrics ===
+[2025-10-21 16:42:41]   auroc_rev: 0.0000
+[2025-10-21 16:42:41]   cohens_d: -2.7751
+[2025-10-21 16:42:41]   n_samples: 15
+[2025-10-21 16:42:41]   n_reasoning: 10
+[2025-10-21 16:42:41]   n_control: 5
+[2025-10-21 16:42:41] 
+=== Evaluating Across Temperatures ===
+[2025-10-21 16:42:41] Testing temperature 0.0...
+[2025-10-21 16:42:51] 
+=== Temp 0.0 Metrics ===
+[2025-10-21 16:42:51]   auroc_rev: 0.0000
+[2025-10-21 16:42:51]   cohens_d: -2.7751
+[2025-10-21 16:42:51]   n_samples: 15
+[2025-10-21 16:42:51]   n_reasoning: 10
+[2025-10-21 16:42:51]   n_control: 5
+[2025-10-21 16:42:51] 
+=== Evaluating Metric Ablations ===
+[2025-10-21 16:42:51] Ablating AE...
+[2025-10-21 16:43:00] 
+=== Ablate AE Metrics ===
+[2025-10-21 16:43:00]   auroc_rev: 0.6600
+[2025-10-21 16:43:00]   cohens_d: 0.4805
+[2025-10-21 16:43:00]   n_samples: 15
+[2025-10-21 16:43:00]   n_reasoning: 10
+[2025-10-21 16:43:00]   n_control: 5
+[2025-10-21 16:43:00]   delta_auroc: 0.6600
+[2025-10-21 16:43:00] Ablating APE...
+[2025-10-21 16:43:10] 
+=== Ablate APE Metrics ===
+[2025-10-21 16:43:10]   auroc_rev: 0.0000
+[2025-10-21 16:43:10]   cohens_d: -5.6985
+[2025-10-21 16:43:10]   n_samples: 15
+[2025-10-21 16:43:10]   n_reasoning: 10
+[2025-10-21 16:43:10]   n_control: 5
+[2025-10-21 16:43:10]   delta_auroc: 0.0000
+[2025-10-21 16:43:10] Ablating APL...
+[2025-10-21 16:43:20] 
+=== Ablate APL Metrics ===
+[2025-10-21 16:43:20]   auroc_rev: 0.5000
+[2025-10-21 16:43:20]   cohens_d: 0.1979
+[2025-10-21 16:43:20]   n_samples: 15
+[2025-10-21 16:43:20]   n_reasoning: 10
+[2025-10-21 16:43:20]   n_control: 5
+[2025-10-21 16:43:20]   delta_auroc: 0.5000
+[2025-10-21 16:43:20] 
+✅ Results saved to reports/phase5/robustness_summary.json
+[2025-10-21 16:43:20] 
+=== Robustness Summary ===
+[2025-10-21 16:43:20] Seed mean AUROC: 0.0000 ± 0.0000
+[2025-10-21 16:43:20] Temp mean AUROC: 0.0000 ± 0.0000
+[2025-10-21 16:43:20] Most important metric: AE
+[2025-10-21 16:43:20]   Robustness evaluation runtime: 66.8s (1.11 min)
+
+================================================================================
+Evaluation Complete
+Total Runtime: 66.8s (1.11 min)
+End Time: 2025-10-21 16:43:20
+================================================================================

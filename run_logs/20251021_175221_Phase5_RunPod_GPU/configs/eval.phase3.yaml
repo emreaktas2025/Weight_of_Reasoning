@@ -1,0 +1,9 @@
+model_cfg: configs/model.tinyllama.yaml
+reasoning_file: data/mini/reasoning.jsonl
+control_file: data/mini/control.jsonl
+out_csv: reports/metrics_phase3.csv
+summary_json: reports/summary_phase3.json
+partial_corr_json: reports/partial_corr_phase3.json
+# Phase 3 specific
+circuit_heads_json: reports/circuits/heads.json
+control_thresholds_npz: reports/control_thresholds_phase3.npz
