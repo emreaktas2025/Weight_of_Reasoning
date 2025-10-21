@@ -4,13 +4,20 @@ set -euo pipefail
 echo "🚀 Phase 4b: Llama Integration & Mechanistic Validation"
 echo "======================================================="
 
+# Load environment variables from .env if it exists
+if [ -f ".env" ]; then
+    echo "📦 Loading environment from .env file..."
+    export $(grep -v '^#' .env | xargs)
+fi
+
 # Check for HuggingFace token
 if [ -z "${HUGGINGFACE_TOKEN:-}" ] && [ -z "${HUGGINGFACE_HUB_TOKEN:-}" ]; then
     echo "⚠️  Warning: No Hugging Face token set. Llama-3.2-1B may be skipped."
-    echo "   To enable access, set either:"
-    echo "   export HUGGINGFACE_HUB_TOKEN='your_token_here'"
-    echo "   or"
-    echo "   export HUGGINGFACE_TOKEN='your_token_here'"
+    echo "   To enable access, either:"
+    echo "   1. Create a .env file with HUGGINGFACE_HUB_TOKEN=your_token"
+    echo "   2. Or export HUGGINGFACE_HUB_TOKEN='your_token_here'"
+else
+    echo "✅ HuggingFace token loaded successfully"
 fi
 
 # Check if config file exists
