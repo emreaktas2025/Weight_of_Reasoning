@@ -32,8 +32,22 @@ def read_jsonl(path: str) -> Iterator[Dict[str, Any]]:
                 yield json.loads(line)
 
 
+def _to_serializable(o: Any) -> Any:
+    """Convert numpy types to JSON-serializable Python types."""
+    if isinstance(o, np.ndarray):
+        return o.tolist()
+    if isinstance(o, (np.floating, np.float32, np.float64)):
+        return float(o)
+    if isinstance(o, (np.integer, np.int32, np.int64)):
+        return int(o)
+    if isinstance(o, np.bool_):
+        return bool(o)
+    return str(o)
+
+
 def save_json(path: str, obj: Dict[str, Any]) -> None:
-    """Save object as JSON with proper formatting."""
+    """Save object as JSON with proper formatting and numpy type conversion."""
     ensure_dir(os.path.dirname(path))
     with open(path, 'w', encoding='utf-8') as f:
-        json.dump(obj, f, indent=2, ensure_ascii=False)
+        json.dump(obj, f, indent=2, ensure_ascii=False, default=_to_serializable)
+    print(f"✅ Saved JSON to {path}")

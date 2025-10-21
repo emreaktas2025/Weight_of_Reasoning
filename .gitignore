@@ -49,6 +49,10 @@ Thumbs.db
 # Project specific
 cache/
 reports/
+!reports/phase5/*.json
+!reports/phase5/*.csv
+!reports/figs_paper/*.png
+!reports/splits/*.csv
 *.npz
 *.pkl
 uv.lock
@@ -57,3 +61,4 @@ requirements-freeze.txt
 # Logs
 *.log
 logs/
+!logs/run_*.txt
