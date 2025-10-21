@@ -1,0 +1,9 @@
+model_name: EleutherAI/pythia-410m-deduped
+device: cpu
+dtype: float32
+max_new_tokens: 64
+temperature: 0.0
+top_p: 1.0
+seed: 1337
+save_activations: true
+act_dir: cache/activations

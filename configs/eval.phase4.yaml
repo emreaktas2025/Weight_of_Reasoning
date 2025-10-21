@@ -1,0 +1,32 @@
+seed: 1337
+
+datasets:
+  reasoning:
+    gsm8k: {n_cpu: 40, n_gpu: 200}
+    strategyqa: {n_cpu: 40, n_gpu: 200}
+  control:
+    wiki: {n_cpu: 40, n_gpu: 200}
+
+models:
+  - configs/models/pythia-70m.yaml
+  - configs/models/pythia-410m.yaml
+  - configs/models/llama3-1b.yaml
+
+runtime:
+  cpu_time_limit_min: 30
+  gpu_time_limit_min: 10
+
+patchout:
+  k_percent: [5, 10, 20]
+
+metrics:
+  enable: [AE, APE, APL, CUD, SIB, FL, REV]
+
+# Phase 4 specific outputs
+output_dir: reports/phase4
+plots_dir: reports/plots_phase4
+splits_dir: reports/splits
+
+# Circuit and threshold reuse
+circuit_heads_json: reports/circuits/heads.json
+control_thresholds_npz: reports/control_thresholds_phase3.npz
