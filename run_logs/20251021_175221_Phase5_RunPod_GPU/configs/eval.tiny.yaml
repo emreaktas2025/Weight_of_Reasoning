@@ -1,5 +1,0 @@
-model_cfg: configs/model.tinyllama.yaml
-reasoning_file: data/mini/reasoning.jsonl
-control_file: data/mini/control.jsonl
-out_csv: reports/metrics.csv
-summary_json: reports/summary.json
