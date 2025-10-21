@@ -26,10 +26,10 @@ def load_reasoning_dataset(name: str, n: int, seed: int = 1337) -> List[Dict[str
         elif name == "strategyqa":
             # Try alternative dataset names
             try:
-                dataset = load_dataset("wics/strategy-qa", split="validation")
+                dataset = load_dataset("ChilleD/StrategyQA", split="train")
             except:
                 try:
-                    dataset = load_dataset("ChilleD/StrategyQA", split="validation")
+                    dataset = load_dataset("wics/strategy-qa", split="train")
                 except:
                     raise Exception("StrategyQA not available")
         else:
@@ -85,10 +85,10 @@ def load_control_dataset(name: str, n: int, seed: int = 1337) -> List[Dict[str, 
         
         # Try different Wikipedia configurations
         try:
-            dataset = load_dataset("wikipedia", "20220301.simple", split="train")
+            dataset = load_dataset("wikimedia/wikipedia", "20231101.simple", split="train")
         except:
             try:
-                dataset = load_dataset("wikimedia/wikipedia", "20220301.simple", split="train")
+                dataset = load_dataset("wikipedia", "20231101.simple", split="train")
             except:
                 raise Exception("Wikipedia not available")
         
