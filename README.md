@@ -130,6 +130,44 @@ bash scripts/05_phase4b_patchout.sh
 - CPU: <20 minutes (30 samples per dataset)
 - GPU: <8 minutes (100 samples per dataset)
 
+## Phase 5: NeurIPS Publication-Grade Upgrade
+
+Run comprehensive evaluation with comparative baselines, robustness tests, and mechanistic case studies:
+
+```bash
+# Quick test (reduced samples)
+bash scripts/06_phase5_robustness.sh --fast
+
+# Full GPU run
+bash scripts/06_phase5_robustness.sh --use_gpu true
+```
+
+**Features:**
+- **Comparative Baselines**: Logistic regression on token_len, avg_logprob, perplexity, CoT_len
+- **Multi-Dataset Generalization**: GSM8K, StrategyQA, Math Dataset with per-dataset AUROC
+- **Robustness Testing**: 3 seeds (42, 1337, 999), 2 temperatures (0.0, 0.2), metric ablations
+- **Mechanistic Case Study**: Induction heads with synthetic ABC→ABC dataset
+- **Causal Validation**: r(ΔREV, ΔAcc) correlation from patch-out experiments
+- **Publication Figures**: Scaling curves, ROC curves, causal scatter, robustness bars
+
+**Outputs:**
+- `reports/phase5/model_results.json`: Cross-model results with scaling analysis
+- `reports/phase5/baseline_comparison.json`: REV vs baseline predictors (ΔAUC)
+- `reports/phase5/robustness_summary.json`: Seed/temp/ablation consistency
+- `reports/phase5/induction_case_study.json`: Targeted vs random patch-out
+- `reports/figs_paper/*.png`: Publication-ready figures
+- `logs/run_*.txt`: Timestamped execution logs
+
+**Success Criteria:**
+- ✅ REV adds ≥ +0.05 AUROC over best baseline on ≥ 2 datasets
+- ✅ Targeted patch-out: ΔAcc ≤ −20%, ΔREV ≤ −0.5σ
+- ✅ Results replicate across 3 seeds (mean ± std reported)
+- ✅ Results consistent across temps 0.0 and 0.2
+
+**Runtime targets:**
+- CPU (--fast): ~5 minutes (10 samples per dataset)
+- GPU (full): ~30 minutes on RTX 4090 (200 samples per dataset)
+
 ## Results
 
 After running the evaluation, you'll find:

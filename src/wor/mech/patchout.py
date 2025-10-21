@@ -598,6 +598,50 @@ def compute_patched_metrics(
     }
 
 
+def compute_delta_correlation(patchout_results: Dict[str, Any]) -> Dict[str, float]:
+    """
+    Compute correlation between ΔREV and ΔAccuracy from patch-out results.
+    
+    Args:
+        patchout_results: Results from patch-out experiments
+        
+    Returns:
+        Dict with correlation statistics (rho, p-value)
+    """
+    from scipy.stats import spearmanr
+    
+    delta_rev_values = []
+    delta_acc_values = []
+    
+    # Extract delta values from all patch-out experiments
+    if "patchout_results" in patchout_results:
+        for k_key, k_result in patchout_results["patchout_results"].items():
+            if "delta_rev" in k_result and "delta_accuracy" in k_result:
+                delta_rev_values.append(k_result["delta_rev"])
+                delta_acc_values.append(k_result["delta_accuracy"])
+    
+    if len(delta_rev_values) >= 2:
+        try:
+            rho, p_value = spearmanr(delta_rev_values, delta_acc_values)
+            return {
+                "rho": float(rho),
+                "p_value": float(p_value),
+                "n_points": len(delta_rev_values),
+                "delta_rev": delta_rev_values,
+                "delta_acc": delta_acc_values
+            }
+        except Exception as e:
+            print(f"Warning: Correlation computation failed: {e}")
+    
+    return {
+        "rho": float('nan'),
+        "p_value": float('nan'),
+        "n_points": 0,
+        "delta_rev": [],
+        "delta_acc": []
+    }
+
+
 def run_mechanistic_validation(
     model,
     data: List[Dict[str, Any]],
@@ -632,10 +676,18 @@ def run_mechanistic_validation(
         model, data, runner, "layers", k_percentages, layers_output_path
     )
     
+    # Compute correlations
+    heads_correlation = compute_delta_correlation(heads_results)
+    layers_correlation = compute_delta_correlation(layers_results)
+    
     # Combine results
     combined_results = {
         "heads_patchout": heads_results,
         "layers_patchout": layers_results,
+        "correlations": {
+            "heads": heads_correlation,
+            "layers": layers_correlation
+        },
         "experiment_summary": {
             "n_samples": len(data),
             "k_percentages": k_percentages,
@@ -649,4 +701,7 @@ def run_mechanistic_validation(
     save_json(combined_output_path, combined_results)
     
     print("Mechanistic validation complete!")
+    print(f"Heads ΔREV vs ΔAcc correlation: ρ={heads_correlation.get('rho', float('nan')):.4f}")
+    print(f"Layers ΔREV vs ΔAcc correlation: ρ={layers_correlation.get('rho', float('nan')):.4f}")
+    
     return combined_results

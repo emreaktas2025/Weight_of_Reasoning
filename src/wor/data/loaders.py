@@ -246,6 +246,52 @@ def save_dataset_manifest(data: List[Dict[str, Any]], dataset_name: str, output_
     print(f"Saved {dataset_name} manifest to {manifest_path}")
 
 
+def load_math_dataset(name: str, n: int, seed: int = 1337) -> List[Dict[str, Any]]:
+    """
+    Load and properly label math_dataset.
+    
+    Args:
+        name: Dataset name ('math' or 'math_dataset')
+        n: Number of samples to load
+        seed: Random seed for sampling
+        
+    Returns:
+        List of samples with 'label' set to 'reasoning'
+    """
+    try:
+        from datasets import load_dataset
+        
+        # Load math_dataset (algebra subset for simplicity)
+        try:
+            dataset = load_dataset("math_dataset", "algebra__linear_1d", split="train")
+        except:
+            # Fallback to local data
+            raise Exception("math_dataset not available")
+        
+        # Deterministic sampling
+        dataset = dataset.shuffle(seed=seed)
+        samples = dataset.select(range(min(n, len(dataset))))
+        
+        # Convert to standard format with proper labeling
+        data = []
+        for i, sample in enumerate(samples):
+            data.append({
+                "id": f"math_{i}",
+                "question": sample["question"],
+                "answer": sample["answer"],
+                "prompt": f"Solve: {sample['question']} Show your work.",
+                "label": "reasoning"  # CRITICAL: Ensure proper labeling
+            })
+        
+        print(f"Loaded {len(data)} reasoning samples from math_dataset")
+        return data
+        
+    except Exception as e:
+        print(f"Failed to load math_dataset from HuggingFace: {e}")
+        print("Falling back to local reasoning data...")
+        return load_local_reasoning_fallback(name, n)
+
+
 def validate_dataset_labels(data: List[Dict[str, Any]], expected_label: str) -> bool:
     """
     Validate that all samples have the expected label.
