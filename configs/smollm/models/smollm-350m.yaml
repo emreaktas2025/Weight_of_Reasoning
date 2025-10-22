@@ -1,0 +1,10 @@
+model_name: HuggingFaceTB/SmolLM-350M
+device: cuda
+dtype: bfloat16
+max_new_tokens: 64
+temperature: 0.2
+top_p: 1.0
+requires_auth: false
+trust_remote_code: false
+save_activations: true
+act_dir: cache/smollm_activations/350m
