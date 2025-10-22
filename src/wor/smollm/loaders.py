@@ -5,18 +5,18 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 from typing import Dict, Any, Optional, List
-from transformer_lens import HookedTransformer
+from transformers import AutoModelForCausalLM, AutoTokenizer
 from ..core.utils import ensure_dir, set_seed
 
 
 class SmolLMRunner:
-    """SmolLM model runner with activation and attention caching using TransformerLens."""
+    """SmolLM model runner with activation and attention caching using HuggingFace Transformers."""
     
     def __init__(self, cfg: Dict[str, Any]):
         """Initialize SmolLM model runner with configuration."""
         self.cfg = cfg
         self.device = cfg.get("device", "cuda")
-        self.dtype = getattr(torch, cfg.get("dtype", "bfloat16"))
+        self.dtype = getattr(torch, cfg.get("dtype", "float32"))
         
         # Set seed for reproducibility
         set_seed(cfg.get("seed", 42))
@@ -24,10 +24,10 @@ class SmolLMRunner:
         # Disable gradients for inference
         torch.set_grad_enabled(False)
         
-        # Load model using TransformerLens
+        # Load model using HuggingFace Transformers
         model_kwargs = {
-            "device": self.device,
             "torch_dtype": self.dtype,
+            "device_map": "auto" if self.device == "cuda" else None,
         }
         
         # Add authentication if required
@@ -44,10 +44,17 @@ class SmolLMRunner:
         if cfg.get("trust_remote_code", False):
             model_kwargs["trust_remote_code"] = True
         
-        self.model = HookedTransformer.from_pretrained(
+        # Load model and tokenizer
+        self.model = AutoModelForCausalLM.from_pretrained(
             cfg["model_name"],
             **model_kwargs
         )
+        self.tokenizer = AutoTokenizer.from_pretrained(cfg["model_name"])
+        
+        # Add pad token if not present
+        if self.tokenizer.pad_token is None:
+            self.tokenizer.pad_token = self.tokenizer.eos_token
+        
         self.model.eval()
         
         # Generation parameters
@@ -69,37 +76,37 @@ class SmolLMRunner:
         self.cache.clear()
         
         # Tokenize input
-        tokens = self.model.to_tokens(prompt, prepend_bos=True)
+        inputs = self.tokenizer(prompt, return_tensors="pt", padding=True, truncation=True)
+        input_ids = inputs["input_ids"].to(self.device)
         
         # Generate with caching
         with torch.no_grad():
-            # Run with cache to capture all activations
-            logits, cache = self.model.run_with_cache(
-                tokens,
-                return_type="logits",
-                names_filter=lambda name: True,  # Capture all activations
-            )
-            
             # Generate continuation
-            generated_tokens = self.model.generate(
-                tokens,
+            generated_ids = self.model.generate(
+                input_ids,
                 max_new_tokens=self.max_new_tokens,
                 temperature=self.temperature,
                 top_p=self.top_p,
                 do_sample=self.temperature > 0,
-                verbose=False,
+                pad_token_id=self.tokenizer.eos_token_id,
+                return_dict_in_generate=True,
+                output_hidden_states=True,
+                output_attentions=True,
             )
         
         # Decode full text
-        full_text = self.model.to_string(generated_tokens[0])
-        generated_text = self.model.to_string(generated_tokens[0][tokens.shape[1]:])
+        full_text = self.tokenizer.decode(generated_ids.sequences[0], skip_special_tokens=True)
+        generated_text = self.tokenizer.decode(
+            generated_ids.sequences[0][input_ids.shape[1]:], 
+            skip_special_tokens=True
+        )
         
-        # Extract hidden states and attention from cache
-        hidden_states = self._extract_hidden_states(cache)
-        attention_probs = self._extract_attention_probs(cache)
+        # Extract hidden states and attention from generation
+        hidden_states = self._extract_hidden_states_from_generation(generated_ids)
+        attention_probs = self._extract_attention_from_generation(generated_ids)
         
         # Compute perplexity from cross-entropy
-        perplexity = self._compute_perplexity(tokens, generated_tokens[0])
+        perplexity = self._compute_perplexity(input_ids, generated_ids.sequences[0])
         
         # Save activations if requested
         if self.save_activations:
@@ -108,52 +115,37 @@ class SmolLMRunner:
         return {
             "text": full_text,
             "generated_text": generated_text,
-            "tokens": generated_tokens[0],
-            "input_tokens": tokens,
+            "tokens": generated_ids.sequences[0],
+            "input_tokens": input_ids,
             "hidden_states": hidden_states,
             "attention_probs": attention_probs,
-            "cache": cache,
+            "cache": {},  # Placeholder for compatibility
             "perplexity": perplexity,
         }
     
-    def _extract_hidden_states(self, cache: Dict[str, torch.Tensor]) -> Optional[np.ndarray]:
-        """Extract hidden states from cache."""
+    def _extract_hidden_states_from_generation(self, generated_ids) -> Optional[np.ndarray]:
+        """Extract hidden states from HuggingFace generation output."""
         try:
-            # Get hidden states from the last layer
-            hidden_key = None
-            for key in cache.keys():
-                if "resid_post" in key or "ln_final" in key:
-                    hidden_key = key
-                    break
-            
-            if hidden_key is None:
-                # Fallback: look for any hidden state
-                for key in cache.keys():
-                    if "resid" in key or "mlp" in key:
-                        hidden_key = key
-                        break
-            
-            if hidden_key is not None:
-                hidden = cache[hidden_key].detach().cpu().numpy()
-                return hidden[0]  # Remove batch dimension
+            if hasattr(generated_ids, 'hidden_states') and generated_ids.hidden_states:
+                # Get the last layer's hidden states
+                last_hidden_states = generated_ids.hidden_states[-1]  # Last layer
+                # Take the last token's hidden state
+                hidden_states = last_hidden_states[0, -1, :].detach().cpu().numpy()
+                return hidden_states
             else:
                 return None
         except Exception:
             return None
     
-    def _extract_attention_probs(self, cache: Dict[str, torch.Tensor]) -> Optional[np.ndarray]:
-        """Extract attention probabilities from cache."""
+    def _extract_attention_from_generation(self, generated_ids) -> Optional[np.ndarray]:
+        """Extract attention probabilities from HuggingFace generation output."""
         try:
-            # Look for attention pattern in cache
-            attn_key = None
-            for key in cache.keys():
-                if "pattern" in key:
-                    attn_key = key
-                    break
-            
-            if attn_key is not None:
-                attn = cache[attn_key].detach().cpu().numpy()
-                return attn[0]  # Remove batch dimension
+            if hasattr(generated_ids, 'attentions') and generated_ids.attentions:
+                # Get attention from the last layer
+                last_attention = generated_ids.attentions[-1]  # Last layer
+                # Average across heads and take last token
+                attention_probs = last_attention[0, :, -1, :].mean(dim=0).detach().cpu().numpy()
+                return attention_probs
             else:
                 return None
         except Exception:
