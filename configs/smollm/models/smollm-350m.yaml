@@ -1,4 +1,4 @@
-model_name: HuggingFaceTB/SmolLM-350M
+model_name: gpt2-medium
 device: cuda
 dtype: bfloat16
 max_new_tokens: 64
