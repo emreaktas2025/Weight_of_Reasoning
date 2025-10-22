@@ -1,6 +1,6 @@
 model_name: gpt2-large
 device: cuda
-dtype: bfloat16
+dtype: float32
 max_new_tokens: 64
 temperature: 0.2
 top_p: 1.0
