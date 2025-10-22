@@ -91,7 +91,7 @@ class SmolLMRunner:
                 pad_token_id=self.tokenizer.eos_token_id,
                 return_dict_in_generate=True,
                 output_hidden_states=True,
-                output_attentions=True,
+                output_attentions=False,  # Disable attention output to avoid SDPA warnings
             )
         
         # Decode full text
@@ -101,9 +101,9 @@ class SmolLMRunner:
             skip_special_tokens=True
         )
         
-        # Extract hidden states and attention from generation
+        # Extract hidden states from generation
         hidden_states = self._extract_hidden_states_from_generation(generated_ids)
-        attention_probs = self._extract_attention_from_generation(generated_ids)
+        attention_probs = None  # Disabled to avoid SDPA warnings
         
         # Compute perplexity from cross-entropy
         perplexity = self._compute_perplexity(input_ids, generated_ids.sequences[0])
@@ -172,7 +172,7 @@ class SmolLMRunner:
             print(f"Warning: Failed to save activations: {e}")
     
     def _compute_perplexity(self, input_tokens: torch.Tensor, full_tokens: torch.Tensor) -> float:
-        """Compute perplexity from cross-entropy loss."""
+        """Compute perplexity from cross-entropy loss using HuggingFace model."""
         try:
             # Get the generated portion (excluding input)
             generated_tokens = full_tokens[input_tokens.shape[1]:]
@@ -182,8 +182,9 @@ class SmolLMRunner:
             
             # Run forward pass to get logits for generated tokens
             with torch.no_grad():
-                # Get logits for the full sequence
-                logits, _ = self.model.run_with_cache(full_tokens, return_type="logits")
+                # Get logits for the full sequence using HuggingFace model
+                outputs = self.model(full_tokens)
+                logits = outputs.logits
                 
                 # Extract logits for generated tokens (shifted by 1 for next-token prediction)
                 pred_logits = logits[0, input_tokens.shape[1]-1:-1, :]  # (seq_len, vocab_size)
