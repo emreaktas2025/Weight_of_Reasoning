@@ -187,8 +187,21 @@ class SmolLMRunner:
                 logits = outputs.logits
                 
                 # Extract logits for generated tokens (shifted by 1 for next-token prediction)
-                pred_logits = logits[0, input_tokens.shape[1]-1:-1, :]  # (seq_len, vocab_size)
-                target_tokens = generated_tokens  # (seq_len,)
+                # Handle tensor dimensions properly
+                input_len = input_tokens.shape[1]
+                if input_len > 0:
+                    pred_logits = logits[0, input_len-1:-1, :]  # (seq_len, vocab_size)
+                else:
+                    pred_logits = logits[0, :-1, :]  # (seq_len, vocab_size)
+                
+                # Ensure target tokens match the logits sequence length
+                target_tokens = generated_tokens[:pred_logits.shape[0]]  # Truncate to match
+                
+                if pred_logits.shape[0] != target_tokens.shape[0]:
+                    # Adjust to match the shorter sequence
+                    min_len = min(pred_logits.shape[0], target_tokens.shape[0])
+                    pred_logits = pred_logits[:min_len, :]
+                    target_tokens = target_tokens[:min_len]
                 
                 # Compute cross-entropy loss
                 loss = F.cross_entropy(
