@@ -1,0 +1,75 @@
+
+================================================================================
+Weight of Reasoning - Phase 5 Evaluation Run
+================================================================================
+Start Time: 2025-10-22 00:17:08
+Log File: logs/run_phase5_20251022_001708.txt
+================================================================================
+
+[2025-10-22 00:17:08] ================================================================================
+[2025-10-22 00:17:08] Phase 5 NeurIPS Evaluation Pipeline
+[2025-10-22 00:17:08] ================================================================================
+[2025-10-22 00:17:08] 
+=== Configuration ===
+[2025-10-22 00:17:08]   seed: 1337
+[2025-10-22 00:17:08]   models: ['configs/models/pythia-70m.yaml', 'configs/models/pythia-410m.yaml', 'configs/models/llama3-1b.yaml']
+[2025-10-22 00:17:08]   datasets: {'reasoning': {'gsm8k': {'n_cpu': 50, 'n_gpu': 200}, 'strategyqa': {'n_cpu': 30, 'n_gpu': 100}}, 'control': {'wiki': {'n_cpu': 50, 'n_gpu': 200}}, 'optional': {'math': {'n_cpu': 20, 'n_gpu': 50}}}
+[2025-10-22 00:17:08]   robustness: {'seeds': [42, 1337, 999], 'temperatures': [0.0, 0.2], 'metric_ablations': ['AE', 'APE', 'APL', 'CUD', 'SIB', 'FL']}
+[2025-10-22 00:17:08]   baselines: {'features': ['token_len', 'avg_logprob', 'perplexity', 'cot_len'], 'model': 'logistic_regression'}
+[2025-10-22 00:17:08]   patchout: {'k_percent': [5, 10, 20], 'max_time_per_model_min': 10}
+[2025-10-22 00:17:08]   runtime: {'cpu_time_limit_min': 60, 'gpu_time_limit_min': 30, 'use_gpu': True, 'torch_dtype': 'bfloat16', 'max_ablation_samples': 10, 'parallel_workers': 2}
+[2025-10-22 00:17:08]   cache_dir: cache/activations
+[2025-10-22 00:17:08]   output_dir: reports/phase5
+[2025-10-22 00:17:08]   plots_dir: reports/figs_paper
+[2025-10-22 00:17:08]   splits_dir: reports/splits
+[2025-10-22 00:17:08]   circuit_heads_json: reports/circuits/heads.json
+[2025-10-22 00:17:08]   control_thresholds_npz: reports/control_thresholds_phase3.npz
+[2025-10-22 00:17:08] 
+[2025-10-22 00:17:08] HuggingFace auth: Success
+[2025-10-22 00:17:08] 
+=== Hardware Configuration ===
+[2025-10-22 00:17:08]   Device: cpu
+[2025-10-22 00:17:08]   Device Name: N/A
+[2025-10-22 00:17:08]   GPU Memory: 0.0 GB
+[2025-10-22 00:17:08]   Dtype: float32
+[2025-10-22 00:17:08]   Batch Size: 2
+[2025-10-22 00:17:08] 
+[2025-10-22 00:17:08] 
+=== Loading Datasets ===
+[2025-10-22 00:17:08]   Loaded gsm8k: 200 samples
+[2025-10-22 00:17:08]   Loaded strategyqa: 100 samples
+[2025-10-22 00:17:08]   Loaded wiki: 200 samples
+[2025-10-22 00:17:08] Total samples loaded: 500
+[2025-10-22 00:17:08] 
+=== Processing Models ===
+[2025-10-22 00:17:08] 
+Processing model: configs/models/pythia-70m.yaml
+[2025-10-22 00:17:08] Loading model: EleutherAI/pythia-70m-deduped
+[2025-10-22 00:17:11] 
+================================================================================
+[2025-10-22 00:17:11] Processing Model: pythia-70m
+[2025-10-22 00:17:11] Parameters: 70,463,616
+[2025-10-22 00:17:11] ================================================================================
+[2025-10-22 00:17:11] Computing circuit heads and thresholds...
+[2025-10-22 00:17:19] Computing baseline metrics...
+[2025-10-22 00:31:07] Saved metrics to reports/phase5/pythia-70m_metrics.csv
+[2025-10-22 00:31:07] Evaluating baseline predictors...
+[2025-10-22 00:31:07] 
+=== Baseline Comparison ===
+[2025-10-22 00:31:07]   AUROC (baseline): 0.8465
+[2025-10-22 00:31:07]   AUROC (REV): 0.6295
+[2025-10-22 00:31:07]   AUROC (combined): 0.8473
+[2025-10-22 00:31:07]   ΔAUC: 0.0008
+[2025-10-22 00:31:07]   Samples: 500
+[2025-10-22 00:31:07]   pythia-70m runtime: 839.0s (13.98 min)
+[2025-10-22 00:31:07] ✅ pythia-70m completed successfully
+[2025-10-22 00:31:07] 
+Processing model: configs/models/pythia-410m.yaml
+[2025-10-22 00:31:07] Loading model: EleutherAI/pythia-410m-deduped
+[2025-10-22 00:31:14] 
+================================================================================
+[2025-10-22 00:31:14] Processing Model: pythia-410m
+[2025-10-22 00:31:14] Parameters: 405,283,968
+[2025-10-22 00:31:14] ================================================================================
+[2025-10-22 00:31:14] Computing circuit heads and thresholds...
+[2025-10-22 00:35:57] Computing baseline metrics...

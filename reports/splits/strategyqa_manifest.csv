@@ -1,6 +1,101 @@
 id,question,answer,prompt,label
-strategyqa_fallback_0,"Solve: John has 7 apples, buys 5, gives 3 to a friend. How many remain? Show steps.",,"Solve: John has 7 apples, buys 5, gives 3 to a friend. How many remain? Show steps.",reasoning
-strategyqa_fallback_1,"If a train travels 120 km in 2 hours at constant speed, how far in 5 hours? Show steps.",,"If a train travels 120 km in 2 hours at constant speed, how far in 5 hours? Show steps.",reasoning
-strategyqa_fallback_2,A store discounts a $80 item by 25% then adds 10% tax. Final price? Show steps.,,A store discounts a $80 item by 25% then adds 10% tax. Final price? Show steps.,reasoning
-strategyqa_fallback_3,"If x+3=11 and y=2x, what is y? Show steps.",,"If x+3=11 and y=2x, what is y? Show steps.",reasoning
-strategyqa_fallback_4,"There are 12 red and 8 blue marbles. If you take 5 at random without replacement, expected reds? Show steps.",,"There are 12 red and 8 blue marbles. If you take 5 at random without replacement, expected reds? Show steps.",reasoning
+strategyqa_0,Are there multiple American government holidays during winter?,True,Answer: Are there multiple American government holidays during winter? Show reasoning.,reasoning
+strategyqa_1,Were paparazzi directly responsible for the death of Amy Winehouse?,False,Answer: Were paparazzi directly responsible for the death of Amy Winehouse? Show reasoning.,reasoning
+strategyqa_2,Are flag of Gabon colors found in rainbow?,True,Answer: Are flag of Gabon colors found in rainbow? Show reasoning.,reasoning
+strategyqa_3,Could Brooke Shields succeed at University of Pennsylvania?,True,Answer: Could Brooke Shields succeed at University of Pennsylvania? Show reasoning.,reasoning
+strategyqa_4,Can you see live harbor seals in Washington DC?,True,Answer: Can you see live harbor seals in Washington DC? Show reasoning.,reasoning
+strategyqa_5,Can a sesame seed grow in the human body?,False,Answer: Can a sesame seed grow in the human body? Show reasoning.,reasoning
+strategyqa_6,Is the tree species that the name Leipzig refers to an evergeen tree?,False,Answer: Is the tree species that the name Leipzig refers to an evergeen tree? Show reasoning.,reasoning
+strategyqa_7,Do some people soak in olive oil and water?,True,Answer: Do some people soak in olive oil and water? Show reasoning.,reasoning
+strategyqa_8,Is Capricorn the hypothetical zodiac sign of Satanism?,True,Answer: Is Capricorn the hypothetical zodiac sign of Satanism? Show reasoning.,reasoning
+strategyqa_9,Do all parts of the aloe vera plant taste good?,False,Answer: Do all parts of the aloe vera plant taste good? Show reasoning.,reasoning
+strategyqa_10,Are the Great Lakes part of an international border?,True,Answer: Are the Great Lakes part of an international border? Show reasoning.,reasoning
+strategyqa_11,Were there fifty English kings throughout the Middle Ages?,False,Answer: Were there fifty English kings throughout the Middle Ages? Show reasoning.,reasoning
+strategyqa_12,Would Rime of the Ancient Mariner make a good sonnet?,False,Answer: Would Rime of the Ancient Mariner make a good sonnet? Show reasoning.,reasoning
+strategyqa_13,Could a monarch butterfly rule a kingdom?,False,Answer: Could a monarch butterfly rule a kingdom? Show reasoning.,reasoning
+strategyqa_14,Would the 10th doctor enjoy a dish of stuffed pears?,False,Answer: Would the 10th doctor enjoy a dish of stuffed pears? Show reasoning.,reasoning
+strategyqa_15,Do the Ubuntu people speak Ubuntu?,False,Answer: Do the Ubuntu people speak Ubuntu? Show reasoning.,reasoning
+strategyqa_16,Did any of the amazons on Xena: Warrior Princess star on later shows?,True,Answer: Did any of the amazons on Xena: Warrior Princess star on later shows? Show reasoning.,reasoning
+strategyqa_17,Can you find Bob Marley's face in most smoke shops?,True,Answer: Can you find Bob Marley's face in most smoke shops? Show reasoning.,reasoning
+strategyqa_18,Is Alan Alda old enough to have fought in the Vietnam War?,True,Answer: Is Alan Alda old enough to have fought in the Vietnam War? Show reasoning.,reasoning
+strategyqa_19,Did Bill Nye vote for Franklin Delano Roosevelt?,False,Answer: Did Bill Nye vote for Franklin Delano Roosevelt? Show reasoning.,reasoning
+strategyqa_20,Is nickel a better payout than mercury if given a dollar per atomic number?,False,Answer: Is nickel a better payout than mercury if given a dollar per atomic number? Show reasoning.,reasoning
+strategyqa_21,Is it impossible for Cheb Mami to win a Pulitzer Prize for musical composition?,True,Answer: Is it impossible for Cheb Mami to win a Pulitzer Prize for musical composition? Show reasoning.,reasoning
+strategyqa_22,Would a greyhound be able to outrun a greyhound bus?,False,Answer: Would a greyhound be able to outrun a greyhound bus? Show reasoning.,reasoning
+strategyqa_23,"Does Orange County, California require airplanes to be quiet?",True,"Answer: Does Orange County, California require airplanes to be quiet? Show reasoning.",reasoning
+strategyqa_24,Is cycling a high-risk activity for pelvis fractures?,False,Answer: Is cycling a high-risk activity for pelvis fractures? Show reasoning.,reasoning
+strategyqa_25,Could Robert Wadlow hypothetically see Frankenstein's monster's bald spot from above?,True,Answer: Could Robert Wadlow hypothetically see Frankenstein's monster's bald spot from above? Show reasoning.,reasoning
+strategyqa_26,Will the small intenstine break down a cotton ball?,False,Answer: Will the small intenstine break down a cotton ball? Show reasoning.,reasoning
+strategyqa_27,Would JPEG be a good format for saving an image of Da Vinci's Vitruvian Man?,False,Answer: Would JPEG be a good format for saving an image of Da Vinci's Vitruvian Man? Show reasoning.,reasoning
+strategyqa_28,Can an Asian black bear use chopsticks?,False,Answer: Can an Asian black bear use chopsticks? Show reasoning.,reasoning
+strategyqa_29,Is World of Warcraft heavier than a loaf of bread?,False,Answer: Is World of Warcraft heavier than a loaf of bread? Show reasoning.,reasoning
+strategyqa_30,Would a vegan eat a traditional Paella dish?,False,Answer: Would a vegan eat a traditional Paella dish? Show reasoning.,reasoning
+strategyqa_31,Was the AK-47 used in the Seven Years' War?,False,Answer: Was the AK-47 used in the Seven Years' War? Show reasoning.,reasoning
+strategyqa_32,Do people with DID have a good memory?,False,Answer: Do people with DID have a good memory? Show reasoning.,reasoning
+strategyqa_33,Did people in Korea under Japanese Rule watch a lot of Iron Chef?,False,Answer: Did people in Korea under Japanese Rule watch a lot of Iron Chef? Show reasoning.,reasoning
+strategyqa_34,Are the brooms from curling good for using on house floors?,False,Answer: Are the brooms from curling good for using on house floors? Show reasoning.,reasoning
+strategyqa_35,Would Brian Warner be a good singer for a soul music band?,False,Answer: Would Brian Warner be a good singer for a soul music band? Show reasoning.,reasoning
+strategyqa_36,Is Christianity better for global warming than Satanism?,True,Answer: Is Christianity better for global warming than Satanism? Show reasoning.,reasoning
+strategyqa_37,Did the Democratic Party's nominee for President of the U.S. in 1908 watch TV?,False,Answer: Did the Democratic Party's nominee for President of the U.S. in 1908 watch TV? Show reasoning.,reasoning
+strategyqa_38,Are hippos dangerous to humans?,True,Answer: Are hippos dangerous to humans? Show reasoning.,reasoning
+strategyqa_39,Are honey badgers and hyenas anatomically dissimilar? ,False,Answer: Are honey badgers and hyenas anatomically dissimilar?  Show reasoning.,reasoning
+strategyqa_40,Do Armenians tend to dislike System of a Down?,False,Answer: Do Armenians tend to dislike System of a Down? Show reasoning.,reasoning
+strategyqa_41,Was hippie culture encouraged by the government in the Soviet Union?,False,Answer: Was hippie culture encouraged by the government in the Soviet Union? Show reasoning.,reasoning
+strategyqa_42,Would it be difficult to host Stanley Cup Finals at Rock in Rio?,True,Answer: Would it be difficult to host Stanley Cup Finals at Rock in Rio? Show reasoning.,reasoning
+strategyqa_43,Is sound barrier too much for Audi R8 V-10 Plus to break?,True,Answer: Is sound barrier too much for Audi R8 V-10 Plus to break? Show reasoning.,reasoning
+strategyqa_44,Are any letters directly before and after H missing from Roman numerals?,True,Answer: Are any letters directly before and after H missing from Roman numerals? Show reasoning.,reasoning
+strategyqa_45,Could the surface of Europa fry an egg?,False,Answer: Could the surface of Europa fry an egg? Show reasoning.,reasoning
+strategyqa_46,Does Snoop Dogg advocate a straight edge lifestyle?,False,Answer: Does Snoop Dogg advocate a straight edge lifestyle? Show reasoning.,reasoning
+strategyqa_47,Could a firewall be destroyed by a hammer?,False,Answer: Could a firewall be destroyed by a hammer? Show reasoning.,reasoning
+strategyqa_48,Is Kim Kardashian a guru?,False,Answer: Is Kim Kardashian a guru? Show reasoning.,reasoning
+strategyqa_49,"In teenagers and young adults with depression, are SSRI medications less safe than they are for adults?",True,"Answer: In teenagers and young adults with depression, are SSRI medications less safe than they are for adults? Show reasoning.",reasoning
+strategyqa_50,Can a dolphin keep a diary?,False,Answer: Can a dolphin keep a diary? Show reasoning.,reasoning
+strategyqa_51,Are birds important to badminton?,True,Answer: Are birds important to badminton? Show reasoning.,reasoning
+strategyqa_52,Can Clouded leopards chase down many Pronghorn antelopes?,False,Answer: Can Clouded leopards chase down many Pronghorn antelopes? Show reasoning.,reasoning
+strategyqa_53,Would an environmentalist advocate for preventing domestic canine reproduction?,True,Answer: Would an environmentalist advocate for preventing domestic canine reproduction? Show reasoning.,reasoning
+strategyqa_54,Hydrogen's atomic number squared exceeds number of Spice Girls?,False,Answer: Hydrogen's atomic number squared exceeds number of Spice Girls? Show reasoning.,reasoning
+strategyqa_55,Does American Independence Day occur during autumn?,False,Answer: Does American Independence Day occur during autumn? Show reasoning.,reasoning
+strategyqa_56,Does Ariana Grande's signature style combine comfort items and high fashion?,True,Answer: Does Ariana Grande's signature style combine comfort items and high fashion? Show reasoning.,reasoning
+strategyqa_57,is the brain located in the torso?,False,Answer: is the brain located in the torso? Show reasoning.,reasoning
+strategyqa_58,Would a veteran of the Phillippine-American War come home craving SPAM?,False,Answer: Would a veteran of the Phillippine-American War come home craving SPAM? Show reasoning.,reasoning
+strategyqa_59,Did U2 play a concert at the Polo Grounds?,False,Answer: Did U2 play a concert at the Polo Grounds? Show reasoning.,reasoning
+strategyqa_60,Would Garfield like canid food?,False,Answer: Would Garfield like canid food? Show reasoning.,reasoning
+strategyqa_61,Was the Treaty of Versailles settled over blueberry scones?,False,Answer: Was the Treaty of Versailles settled over blueberry scones? Show reasoning.,reasoning
+strategyqa_62,Does Capricorn astrology symbol have all of the parts of a chimera?,False,Answer: Does Capricorn astrology symbol have all of the parts of a chimera? Show reasoning.,reasoning
+strategyqa_63,Could Jamie Brewer have attended the United States Naval Academy?,False,Answer: Could Jamie Brewer have attended the United States Naval Academy? Show reasoning.,reasoning
+strategyqa_64,Is it bad to have lactic acid in your body?,False,Answer: Is it bad to have lactic acid in your body? Show reasoning.,reasoning
+strategyqa_65,Can the Palace of Westminster tell time in the dark?,True,Answer: Can the Palace of Westminster tell time in the dark? Show reasoning.,reasoning
+strategyqa_66,Are blue lips normal?,False,Answer: Are blue lips normal? Show reasoning.,reasoning
+strategyqa_67,Do restaurants associate meatballs with the wrong country of origin?,True,Answer: Do restaurants associate meatballs with the wrong country of origin? Show reasoning.,reasoning
+strategyqa_68,Do you need to worry about Zika virus in Antarctica? ,False,Answer: Do you need to worry about Zika virus in Antarctica?  Show reasoning.,reasoning
+strategyqa_69,Does the central processing unit usually have a dedicated fan?,True,Answer: Does the central processing unit usually have a dedicated fan? Show reasoning.,reasoning
+strategyqa_70,Are rainbows devoid of color made by mixing yin and yang colors?,True,Answer: Are rainbows devoid of color made by mixing yin and yang colors? Show reasoning.,reasoning
+strategyqa_71,Is Issac Newton often associated with a red fruit?,True,Answer: Is Issac Newton often associated with a red fruit? Show reasoning.,reasoning
+strategyqa_72,Is the tongue part of a creature's head?,True,Answer: Is the tongue part of a creature's head? Show reasoning.,reasoning
+strategyqa_73,Would the host of The Colbert Report be likely to vote for Trump?,False,Answer: Would the host of The Colbert Report be likely to vote for Trump? Show reasoning.,reasoning
+strategyqa_74,Could Toyota stadium house people suffering homelessness in Michigan?,True,Answer: Could Toyota stadium house people suffering homelessness in Michigan? Show reasoning.,reasoning
+strategyqa_75,Did Confederate States Army influence West Point fashion?,True,Answer: Did Confederate States Army influence West Point fashion? Show reasoning.,reasoning
+strategyqa_76,Could someone listen to the entire U2 debut studio album during an episode of Peppa Pig?,False,Answer: Could someone listen to the entire U2 debut studio album during an episode of Peppa Pig? Show reasoning.,reasoning
+strategyqa_77,Did any killer Manson band members were named for exceed Charles Manson's kills?,True,Answer: Did any killer Manson band members were named for exceed Charles Manson's kills? Show reasoning.,reasoning
+strategyqa_78,Would you be likely to see storks at a baby shower?,True,Answer: Would you be likely to see storks at a baby shower? Show reasoning.,reasoning
+strategyqa_79,Was P. G. Wodehouse's favorite book The Hunger Games?,False,Answer: Was P. G. Wodehouse's favorite book The Hunger Games? Show reasoning.,reasoning
+strategyqa_80,Does the human stomach destroy a bee if ingested?,True,Answer: Does the human stomach destroy a bee if ingested? Show reasoning.,reasoning
+strategyqa_81,Is number of stars in Milky Way at least ten times earth's population?,True,Answer: Is number of stars in Milky Way at least ten times earth's population? Show reasoning.,reasoning
+strategyqa_82,Did Francois Mitterrand ever meet Barak Obama while they both held the position of President?,False,Answer: Did Francois Mitterrand ever meet Barak Obama while they both held the position of President? Show reasoning.,reasoning
+strategyqa_83,"Did the founders of the biggest city in Orange County, California speak Italian?",False,"Answer: Did the founders of the biggest city in Orange County, California speak Italian? Show reasoning.",reasoning
+strategyqa_84,Was Land of Israel in possession of an Islamic empire in 16th century?,True,Answer: Was Land of Israel in possession of an Islamic empire in 16th century? Show reasoning.,reasoning
+strategyqa_85,Would LeBron James hypothetically glance upwards at Yuri Gagarin?,False,Answer: Would LeBron James hypothetically glance upwards at Yuri Gagarin? Show reasoning.,reasoning
+strategyqa_86,Do people put creatures from the Black Sea on their pizza?,True,Answer: Do people put creatures from the Black Sea on their pizza? Show reasoning.,reasoning
+strategyqa_87,Was Lorenzo de Medici's patronage of Da Vinci exclusive?,False,Answer: Was Lorenzo de Medici's patronage of Da Vinci exclusive? Show reasoning.,reasoning
+strategyqa_88,Would the tunnels at CERN fit onto the High Speed 1 rails?,True,Answer: Would the tunnels at CERN fit onto the High Speed 1 rails? Show reasoning.,reasoning
+strategyqa_89,Was Charles Manson's body unwanted?,False,Answer: Was Charles Manson's body unwanted? Show reasoning.,reasoning
+strategyqa_90,Did J. P. Morgan have healthy lungs?,False,Answer: Did J. P. Morgan have healthy lungs? Show reasoning.,reasoning
+strategyqa_91,"If you have black hair and want red hair, do you need bleach?",True,"Answer: If you have black hair and want red hair, do you need bleach? Show reasoning.",reasoning
+strategyqa_92,Was Emperor Commodus paid tribute in Pound sterling?,False,Answer: Was Emperor Commodus paid tribute in Pound sterling? Show reasoning.,reasoning
+strategyqa_93,Would 2019 Natalie Portman avoid a Snickers bar due to her diet?,True,Answer: Would 2019 Natalie Portman avoid a Snickers bar due to her diet? Show reasoning.,reasoning
+strategyqa_94,Would Jon Brower Minnoch break a chair before Voyager 2 launch mass?,False,Answer: Would Jon Brower Minnoch break a chair before Voyager 2 launch mass? Show reasoning.,reasoning
+strategyqa_95,Could James Brown's ex-wives hold a doubles game of tennis?,True,Answer: Could James Brown's ex-wives hold a doubles game of tennis? Show reasoning.,reasoning
+strategyqa_96,Was a Tiny House ceiling out of Osama bin Laden's reach?,False,Answer: Was a Tiny House ceiling out of Osama bin Laden's reach? Show reasoning.,reasoning
+strategyqa_97,Did the Wall Street Crash of 1929 hurt the stocks of robotics companies?,False,Answer: Did the Wall Street Crash of 1929 hurt the stocks of robotics companies? Show reasoning.,reasoning
+strategyqa_98,Were karaoke and the turtle power tiller patented in the same country?,True,Answer: Were karaoke and the turtle power tiller patented in the same country? Show reasoning.,reasoning
+strategyqa_99,Can Ford F-350 tow entire Yale University student body?,False,Answer: Can Ford F-350 tow entire Yale University student body? Show reasoning.,reasoning

@@ -1,61 +1,99 @@
 {
   "seed_results": {
     "42": {
-      "auroc_rev": 1.0,
-      "cohens_d": 13.331116524956864,
-      "n_samples": 15,
-      "n_reasoning": 10,
-      "n_control": 5
+      "auroc_rev": 0.8588,
+      "cohens_d": 1.5229425161633825,
+      "n_samples": 100,
+      "n_reasoning": 50,
+      "n_control": 50
     },
     "1337": {
-      "auroc_rev": 1.0,
-      "cohens_d": 13.331116524956864,
-      "n_samples": 15,
-      "n_reasoning": 10,
-      "n_control": 5
+      "auroc_rev": 0.8588,
+      "cohens_d": 1.5229425161633825,
+      "n_samples": 100,
+      "n_reasoning": 50,
+      "n_control": 50
+    },
+    "999": {
+      "auroc_rev": 0.8588,
+      "cohens_d": 1.5229425161633825,
+      "n_samples": 100,
+      "n_reasoning": 50,
+      "n_control": 50
     }
   },
   "temp_results": {
     "0.0": {
-      "auroc_rev": 1.0,
-      "cohens_d": 13.331116524956864,
-      "n_samples": 15,
-      "n_reasoning": 10,
-      "n_control": 5
+      "auroc_rev": 0.8588,
+      "cohens_d": 1.5229425161633825,
+      "n_samples": 100,
+      "n_reasoning": 50,
+      "n_control": 50
+    },
+    "0.2": {
+      "auroc_rev": NaN,
+      "cohens_d": NaN,
+      "n_samples": 100,
+      "n_reasoning": 50,
+      "n_control": 50
     }
   },
   "ablation_results": {
     "AE": {
-      "auroc_rev": 1.0,
-      "cohens_d": 12.159672687544964,
-      "n_samples": 15,
-      "n_reasoning": 10,
-      "n_control": 5,
-      "delta_auroc": 0.0
+      "auroc_rev": 0.8520000000000001,
+      "cohens_d": 1.470694165354757,
+      "n_samples": 100,
+      "n_reasoning": 50,
+      "n_control": 50,
+      "delta_auroc": -0.006799999999999917
     },
     "APE": {
-      "auroc_rev": 1.0,
-      "cohens_d": 11.998054470013141,
-      "n_samples": 15,
-      "n_reasoning": 10,
-      "n_control": 5,
-      "delta_auroc": 0.0
+      "auroc_rev": 0.8340000000000001,
+      "cohens_d": 1.3521609887732189,
+      "n_samples": 100,
+      "n_reasoning": 50,
+      "n_control": 50,
+      "delta_auroc": -0.024799999999999933
     },
     "APL": {
-      "auroc_rev": 1.0,
-      "cohens_d": 11.394704680951508,
-      "n_samples": 15,
-      "n_reasoning": 10,
-      "n_control": 5,
-      "delta_auroc": 0.0
+      "auroc_rev": 0.7572,
+      "cohens_d": 1.0003715108840299,
+      "n_samples": 100,
+      "n_reasoning": 50,
+      "n_control": 50,
+      "delta_auroc": -0.10160000000000002
+    },
+    "CUD": {
+      "auroc_rev": 0.8968,
+      "cohens_d": 1.8254050994617967,
+      "n_samples": 100,
+      "n_reasoning": 50,
+      "n_control": 50,
+      "delta_auroc": 0.038000000000000034
+    },
+    "SIB": {
+      "auroc_rev": 0.8635999999999999,
+      "cohens_d": 1.5219319425072018,
+      "n_samples": 100,
+      "n_reasoning": 50,
+      "n_control": 50,
+      "delta_auroc": 0.0047999999999999154
+    },
+    "FL": {
+      "auroc_rev": 0.8804,
+      "cohens_d": 1.6862984676102257,
+      "n_samples": 100,
+      "n_reasoning": 50,
+      "n_control": 50,
+      "delta_auroc": 0.021599999999999953
     }
   },
-  "baseline_auroc": 1.0,
+  "baseline_auroc": 0.8588,
   "summary": {
-    "seed_mean_auroc": 1.0,
+    "seed_mean_auroc": 0.8588,
     "seed_std_auroc": 0.0,
-    "temp_mean_auroc": 1.0,
+    "temp_mean_auroc": 0.8588,
     "temp_std_auroc": 0.0,
-    "most_important_metric": "AE"
+    "most_important_metric": "APL"
   }
 }

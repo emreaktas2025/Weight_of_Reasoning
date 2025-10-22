@@ -2,61 +2,1298 @@ id,label,dataset,token_len,ppl,AE,APE,APL,CUD,SIB,FL,generated_text,answer,REV,l
 gsm8k_0,reasoning,gsm8k,139,1.1240234375,1.53125,0.0691582247149282,0.8125,0.9166666666666666,0.8636676967485623,0.29067230224609375," (Round your answer to the nearest whole number.)
 Solve: In a yard, the number of tanks is five time...","There are 5*20 = <<5*20=100>>100 tanks in the yard.
 Altogether, there are 100+20 = <<100+20=120>>120 trucks and tanks in the yard.
-#### 140",0.19231067795505682,1
+#### 140",0.12651372882995815,1
 gsm8k_1,reasoning,gsm8k,29,5.0078125,1.54296875,0.060348480393996,0.75,0.7916666666666666,0.9395975299585451,0.29276275634765625,<|end_of_text|>,"Sam has half the number of Chris: 6/2=<<6/2=3>>3 teslas
 Elon has 10 more than Sam: 10+3=<<10+3=13>>13 teslas
-#### 13",0.43157736011245174,1
+#### 13",0.5258261865039399,1
 gsm8k_2,reasoning,gsm8k,62,2.3125,1.52734375,0.08140426938390911,0.75,0.9166666666666666,0.9461199201896152,0.2933197021484375,<|end_of_text|>,"3 weeks translate to 3 * 7 days = <<3*7=21>>21 days.
 To meet Dr. Juan’s recommendation would mean drinking 105/21 = <<105/21=5>>5 gallons daily.
 This means that Flora must drink 5 -3 = <<5-3=2>>2 more gallons daily.
-#### 2",0.8639556408402402,1
+#### 2",0.8248393706060009,1
 gsm8k_3,reasoning,gsm8k,42,1.689453125,1.5048828125,0.07637711943514743,0.8125,0.9166666666666666,0.9316660200805201,0.29322052001953125,<|end_of_text|>,"First find the number of seeds that land in water: 300 seeds * 1/3 = <<300*1/3=100>>100 seeds
 Then find the number of seeds that are eaten: 300 seeds * 1/6 = <<300*1/6=50>>50 seeds
 Subtract the number of seeds that are destroyed to find the number that sprout: 300 seeds - 100 seeds - 50 seeds = <<300-100-50=150>>150 seeds
 Then divide that number by 2 to find the number of sprouts that survive: 150 seeds / 2 = <<150/2=75>>75 seeds
-#### 75",0.26069073255953584,1
+#### 75",0.19388839157369187,1
 gsm8k_4,reasoning,gsm8k,117,1.4267578125,1.5166015625,0.07548760900826763,0.75,0.9583333333333334,0.9524847838892239,0.29199981689453125,"  (a) 1/2 (b) 1/3 (c) 1/4 (d) 1/5 (e) 1/6
 Answer: (a) 1/2
 Explanation:  The distance between Granvil...","If Danielle drives at three times the speed of Cameron, it will take Cameron 30*3=<<30*3=90>>90 minutes for Cameron to travel the same distance.
 And since Cameron drives at twice the speed of his brother, Chase, it will take Chase 90*2=<<90*2=180>>180 minutes to travel from Granville to Salisbury.
-#### 180",0.9064548741580888,1
+#### 180",0.821506200866251,1
 gsm8k_5,reasoning,gsm8k,44,2.283203125,1.5126953125,0.07325860049042968,0.75,0.9166666666666666,0.8593826524611146,0.29412078857421875,<|end_of_text|>,"Cloud 9 earned $12,000 + $16,000 = $<<12000+16000=28000>>28,000 from bookings.
 After returning money due to cancellations, they had a final total of $28,000 - $1600 = $<<28000-1600=26400>>26,400.
-#### 26400",0.7517736694032274,1
+#### 26400",0.7095661401583522,1
 gsm8k_6,reasoning,gsm8k,130,1.2216796875,1.52734375,0.08098185663489171,0.75,0.9166666666666666,0.9570691812940065,0.29309844970703125,"  (Hint: 1 serving = 1 cup of tea)
 Solve: Tabitha adds 1 serving of honey per cup of tea in the even...","She has 1 serving of honey per cup of tea and she has 2 teas at night so she needs a total of 1*2 = <<1*2=2>>2 servings per night
 There are 6 servings in 1 ounce and she has a 16-ounce jar of honey so that's 6*16 = <<6*16=96>>96 servings of honey
 Her jar has 96 servings and she has 2 servings a night so 1 jar will last her 96/2 = <<96/2=48>>48 nights
-#### 48",0.8662102067915253,1
+#### 48",0.827284184745773,1
 gsm8k_7,reasoning,gsm8k,51,3.23828125,1.5263671875,0.07405121396900524,0.75,0.875,0.9493598144301716,0.2925872802734375,<|end_of_text|>,"First find the total amount of water Violet and her dog consume per hour: 800 ml + 400 ml = <<800+400=1200>>1200 ml
 Then divide that amount by 1000 ml/L to convert it to liters: 1200 ml / 1000 ml/L = <<1200/1000=1.2>>1.2 L
 Then divide Violet's carrying capacity by the amount of water they drink per hour to find how many hours she can hike: 4.8 L / 1.2 L/hour = 4 hours
-#### 4",0.7248872366933705,1
+#### 4",0.7309793908538232,1
 gsm8k_8,reasoning,gsm8k,133,1.1044921875,1.541015625,0.06842701965398834,0.75,0.875,0.9231699166088466,0.29325103759765625," (1 yard = 36 inches)
 Solve: Josh has 18 yards of ribbon that is to be used equally to 6 gifts. If e...","The 6 gifts will use 6 x 2 = <<6*2=12>>12 yards of ribbon.
 So, 18 - 12 = <<18-12=6>>6 yards of ribbon will be left.
-#### 6",0.655481023202169,1
+#### 6",0.6588952543870992,1
 gsm8k_9,reasoning,gsm8k,129,1.33203125,1.4990234375,0.07859506839739368,0.75,0.7916666666666666,0.9396722402883629,0.29273223876953125,  I know the answer is 1000.00 but I don't know how to get there.  I know the answer is 1000.00 but ...,"She has 5 grandchildren 4 children so she needs 5+4 = <<5+4=9>>9 stockings
 The stockings are $20.00 each and currently 10% off so that's 20*.10 = $<<20*.10=2.00>>2.00 off
 The stockings are $20.00 with a $2.00 discount so they are each 20-2 = $<<20-2=18.00>>18.00
 The stockings are now $18.00 and she needs 9 so that's $<<18*9=162>>162.00
 She also wants to monogram each stocking at $5.00 per stocking so that's 9*5 = $<<9*5=45.00>>45.00
 The stockings are $162.00 and the monogramming will cost $45.00 so the stockings will cost 162+45 = $<<162+45=207.00>>207.00
-#### 1035",0.6047007527930145,1
-strategyqa_fallback_0,reasoning,strategyqa,60,1.123046875,1.7361111111111112,0.05626134404064406,0.75,0.7916666666666666,0.0,0.3079901801215278, 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. ...,,-0.1177170058601964,1
-strategyqa_fallback_1,reasoning,strategyqa,115,1.1416015625,1.90625,0.05288105025463048,0.75,0.7916666666666666,0.0,0.309208984375," (Round your answer to 2 decimal places)
-If a train travels 120 km in 2 hours at constant speed, how...",,-0.18105917329833845,1
-strategyqa_fallback_2,reasoning,strategyqa,102,1.1103515625,1.9869791666666667,0.05075002795468262,0.75,0.6666666666666666,0.0,0.31138102213541663," A store discounts a $80 item by 25% then adds 10% tax. Final price? Show steps.
-A store discounts a...",,-0.4722138105762408,1
-strategyqa_fallback_3,reasoning,strategyqa,86,1.3212890625,2.5822368421052633,0.04984400444184752,0.75,0.75,0.0,0.3152562191611842," I know that y=2x+3, but I don't know how to get the y from the x and y from the x+3=11.
-If x+3=11 a...",,-0.4294058129199445,1
-strategyqa_fallback_4,reasoning,strategyqa,111,1.28515625,1.6357758620689655,0.05592506375086941,0.75,0.7916666666666666,0.9954225165380102,0.30831488247575434," I know the answer is 5/12 but I don't know how to get there.
-There are 12 red and 8 blue marbles. I...",,0.24479027221306948,1
-wiki_fallback_0,control,wiki,122,1.2529296875,4.431818181818182,0.033917240418384884,0.75,0.75,0.0,0.3300947709517046, What are the different types of pencils? What are the different uses of pencils? What are the diffe...,,-0.9426225037384116,0
-wiki_fallback_1,control,wiki,128,1.3125,4.925,0.03058777837105453,0.75,0.7083333333333334,0.0,0.3333251953125, The lake is calm because it is surrounded by trees and there is no wind. The lake is calm because i...,,-1.1439148443057905,0
-wiki_fallback_2,control,wiki,112,1.8583984375,4.431818181818182,0.0331529383517098,0.75,0.6666666666666666,0.0,0.32998934659090906," (1-2 sentences)
-Bread is a staple food in most of the world. It is made from flour, water, and yeas...",,-1.1088265027560322,0
-wiki_fallback_3,control,wiki,121,1.3544921875,5.486111111111111,0.029408415830609217,0.75,0.75,0.0,0.3386773003472222, The paragraph should be 100-150 words long. The paragraph should be written in the third person. Th...,,-1.194433173400695,0
-wiki_fallback_4,control,wiki,97,1.1923828125,4.9375,0.029826669649880105,0.75,0.8333333333333334,0.0,0.33338623046875," (1-2 sentences)
-Write a short neutral paragraph about storing winter clothes. (1-2 sentences)
-Write...",,-0.9126396198660984,0
+#### 1035",0.7046659416673172,1
+gsm8k_10,reasoning,gsm8k,52,6.515625,1.5244140625,0.0783785136684695,0.8125,0.9583333333333334,0.9305883679854897,0.29335784912109375,<|end_of_text|>,"The total time we spent going to school is 15 minutes + 6 minutes = <<15+6=21>>21 minutes.
+We have 30 minutes - 21 minutes = <<30-21=9>>9 minutes left not to be late.
+#### 9",0.24215771277073897,1
+gsm8k_11,reasoning,gsm8k,41,3.55859375,1.53515625,0.0765855174167485,0.75,0.7916666666666666,0.928974204129842,0.29203033447265625,<|end_of_text|>,"1/3rd of the workers before the new hires were women because 1 - (2/3) = 1/3
+There were 30 women working for the company before the new hires
+There are now 40 women working for the company because 30 + 10 = <<30+10=40>>40
+There are 100 people working for the company because 90 + 10 = <<90+10=100>>100
+The proportion of women working in the company is .4 because 40 / 100 = <<40/100=.4>>.4
+The percentage of women working in the company is now 40 because .4 x 100 = <<.4*100=40>>40
+#### 40",0.6848951256697253,1
+gsm8k_12,reasoning,gsm8k,22,6.46875,1.51171875,0.05614460784595628,0.75,0.875,0.7017526516755298,0.29279327392578125,<|end_of_text|>,"If Kristoff has 85 stickers, Riku has 25 * 85 stickers = <<85*25=2125>>2125 more stickers.
+The total number of stickers Riku has is 2125 stickers + 85 stickers = <<2125+85=2210>>2210 stickers
+#### 2210",0.4723725721399774,1
+gsm8k_13,reasoning,gsm8k,60,3.052734375,1.513671875,0.07407903809714296,0.75,0.8333333333333334,0.965206063802773,0.2928314208984375,  (Hint: 1000 pounds is 1000 pounds of meat.  The profit is 2 pounds of meat times the price of 2 po...,"It cost .2*40000=$<<.2*40000=8000>>8000 more to feed than buy them
+So the total cost to feed them was 40000+8000=$<<40000+8000=48000>>48,000
+So in total it cost 48000+40000=$<<48000+40000=88000>>88,000
+Each cow sells for 2*1000=$<<2*1000=2000>>2000
+So he sells them for 2000*100=$<<2000*100=200000>>200,000
+So he makes a profit of 200,000-88,000=$<<200000-88000=112000>>112,000
+#### 112000",0.701957714714457,1
+gsm8k_14,reasoning,gsm8k,64,3.44921875,1.51953125,0.0841047735892047,0.8125,0.9166666666666666,0.9103844803291649,0.2931671142578125,<|end_of_text|>,"If three-quarters of the boxes are full, then 1 – ¾ = ¼ of the boxes are half-full.
+On average, each harvest therefore has 20 boxes * 0.25 = <<20*0.25=5>>5 boxes that are half-full.
+This leaves 20 total boxes – 5 half-full boxes = <<20-5=15>>15 full boxes.
+Half-full boxes hold 20 parsnips / 2 = <<20/2=10>>10 parsnips each.
+In total, the half-full boxes, therefore, hold 5 boxes * 10 parsnips = <<5*10=50>>50 parsnips.
+The full boxes hold a total of 15 boxes * 20 parsnips = <<15*20=300>>300 parsnips.
+So Betty harvests a total of 50 + 300 = <<50+300=350>>350 parsnips in an average harvest.
+#### 350",0.2579425265234307,1
+gsm8k_15,reasoning,gsm8k,30,6.72265625,1.5205078125,0.062277695722090354,0.75,0.8333333333333334,0.9522164967033638,0.29340362548828125,<|end_of_text|>,"Two bracelets need 50 x 2 = <<50*2=100>>100 beads.
+So they will need 9 x 100 = <<9*100=900>>900 beads in all.
+#### 900",0.5782973246503821,1
+gsm8k_16,reasoning,gsm8k,57,4.203125,1.5380859375,0.08032580677306003,0.8125,0.9166666666666666,0.9323143462138915,0.29265594482421875,<|end_of_text|>,"Jess needs to walk 11 blocks + 6 blocks + 8 blocks = <<11+6+8=25>>25 blocks total.
+Jess needs to go 25 blocks – 5 = <<25-5=20>>20 blocks to get to work.
+#### 20",0.23337187778121019,1
+gsm8k_17,reasoning,gsm8k,40,5.7890625,1.5458984375,0.07000183399326813,0.75,0.8333333333333334,0.9083722670068171,0.2928314208984375,<|end_of_text|>,"Martha has 11-5=<<11-5=6>>6 blue and yellow butterflies.
+Martha has 6/3=<<6/3=2>>2 yellow butterflies.
+Martha has 2*2=<<2*2=4>>4 blue butterflies.
+#### 4",0.6386414109429464,1
+gsm8k_18,reasoning,gsm8k,130,1.271484375,1.517578125,0.07680380145932374,0.75,0.8333333333333334,0.9629448263578881,0.29235076904296875,  The total cost of the meal was $34.00.  The cost of the meal was $34.00.  The cost of the meal was...,"Curtis had the Salisbury steak for $16.00 and Rob had the Chicken Fried Steak at $18.00 so their meal cost 16+18 = $<<16+18=34.00>>34.00
+They ate 3 pm so their meal is half off so their meal cost 34/2 = $17.00
+#### 17",0.731827754633395,1
+gsm8k_19,reasoning,gsm8k,53,4.515625,1.51171875,0.072619698800205,0.75,0.9166666666666666,0.9290338350974005,0.2919921875,<|end_of_text|>,"Hunter saw 5 + 3 = <<5+3=8>>8 adult frogs in the pond.
+He saw 2 x 12 = <<2*12=24>>24 baby frogs in the pond.
+Altogether, he saw 8 + 24 = <<8+24=32>>32 frogs in the pond.
+#### 32",0.7527866240228723,1
+gsm8k_20,reasoning,gsm8k,118,4.06640625,1.5439453125,0.09604977307256257,0.75,1.0,0.9169244205710886,0.29222869873046875,<|end_of_text|>,"Amaya watches the movie without rewinding for 20 minutes + 15 minutes + 45 minutes + 20 minutes = <<20+15+45+20=100>>100 minutes duration of the movie.
+However, Amaya also spent extra time re-watching parts she rewound, for 5 minutes + 15 minutes = <<5+15=20>>20 minutes.
+In all, Amaya spent 100 minutes + 20 minutes = <<100+20=120>>120 minutes watching the movie.
+#### 120",1.0308036901782645,1
+gsm8k_21,reasoning,gsm8k,89,1.21484375,1.5361328125,0.07176083128495833,0.75,0.875,0.9040215124800746,0.2926788330078125,  23k + 3g = 2l  23k + 3g = 2(4l)  23k + 3g = 8l  23k + 3g = 8(4l)  23k + 3g = 32l  23k + 3g = 32(4l...,"His kangaroos have a total of 23*2=<<23*2=46>>46 legs
+He has 23*3=<<23*3=69>>69 goats
+The goats have 69*4=<<69*4=276>>276 legs
+So in total his animals have 276+46=<<276+46=322>>322 legs
+#### 322",0.6906827663208803,1
+gsm8k_22,reasoning,gsm8k,64,1.1591796875,1.6875,0.05441187222007396,0.75,0.75,0.3327637802355961,0.30759102957589285, 1. 1. 2. 2. 3. 3. 4. 4. 5. 5. 6. 6. 7. 7. 8. 8. 9. 9. 10. 10. 11. 11. 12. 12. 13. 13. 14. 14. 15. 1...,"Let x be the amount of the discount.
+We have, 22 - x = $16
+We change the writing of the equation:
+22 - x + x = 16 + x
+So, 22 = 16 + x
+We then Remove 16 from both sides:
+22 - 16 = 16 + x - 16
+So, 22 - 16 = x
+So, the amount of the discount is x = $<<6=6>>6.
+#### 6",0.030320213134342574,1
+gsm8k_23,reasoning,gsm8k,32,6.24609375,1.552734375,0.06991856511417119,0.75,0.9583333333333334,0.9495366496779652,0.2913055419921875,<|end_of_text|>,"3/5th of 20 liters of water is 20*(3/5) = <<20*(3/5)=12>>12 liters
+5/6th of 18 liters of vinegar is 18*(5/6) = <<18*(5/6)=15>>15 liters
+12 liters of water mixed with 15 liters of vinegar gives 12+15 = <<12+15=27>>27-liter mixture
+#### 27",0.7707749530838122,1
+gsm8k_24,reasoning,gsm8k,163,1.107421875,1.5302734375,0.07893495232832311,0.75,0.9583333333333334,0.952261147660602,0.29187774658203125," (Round to the nearest dollar.)
+Val has three times as many dimes as nickels. If she accidentally fi...","If Val currently has 20 nickels and finds twice as many nickels as she has in her older brother's treasure box, she will have 2*20=40 more nickels.
+The total number of nickels she'll have is 40+20=<<40+20=60>>60
+Since nickel is worth $0.05, the value of the nickels Val is having is 60*0.05=$<<60*0.05=3>>3
+Val had three times as many dimes as nickels before she found the 40 new nickels, a total of 3*20=<<3*20=60>>60 dimes
+Since a dime has a value of $0.10, the value of the dimes that Val has is 60*$0.10=$<<60*0.10=6>>6
+Together, the value of the dimes and nickels Val has is worth $6+$3=$<<6+3=9>>9
+#### 9",0.8535599536462714,1
+gsm8k_25,reasoning,gsm8k,139,1.12890625,1.5361328125,0.06882480302775743,0.75,0.875,0.8670092644327726,0.2924346923828125," (Round to the nearest dollar.)
+Solve: Carmela has $7 and each of her four cousins has $2. How much ...","Carmela's four cousins have a total of $2 x 4 = $<<2*4=8>>8.
+The total money they all have is $7 + $8 = $<<7+8=15>>15.
+There will be 1 (Carmela) + 4 (cousins) = <<1+4=5>>5 people who will be sharing equally the money.
+So each of them should get $15/5 = $<<15/5=3>>3.
+Hence, Carmela has to give a total of $7 - $3 = $<<7-3=4>>4 to her 4 cousins.
+Therefore, each of her cousins will get $4/4 = $<<4/4=1>>1.
+#### 1",0.6523928567707762,1
+gsm8k_26,reasoning,gsm8k,169,1.1484375,1.5205078125,0.0870814651055994,0.8125,0.9583333333333334,0.9444630478895567,0.29376220703125,"  (a) 8 (b) 16 (c) 32 (d) 64
+Solve: The Eat ""N Go Mobile Sausage Sandwich Shop specializes in the sa...","If each sandwich comes with 4 strips of pepper, and each pepper makes 8 slices, then each sandwich uses 4/8=<<4/8=0.5>>0.5 pepper.
+If the Sandwich Shop serves a sandwich every 5 minutes, then per hour the Shop serves 60/5=<<60/5=12>>12 sandwiches.
+Thus, per hour, the Shop uses 12*0.5=<<12*0.5=6>>6 jalapeno peppers.
+And in an 8-hour day, the Sandwich Shop uses 8*6=<<8*6=48>>48 jalapeno peppers.
+#### 48",0.32538009304299303,1
+gsm8k_27,reasoning,gsm8k,77,2.9296875,1.5458984375,0.08639791295267658,0.75,0.9166666666666666,0.8991675608332311,0.29296112060546875,<|end_of_text|>,"Jack is able to carry two 5-gallon buckets of water per trip, or 2 * 5 = 10 gallons of water. Jill can only carry one bucket per trip, or 5 gallons.
+Jack completes 3 trips to the well and back for every 2 trips Jill completes, so in that time they have both together carried 3 Jack trips * 2 buckets per Jack trip * 5 gallons per bucket + 2 Jill trips * 1 bucket per Jill trip * 5 gallons per bucket = 30 gallons + 10 gallons = <<3*2*5+2*1*5=40>>40 gallons of water.
+If you consider these as a single ""group"" of trips, it will take 600 gallons / 40 gallons per ""group"" of trips = <<600/40=15>>15 groups of trips.
+As each of these ""groups"" of trips consists of two Jill trips, Jill will make 15 * 2 = <<15*2=30>>30 trips to the well and back before the tank is filled.
+#### 30",0.8567512963839222,1
+gsm8k_28,reasoning,gsm8k,108,1.1357421875,1.5185546875,0.06628373359657833,0.75,0.875,0.9183164107094323,0.29405975341796875," (1 dozen = 10 watermelons)
+Solve: Alice had 10 dozens of watermelons. She sold 40% of it yesterday ...","Ten dozens of watermelons are equal to 10 x 12 = <<10*12=120>>120 watermelons.
+Yesterday, Alice sold 120 x 40/100 = <<120*40/100=48>>48 watermelons.
+So, there are only 120 - 48 = <<120-48=72>>72 watermelons left for today.
+Today, Alice sold 72 x 1/4 = <<72*1/4=18>>18 watermelons.
+Hence, 72 - 18 = <<72-18=54>>54 watermelons are left to be sold tomorrow.
+#### 54",0.6307567242873833,1
+gsm8k_29,reasoning,gsm8k,149,1.5546875,1.53125,0.08295414924919932,0.75,0.875,0.9197383985910488,0.2923431396484375,"  (a) 13 seconds (b) 10 seconds (c) 6 seconds (d) 4 seconds
+Answer: (a) 13 seconds
+Solution:  The ti...","John runs 100-4=<<100-4=96>>96 meters once he reaches his max speed
+He runs it in 13-1=<<13-1=12>>12 seconds
+So he runs at a speed of 96/12=<<96/12=8>>8 m/s
+So that means James's top speed is 8+2=<<8+2=10>>10 m/s
+He has to run 100-10=<<100-10=90>>90 meters at his top speed
+So he runs that at 90/10=<<90/10=9>>9 seconds
+So he takes 9+2=<<9+2=11>>11 seconds to run 100 meters
+#### 11",0.80663042267491,1
+gsm8k_30,reasoning,gsm8k,34,6.5078125,1.5458984375,0.06656965179340014,0.75,0.9166666666666666,0.9575233319196385,0.29306793212890625,<|end_of_text|>,"Wednesday + Friday = 4816 + 2095 = <<4816+2095=6911>>6911 meters
+9 km = <<9*1000=9000>>9000 meters
+9000 - 6911 = <<9000-6911=2089>>2089 meters
+Hannah ran 2089 meters farther on Monday than Wednesday and Friday.
+#### 2089",0.6890105330544,1
+gsm8k_31,reasoning,gsm8k,53,2.68359375,1.5283203125,0.07379167285396597,0.8125,0.875,0.9747683772824524,0.29224395751953125,  (Hint:  $1200 * 12 = $14400 per year.)<|end_of_text|>,"His old apartment cost 1200*12=$<<1200*12=14400>>14,400 per year
+His new apartment 1200*1.4=$<<1200*1.4=1680>>1680 per month
+That means it cost 1680/3=$<<1680/3=560>>560 per month
+So it cost 560*12=$<<560*12=6720>>6720
+So he saves 14400-6720=$<<14400-6720=7680>>7680
+#### 7680",0.15889623628986674,1
+gsm8k_32,reasoning,gsm8k,80,3.05859375,1.517578125,0.09241556794445158,0.75,0.9166666666666666,0.9119920143130145,0.29109954833984375,<|end_of_text|>,"The sum of Yuri's dice gave, 2 + 4 + 5 = <<2+4+5=11>>11 squares.
+For Yuko to get the same sum in the dice, 1 + 5 + X = 11 squares.
+Solving the equation, X = 11 - 6, X = <<11-6=5>>5 squares.
+To stand in front of his brother, Yuko needs to be at least 1 place in front, so his last die will move him, 5 + 1 = <<5+1=6>>6 squares.
+#### 6",0.9431706985968602,1
+gsm8k_33,reasoning,gsm8k,122,1.15234375,1.5185546875,0.06643140569643399,0.75,0.7916666666666666,0.9600420170118564,0.2926788330078125,  2 friends want to each eat 1 bar.  How much money will that require per person? Show steps.  3 fri...,"If 6 friends each want 2 bars, that's 6 friends * 2 bars = <<6*2=12>>12 bars needed.
+Each box contains 3 bars, so 12 bars / 3 bars per box = <<12/3=4>>4 boxes needed.
+A box is $7, so 4 boxes * $7.50 = $<<4*7.5=30>>30.
+There are 6 friends so $30 / 6 friends = $<<30/6=5>>5 per person.
+#### 5",0.5949342319083955,1
+gsm8k_34,reasoning,gsm8k,46,3.755859375,1.517578125,0.07239017760440329,0.75,0.9166666666666666,0.9097988413112875,0.29229736328125,<|end_of_text|>,"The amount of the discount is 20/100 * $90 original price = $<<20/100*90=18>>18
+Charlotte needs to bring the $90 - $18 discount = $<<90-18=72>>72
+#### 72",0.7394595990417336,1
+gsm8k_35,reasoning,gsm8k,151,1.095703125,1.525390625,0.07758289363603758,0.75,0.8333333333333334,0.8387844483748693,0.29122161865234375," (Round your answer to the nearest dollar.)
+Solve: In a grocery store, the daily salary of the manag...","The 2 managers earn $5 x 2 = $<<5*2=10>>10 per day.
+The daily salary of 3 clerks is $2 x 3 = $<<3*2=6>>6.
+Therefore the total salary of all employees of the grocery store is $10 + $6= $<<10+6=16>>16
+#### 16",0.7063374906172775,1
+gsm8k_36,reasoning,gsm8k,43,4.24609375,1.5263671875,0.07116419972685044,0.75,0.9166666666666666,0.9083295141708696,0.29471588134765625,<|end_of_text|>,"He has given out 120 tickets because 15 x 8 = <<15*8=120>>120
+He has 16 days left to had out tickets because 31 - 15 = <<31-15=16>>16
+He has to give out 80 more because 200 - 120 = <<200-120=80>>80
+He has to give out 5 a day because 80 / 16 = <<80/16=5>>5
+#### 5",0.698754752299262,1
+gsm8k_37,reasoning,gsm8k,101,1.560546875,1.5400390625,0.07776374822811831,0.75,0.9166666666666666,0.9529913885788662,0.29236602783203125,  (Hint:  1 ounce = 28.35 grams)  (Hint:  1 cubic inch = 25.4 cm^3)  (Hint:  1 cubic inch = 1/28.35 ...,"The silver has a volume of 3*3*3=<<3*3*3=27>>27 cubic inches
+So it weighs 27*6=<<27*6=162>>162 ounces
+So its value is 162*25=$<<162*25=4050>>4050
+That means he sold it for 4050*1.1=$<<4050*1.1=4455>>4455
+#### 4455",0.8019733530204335,1
+gsm8k_38,reasoning,gsm8k,113,1.107421875,1.5244140625,0.06976628716007705,0.75,0.7916666666666666,0.9526915246596682,0.29247283935546875,  50 percent of the ducks are Muscovy and 30 percent of the Muscovies are female.  How many female M...,"Muscovies: 40(.50)=<<40*.50=20>>20 Muscovy ducks
+Female Muscovies:20(.30)=6 ducks
+#### 6",0.6253703499055947,1
+gsm8k_39,reasoning,gsm8k,33,5.5234375,1.5302734375,0.06818663152623546,0.75,0.8333333333333334,0.9350467409977927,0.29293060302734375,<|end_of_text|>,"Find how many soaps are in 1 box by multiplying the number of soaps per package by the number of packages per box: 192*6=<<192*6=1152>>1152 soaps.
+Then find how many soaps 2 boxes contain by multiplying the number of boxes by the number of soaps per box: 1152*2= <<1152*2=2304>>2304 soaps.
+#### 2304",0.6320438400820837,1
+gsm8k_40,reasoning,gsm8k,29,7.98828125,1.5380859375,0.0639633562733945,0.75,0.8333333333333334,0.9317375856413834,0.29372406005859375,<|end_of_text|>,"He spent a total of 8 * $12 + 4 * $18 = $<<8*12+4*18=168>>168
+He bought a total of 8 + 4 = <<8+4=12>>12 movies.
+The average price is $168 / 12 = $<<168/12=14>>14 per movie.
+#### 14",0.5808779141520272,1
+gsm8k_41,reasoning,gsm8k,127,1.1298828125,1.5234375,0.06825082205403366,0.75,0.8333333333333334,0.9590716111328524,0.29236602783203125," (Round to the nearest integer.)
+Solve: Ron's baseball team scored 270 points in the year. There are...","The first five players scored a total of 250 points because 5 x 50 = <<5*50=250>>250
+There are 4 players left because 9 - 5 = <<9-5=4>>4
+The 4 remaining players scored 20 points because 270 - 250 = 20
+The 4 remaining players averaged 5 points because 20 / 4 = <<20/4=5>>5
+#### 5",0.6485983332377985,1
+gsm8k_42,reasoning,gsm8k,38,6.5859375,1.5498046875,0.06758916246261588,0.75,0.875,0.8658982312695742,0.29288482666015625,<|end_of_text|>,"First find the total cost of the color cartridges: $32/cartridge * 3 cartridges = $<<32*3=96>>96
+Then add the cost of the black-and-white cartridge to find the total cost: $96 + $27 = $<<96+27=123>>123
+#### 123",0.6333648277264697,1
+gsm8k_43,reasoning,gsm8k,34,6.7734375,1.546875,0.06289874013164835,0.75,0.7916666666666666,0.9369305549885842,0.29297637939453125,<|end_of_text|>,"The amount of money they currently make in a year is 12 * 4000 = $<<12*4000=48000>>48000.
+The additional amount they need to make is $60000 - $48000= $<<60000-48000=12000>>12000 per year.
+So, they should make $12000 / 12 = $<<12000/12=1000>>1000 more every month.
+#### 1000",0.5460353939040317,1
+gsm8k_44,reasoning,gsm8k,34,2.763671875,1.509765625,0.06666015090446854,0.75,0.9166666666666666,0.9359260555980752,0.29372406005859375,<|end_of_text|>,"First find how many of the peaches are fresh, which is 250 peaches * 60% = <<250*60*.01=150>>150 peaches.
+Then, subtract the number Brenda throws away after the fresh count, which is 150 peaches - 15 peaches = <<150-15=135>>135 peaches.
+#### 135",0.6795546529086477,1
+gsm8k_45,reasoning,gsm8k,51,3.447265625,1.525390625,0.07759442030072414,0.75,0.8333333333333334,0.8978612168505352,0.29184722900390625,<|end_of_text|>,"The second course cost Amelia $15 + $5 = $<<15+5=20>>20.
+The dessert cost 25/100 * $20 = $<<25/100*20=5>>5.
+That leaves Amelia with $60 - $15 - $20 - $5 = $<<60-15-20-5=20>>20.
+#### 20",0.7205775141718794,1
+gsm8k_46,reasoning,gsm8k,44,3.40625,1.521484375,0.0738530310270489,0.75,0.8333333333333334,0.9428396504145682,0.29351043701171875,<|end_of_text|>,"Sophie has 4 - 1 = <<4-1=3>>3 boxes of donuts left.
+The total number of pieces of donuts that she has is 3 x 12 = <<3*12=36>>36.
+She gave 12 / 2 = <<12/2=6>>6 donuts to her sister.
+Therefore Sophie was left with 36 - 6 = <<36-6=30>>30 donuts after giving her sister.
+#### 30",0.6830405087452576,1
+gsm8k_47,reasoning,gsm8k,56,2.869140625,1.5439453125,0.08065891089959482,0.75,0.9166666666666666,0.9141355882244767,0.2924652099609375,<|end_of_text|>,"Padma traded 2 + 15 of her cards = <<2+15=17>>17 cards.
+Robert traded 10 + 8 of his cards = <<10+8=18>>18 cards.
+In total, between both of them Padma and Robert traded 17 + 18 = <<17+18=35>>35 cards.
+#### 35",0.8137425884114857,1
+gsm8k_48,reasoning,gsm8k,50,1.9794921875,1.513671875,0.06894030560583032,0.75,0.8333333333333334,0.9324358013480101,0.29224395751953125,  347 + 375 = 722 calories.  The cake has 722 calories more than the brownies.<|end_of_text|>,"The cake has 8 slices * 347 calories = <<8*347=2776>>2776 calories.
+The brownies have 6 slices * 375 = <<6*375=2250>>2250 calories.
+The cake has 2776 calories - 2250 = <<2776-2250=526>>526 more calories.
+#### 526",0.6482525808620622,1
+gsm8k_49,reasoning,gsm8k,44,3.3203125,1.5380859375,0.07235462474721534,0.75,0.875,0.9347020958805707,0.292755126953125,<|end_of_text|>,"The cost of the loaves of bread is 4 × $2 = $<<4*2=8>>8.
+The cost of the milk is 2 × $2 = $<<2*2=4>>4.
+The total cost of the groceries is $8 + $4 = $<<8+4=12>>12.
+Clare has $47 − $12 = $35 left.
+#### 35",0.7061888635125545,1
+gsm8k_50,reasoning,gsm8k,62,4.98046875,1.5234375,0.07953572623681147,0.75,0.9583333333333334,0.9594171089472135,0.2924957275390625,<|end_of_text|>,"Drew’s lawn is 22 * 36 = <<22*36=792>>792 square feet.
+He bought enough grass seed to cover 250 * 4 = <<250*4=1000>>1000 square feet.
+Thus, the leftover grass seed can cover 1000 - 792 = <<1000-792=208>>208 square feet.
+#### 208",0.8557330003618389,1
+gsm8k_51,reasoning,gsm8k,141,1.322265625,1.5244140625,0.07830065437022536,0.75,0.9166666666666666,0.9050708736346502,0.29409027099609375,"  (Hint:  The first artifact took 6 months, and the second took 18 months.  The total time was 24 mo...","The research took 6/12=<<6/12=.5>>.5 years
+So it took 2+.5=<<2.5=2.5>>2.5 years for the first artifact
+It takes 2.5*3=<<2.5*3=7.5>>7.5 years for the second
+So in total it took 2.5+7.5=<<2.5+7.5=10>>10 years to find both
+#### 10",0.7724153968449264,1
+gsm8k_52,reasoning,gsm8k,47,3.52734375,1.517578125,0.07352879109469129,0.75,0.8333333333333334,0.9259382923706445,0.2922821044921875,<|end_of_text|>,"The insurance plan costs $30*0.2=$<<30*0.2=6>>6.
+The pre-state tax total is $30+$6=$<<30+6=36>>36.
+State tax will be $36*0.5=$<<36*0.5=18>>18.
+Jon needs to pay $18+$36=$<<18+36=54>>54 for his new toaster.
+#### 54",0.6883467148632231,1
+gsm8k_53,reasoning,gsm8k,119,1.5908203125,1.5322265625,0.06305002377807885,0.75,0.875,0.9681314587037603,0.293121337890625, (1 point) 2. A 1.5 kg block is pulled up a 30 degree incline at a constant speed. The coefficient o...,"Jon’s textbooks weigh 2 + 8 + 5 + 9 = <<2+8+5+9=24>>24 pounds.
+Thus, Brandon’s textbooks weigh 24 / 3 = <<24/3=8>>8 pounds.
+#### 8",0.6268564566602504,1
+gsm8k_54,reasoning,gsm8k,33,4.828125,1.5361328125,0.06578184872498213,0.75,0.875,0.9344270103776472,0.29198455810546875,<|end_of_text|>,"The desert has 3/5 fewer palm trees than the forest, and since the forest has 5000 palm trees, the desert has 3/5*5000 = <<3/5*5000=3000>>3000 fewer palm trees.
+The total number of palm trees in the desert is 5000-3000 = <<5000-3000=2000>>2000
+Together, the desert and the forest have a total of 5000+2000 = <<5000+2000=7000>>7000 palm trees.
+#### 7000",0.6529329209936934,1
+gsm8k_55,reasoning,gsm8k,36,7.8046875,1.53125,0.06721372702764042,0.75,0.875,0.9043671471163351,0.29265594482421875,<|end_of_text|>,"The total amount of money saved is $27 + $13 + $28 = $<<27+13+28=68>>68.
+The total cost of the two products is $49 + $5 = $<<49+5=54>>54.
+Kate has $68 − $54 = $14 left.
+#### 14",0.6487293779596106,1
+gsm8k_56,reasoning,gsm8k,42,3.458984375,1.5380859375,0.06968742887176617,0.75,0.875,0.93929324323575,0.2921295166015625,<|end_of_text|>,"In total, the 3 tea leaf plants have 18 x 3 = <<18*3=54>>54 green leaves.
+One-third of the yellow leaves falling off of all plants is 54 / 3 = <<54/3=18>>18.
+The number of remaining green leaves on the plants is 54 - 18 = <<54-18=36>>36.
+#### 36",0.689704832093443,1
+gsm8k_57,reasoning,gsm8k,111,1.474609375,1.517578125,0.0694282797593696,0.75,0.875,0.9053550034415089,0.29363250732421875,"  (a) 5 (b) 10 (c) 20 (d) 40
+Answer: (a) 5
+Explanation:  The number of times they coughed in 20 minu...","Robert coughs twice as much as Georgia who coughs 5 times so Robert coughs 2*5 = <<10=10>>10 coughs per minute
+Georgia coughs 5 times and Robert coughs 10 times so together they cough 5+10 = <<5+10=15>>15 times per minute
+After 20 minutes they will have coughed 15*20 = <<15*20=300>>300 coughs
+#### 300",0.6608072108655462,1
+gsm8k_58,reasoning,gsm8k,41,4.5390625,1.5693359375,0.07209765188995024,0.75,0.8333333333333334,0.9398727211486454,0.29254150390625,<|end_of_text|>,"In the first store, each apple costs $3/6 = $<<3/6=0.5>>0.5.
+In the second store, each apple costs $4/10 = $<<4/10=0.4>>0.4.
+So, you can save $0.5 - $0.4 = $0.1 on each apple from buying $4 for 10 apples than from $3 for 6 apples.
+In cents, this is equal to $0.1 x 100 = <<0.1*100=10>>10.
+#### 10",0.6698926818208933,1
+gsm8k_59,reasoning,gsm8k,163,1.5126953125,1.52734375,0.09135531820480731,0.75,0.875,0.8367010218854581,0.2934722900390625,"  (Hint:  Use the 20% discount on the item with the small issue, and then use the 10% coupon on the ...","They approved 20% off of the $20.00 item so .20*20 = $<<20*.01*20=4.00>>4.00
+The item has a $4.00 discount which can be applied from his final total of $54.00 so 54-4 = $<<54-4=50.00>>50.00
+Now he can use his 10% coupon on the $50.00 total so .10*50 = $<<10*.01*50=5.00>>5.00
+The total was $50.00 but his $5.00 discount now makes it 50-5 = $<<50-5=45.00>>45.00
+#### 45",0.8439811918891539,1
+gsm8k_60,reasoning,gsm8k,102,6.2265625,1.55078125,0.09204713239378166,0.8125,0.9583333333333334,0.9624860916947502,0.292236328125,<|end_of_text|>,"His fourth throw made 8 - 1 = <<8-1=7>>7 skips.
+His third throw made 7 + 3 = <<7+3=10>>10 skips.
+His second throw made 10 / 2 = <<10/2=5>>5 skips.
+His first throw made 5 - 2 = <<5-2=3>>3 skips.
+The total number of skips is 8 + 7 + 10 + 5 + 3 = <<8+7+10+5+3=33>>33 skips.
+#### 33",0.3920058054672069,1
+gsm8k_61,reasoning,gsm8k,133,1.11328125,1.529296875,0.07050431719063227,0.75,0.8333333333333334,0.896958681009678,0.29386138916015625," (Round to the nearest tenth.)
+Solve: Anna is making gingerbread cookies. She gives 6 of them red ha...","The first step to find the total number of gingerbread men is to add the number with each decoration: 6 men + 9 men = <<6+9=15>>15 men
+Then subtract the number of gingerbread men with both decorations to find the total number of gingerbread men: 15 men - 3 men = <<15-3=12>>12 men
+Then divide the number of gingerbread men with red hats by the total number and multiply by 100% to express the answer as a percentage: 6 men / 12 men * 100% = 50%
+#### 50",0.6298668175088084,1
+gsm8k_62,reasoning,gsm8k,38,6.515625,1.521484375,0.0718413703307047,0.75,0.875,0.9502620149349049,0.2933349609375,<|end_of_text|>,"He runs for 3 hours because 2 x 1.5 = <<2*1.5=3>>3
+He runs for 180 minutes because 3 x 60 = <<3*60=180>>180
+He runs 15 miles because 180 / 12 = <<180/12=15>>15
+#### 15",0.7025969832355221,1
+gsm8k_63,reasoning,gsm8k,57,4.34375,1.546875,0.08007758773298354,0.75,1.0,0.8498641576566728,0.293487548828125,<|end_of_text|>,"Since June has 30 days, halfway is 1/2*30 = <<1/2*30=15>>15
+The total number of video hours halfway through June is 10*15 = <<10*15=150>>150
+When she doubled the number of video hours, the total per day became 10*2 = <<10*2=20>>20
+The total number of video hours for the remaining days is 15*20 = <<15*20=300>>300
+The total number of video hours for the whole month is 300+150 = <<300+150=450>>450
+#### 450",0.8410336062611611,1
+gsm8k_64,reasoning,gsm8k,48,3.998046875,1.53515625,0.0741631774448544,0.75,0.9166666666666666,0.9170007477062686,0.29180145263671875,<|end_of_text|>,"At the back of stores, the town has paid for 14 trash cans on the streets * 2 = <<14*2=28>>28 trash cans.
+The town has therefore added 14 trash cans on the streets + 28 trash cans at the back of stores = <<14+28=42>>42 trash cans.
+#### 42",0.7620559024266731,1
+gsm8k_65,reasoning,gsm8k,125,1.1298828125,1.556640625,0.06074418531265952,0.75,0.9166666666666666,0.9200164476475029,0.2935943603515625," (Round to the nearest tenth.)
+Solve: Hadassah took six hours to paint 12 paintings. What would be t...","If it took Hadassah six hours to paint 12 paintings, then she paints 12/6 = <<12/6=2>>2 paintings in an hour.
+If two paintings take an hour to complete, 20 paintings will take 20/2 = <<20/2=10>>10 hours.
+The total time she took to finish all the paintings is 10+6 = <<10+6=16>>16 hours.
+#### 16",0.6130416821818014,1
+gsm8k_66,reasoning,gsm8k,50,5.375,1.529296875,0.07759580979949823,0.75,0.8333333333333334,0.9383911894735532,0.29250335693359375,<|end_of_text|>,"He spent 100*.5=$<<100*.5=50>>50 at the arcade.
+He uses 50-10=$<<50-10=40>>40 on tokens
+He can play 40/8=<<40/8=5>>5 hours
+There are 60 minutes in an hour so he can play 5*60=<<5*60=300>>300 minutes
+#### 300",0.7271872558903766,1
+gsm8k_67,reasoning,gsm8k,42,10.5,1.552734375,0.0730425132218948,0.75,0.7916666666666666,0.9394372212465619,0.29210662841796875,<|end_of_text|>,"100/2 = <<100/2=50>>50 people in the theater have brown eyes.
+100/4 = <<100/4=25>>25 people in the theater have black eyes.
+There are 50+25+19 = <<50+25+19=94>>94 people in the theater with either brown, black, or blue eyes.
+There are 100-94 = <<100-94=6>>6 people in the theater with green eyes.
+#### 6",0.6519139934924563,1
+gsm8k_68,reasoning,gsm8k,38,5.0,1.5263671875,0.07134114284761144,0.75,0.875,0.9536218984573361,0.2928314208984375,<|end_of_text|>,"The first round will result in 1000 * 10% = <<1000*10*.01=100>>100 employee layoffs.
+There are 1000 - 100 = <<1000-100=900>>900 employees remaining.
+The second round will result in 900 * 10% = <<900*10*.01=90>>90 employee layoffs.
+There are 900 - 90 = <<900-90=810>>810 employees remaining.
+The third round will result in 810 * 10% = <<810*10*.01=81>>81 employee layoffs.
+The total number of of employees laid off is 100 + 90 + 81 = <<100+90+81=271>>271.
+#### 271",0.7041188329424711,1
+gsm8k_69,reasoning,gsm8k,75,3.349609375,1.54296875,0.08714313438778115,0.75,0.9166666666666666,0.919896367100109,0.29257965087890625,<|end_of_text|>,"On days one, two, and three he sold 5 cars each day so, 5 cars + 5 cars + 5 cars = <<5+5+5=15>>15 cars that he sold on those days.
+On days 4,5,6 and 7 he sold 3 cars each day so, 3 cars + 3 cars + 3 cars + 3 cars = <<3+3+3+3=12>>12 cars that he sold on those days.
+Now we combine the cars he has already sold, which is 15 cars, and 12 cars, so 15 cars + 12 cars = <<15+12=27>>27 cars are sold in total.
+If he needs to sell 50 cars and has already sold 27 cars then 50 cars - 27 cars = <<50-27=23>>23 cars left to sell to meet his quota.
+#### 23",0.8759599071439922,1
+gsm8k_70,reasoning,gsm8k,86,1.65234375,1.5224609375,0.07051655392565265,0.75,0.8333333333333334,0.9578462866828176,0.2921905517578125,"  (a) $3.5 (b) $3.0 (c) $2.5 (d) $2.0 (e) $1.5
+Answer: (a) $3.5
+Explanation:  The cost of the candy ...","The gum cost $1.5/2=$<<1.5/2=.75>>.75 per pack
+So he pays $.75*2=$<<.75*2=1.5>>1.5 for the gum
+He pays $1.5*3=$<<1.5*3=4.5>>4.5 for the candy bars
+So in total, he pays $1.5 + $4.5 = $<<1.5+4.5=6>>6
+#### 6",0.671702029555071,1
+gsm8k_71,reasoning,gsm8k,23,7.92578125,1.5107421875,0.06060011455205334,0.75,0.8333333333333334,0.25972851659076585,0.2928466796875,<|end_of_text|>,"Neil gave 20 x 2/5 = <<20*2/5=8>>8 cookies
+So he is left with 20 - 8 = <<20-8=12>>12 cookies.
+#### 12",0.32134596245043734,1
+gsm8k_72,reasoning,gsm8k,22,3.796875,1.505859375,0.05699546116566627,0.75,0.8333333333333334,0.25658492463421056,0.293731689453125,<|end_of_text|>,"The movie last 2.5*60=<<2.5*60=150>>150 minutes
+So he uses the bathroom 150/50=<<150/50=3>>3 times
+#### 3",0.27676583115402376,1
+gsm8k_73,reasoning,gsm8k,72,2.884765625,1.525390625,0.09030433752502999,0.75,0.8333333333333334,0.9454368099728935,0.2924652099609375,<|end_of_text|>,"25% of Facebook's annual earnings is 25/100 * $5,000,000 = $<<25/100*5000000=1250000>>1,250,000.
+The number of male employees is 3300 * 1/3 = <<3300*1/3=1100>>1100.
+So, the number of female employees is 3300 - 1100 = <<3300-1100=2200>>2200.
+The number of female employees who are not moms is 2200 - 1200 = <<2200-1200=1000>>1000.
+So the amount to be distributed to each mother would be $1,250,000 / 1000 = $<<1250=1250>>1250.
+#### 1250",0.8508452918647408,1
+gsm8k_74,reasoning,gsm8k,47,5.671875,1.5185546875,0.07896435656056487,0.75,0.9583333333333334,0.9332567455999666,0.29317474365234375,<|end_of_text|>,"On Monday, Mr Castiel ate 2/5*600 = <<2/5*600=240>>240 sausages.
+The remaining number of sausages after he ate 240 on Monday is 600-240 = <<600-240=360>>360
+On Tuesday, he ate half of the remaining sausages, a total of 360/2 = <<360/2=180>>180.
+The remaining number of sausages that he saved for Friday after eating 180 on Tuesday is 360-180 = <<360-180=180>>180.
+On Friday, Mr Castiel ate 3/4*180 = <<3/4*180=135>>135 of the sausages he had kept.
+The remaining number of sausages after he ate 135 on Friday is 180-135 = <<180-135=45>>45
+#### 45",0.8339014813687373,1
+gsm8k_75,reasoning,gsm8k,50,4.2265625,1.5341796875,0.07304311587923054,0.8125,0.9166666666666666,0.9557082141607945,0.2941131591796875,<|end_of_text|>,"Before Samuel walked across the porch, there were 331 - 223 = <<331-223=108>>108 dust particles.
+Those 108 were 1/10 of the original amount, so there were 108 * 10 = <<108*10=1080>>1080 dust particles on the porch before Samuel swept.
+#### 1080",0.15693059688902397,1
+gsm8k_76,reasoning,gsm8k,52,2.583984375,1.5146484375,0.0735552290960638,0.8125,0.9583333333333334,0.929391075021956,0.29283905029296875,<|end_of_text|>,"Mary has 3 + 1 + 1 = <<3+1+1=5>>5 rooms in her house.
+At 4 minutes a room, it will take her 4 * 5 = <<4*5=20>>20 minutes to vacuum her whole house.
+At 10 minutes a charge, she will need to charge her vacuum cleaner 20 / 10 = <<20/10=2>>2 times to vacuum her whole house.
+#### 2",0.20331580174229757,1
+gsm8k_77,reasoning,gsm8k,66,1.435546875,1.513671875,0.07436248802669822,0.75,0.875,0.9291367347519963,0.2923126220703125,"  (Hint: 72-4=60, 60-10=50, 50-2=48, 48-2=46, 46-4=42, 42-10=32, 32-2=30, 30-4=26, 26-2=24, 24-10=14...","Colton gave away 4 stickers * 3 friends = <<4*3=12>>12 stickers.
+Colton gave Mandy 2 + 12 stickers = <<2+12=14>>14 stickers.
+Colton gave Justin 14 stickers - 10 = <<14-10=4>>4 stickers.
+In total, Colton gave away 12 + 14 + 4 stickers = <<12+14+4=30>>30 stickers.
+Colton's number of total stickers at the end is 72 - 30 = <<72-30=42>>42 stickers.
+#### 42",0.7314847399672851,1
+gsm8k_78,reasoning,gsm8k,139,1.5771484375,1.5322265625,0.0796766539363152,0.75,0.9166666666666666,0.9322912002436845,0.29189300537109375,"  (a) 1 hour, 30 minutes (b) 1 hour, 45 minutes (c) 2 hours, 15 minutes (d) 2 hours, 30 minutes (e) ...","First, find the total number of blocks south Janet is from her starting point by subtracting the blocks she walked north from the blocks she walked south: 8 blocks - 3 blocks = <<8-3=5>>5 blocks
+Then find the number blocks she walked west: 3 blocks * 7 = <<3*7=21>>21 blocks
+Then find the number of blocks she walked east: 8 blocks * 2 = <<8*2=16>>16 blocks
+Subtract the number of blocks she walked east from the number of blocks she walked west to find how many blocks west of her starting point she is: 21 blocks - 16 blocks = <<21-16=5>>5 blocks
+Add the number of blocks she needs to walk north to the number of blocks she needs to walk east: 5 blocks + 5 blocks = <<5+5=10>>10 blocks
+Finally, divide the distance she needs to walk by her speed to find how long she'll spend walking: 10 blocks / 2 blocks/minute = <<10/2=5>>5 minutes
+#### 5",0.8190398201163736,1
+gsm8k_79,reasoning,gsm8k,74,4.19921875,1.50390625,0.0880936212602485,0.75,0.9166666666666666,0.9156628475375502,0.2934417724609375,<|end_of_text|>,"In total, the lollipops needed 5ml of food colouring * 100 lollipops = <<5*100=500>>500ml of food colouring.
+This means that the hard candies needed 600ml total food colouring – 500ml food colouring for lollipops = 100ml of food colouring.
+So each hard candy needed 100ml of food colouring / 5 hard candies = <<100/5=20>>20 ml of food colouring.
+#### 20",0.8789341852997277,1
+gsm8k_80,reasoning,gsm8k,33,5.30078125,1.5302734375,0.06405356060648107,0.75,0.8333333333333334,0.9230017979137687,0.29215240478515625,<|end_of_text|>,"Maria has 3 x 2 = <<3*2=6>>6 free flowers from buying 3 dozens flowers.
+Since each dozen is equal to 12, then Maria bought 3 x 12 = <<3*12=36>>36 flowers.
+Hence, she has a total of 36 + 6 = <<36+6=42>>42 flowers.
+#### 42",0.5974524449296946,1
+gsm8k_81,reasoning,gsm8k,85,1.1640625,1.5244140625,0.07292773516952931,0.75,0.875,0.9282910023348262,0.29154205322265625,  1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27....,"If Calen lost 10 pencils, which left him with 10 pencils, then Calen originally had 10+10=<<10+10=20>>20 pencils.
+Calen originally had 5 more pencils than does Caleb, and thus Caleb has 20-5=<<20-5=15>>15 pencils.
+Let's let ""x"" represent the number of pencils owned by Candy.
+Since Caleb has 3 less than twice as many pencils as does Candy, then (2*x)-3=15.
+This simplifies to 2*x=18.
+Thus, the number of pencils owned by Candy is x=<<9=9>>9 pencils.
+#### 9",0.7248934503330376,1
+gsm8k_82,reasoning,gsm8k,60,2.810546875,1.5498046875,0.08148263651032264,0.75,0.9166666666666666,0.9142432189372584,0.2917633056640625,<|end_of_text|>,"For 1 match won, Joe's team scored 1 * 3 = <<1*3=3>>3 points.
+For 3 tied games, Joe's team scored 3 * 1 = <<3*1=3>>3 points.
+In total, Joe's team scored 3 + 3 = <<3+3=6>>6 points.
+For 2 games won, the first-place team scored 2 * 3 = <<2*3=6>>6 points
+For 2 tied games, the first-place team scored 2 * 1 = <<2*1=2>>2 points
+In total, the first-place team scored 6 + 2 = <<6+2=8>>8 points.
+The first-place team outscored Joe's team by 8 - 6 = <<8-6=2>>2 points.
+#### 2",0.8287305596242263,1
+gsm8k_83,reasoning,gsm8k,55,4.70703125,1.544921875,0.07763448203889878,0.75,0.9583333333333334,0.9068974786618046,0.29236602783203125,<|end_of_text|>,"Regina has 4 pigs/cow * 20 cows = <<4*20=80>>80 pigs.
+She could sell the pigs for 80 pigs * $400/pig = $<<80*400=32000>>32000.
+For the cows Regina would get 20 cows * $800/cow = $<<20*800=16000>>16000.
+In total Regina would earn $16000 + $32000 = $<<16000+32000=48000>>48000.
+#### 48000",0.8174609904920596,1
+gsm8k_84,reasoning,gsm8k,185,1.267578125,1.533203125,0.09201164536509958,0.75,0.8333333333333334,0.8914425099852282,0.29248046875," Jake watched 4 hours on Monday, 4 hours on Tuesday, 4 hours on Wednesday, 4 hours on Thursday, and ...","On Monday, Jake watched 24 hours / 2 = <<24/2=12>>12 hours.
+On Wednesday, he watched 24 hours / 4 = <<24/4=6>>6 hours.
+So from Monday to Wednesday, he watched a total of 12 Monday hours + 4 Tuesday hours + 6 Wednesday hours = <<12+4+6=22>>22 hours.
+He watched half of this on Thursday, which is 22 hours / 2 = <<22/2=11>>11 hours.
+So from Monday to Thursday, he watched 22 + 11 = <<22+11=33>>33 hours.
+To finish the show on Friday, he must have therefore watched 52 – 33 = <<52-33=19>>19 hours.
+#### 19",0.8463686776163774,1
+gsm8k_85,reasoning,gsm8k,36,3.8671875,1.529296875,0.0662992898929162,0.75,0.875,0.9203266596024315,0.2935638427734375,<|end_of_text|>,"First subtract the 300 MB Elsa spent on YouTube: 500 MB - 300 MB = <<500-300=200>>200 MB.
+Then multiply 200 MB by 2/5th to find out how much data Elsa spent on Facebook: 200 MB * 2/5 = <<200*2/5=80>>80 MB.
+Finally, subtract the data Elsa spent on Facebook from the 200 MB: 200 MB - 80 MB = <<200-80=120>>120 MB.
+#### 120",0.6357934327282951,1
+gsm8k_86,reasoning,gsm8k,144,1.4775390625,1.515625,0.08627277745566629,0.75,0.875,0.9164125570010309,0.291534423828125,"  (a) 4 slices (b) 8 slices (c) 12 slices (d) 16 slices (e) 20 slices
+Answer: (a) 4 slices
+Step 1: 4...","George has 3 small pizzas * 4 slices = <<3*4=12>>12 pieces.
+George also has 2 large pizzas * 8 slices = <<2*8=16>>16 slices.
+Total, George has 12 + 16 slices = <<12+16=28>>28 slices of pizza.
+Bob will eat 3 slices + 1 = <<3+1=4>>4 slices.
+Susie will eat 1/2 * 4 slices = <<1/2*4=2>>2 slices.
+Bob, Fred and Mark will eat in total 3 + 3 + 3 = <<3+3+3=9>>9 pieces.
+Total slices of pizza eaten will be 3 + 4 + 2 + 9 = <<3+4+2+9=18>>18 pieces.
+Total pizza slices remaining will be 28 pieces - 18 = <<28-18=10>>10 slices left.
+#### 10",0.8480868465430857,1
+gsm8k_87,reasoning,gsm8k,43,8.375,1.5341796875,0.07437662966761191,0.75,0.875,0.9327804736352657,0.29378509521484375,<|end_of_text|>,"Amount spent on textbooks is 960/2 = <<960/2=480>>480 dollars.
+Amount spent on school supplies is 480/4 = <<480/4=120>>120 dollars.
+Amount Derek has left 960-480-120 = <<960-480-120=360>>360 dollars.
+#### 360",0.7134775942541055,1
+gsm8k_88,reasoning,gsm8k,55,4.70703125,1.5458984375,0.07991188626254718,0.75,0.8333333333333334,0.8961267054223464,0.29315948486328125,<|end_of_text|>,"7 leaves fell in the first hour.
+4 leaves fell in the second hour.
+4 leaves fell in the third hour.
+The total number of leaves that fell during the 3 hours is 7 + 4 + 4 = <<7+4+4=15>>15 leaves.
+The average number of leaves that fell per hour is 15 leaves / 3 hours = <<15/3=5>>5 leaves per hour.
+#### 5",0.7242332451090306,1
+gsm8k_89,reasoning,gsm8k,76,6.15625,1.5341796875,0.08423382441043603,0.75,0.9166666666666666,0.9129237139946113,0.29241180419921875,<|end_of_text|>,"The total rain was 2 inches + 1 inches = <<2+1=3>>3 inches on Monday.
+The total rain was 2 * 3 inches = <<2*3=6>>6 inches on Tuesday.
+The total rain was 0 inches + 1 inch = <<0+1=1>>1 inch across Wednesday and Thursday.
+The total rain was 3 inches + 6 inches + 1 inch = <<3+6+1=10>>10 inches on Friday.
+There were 3 inches + 6 inches + 1 inch + 10 inches = <<3+6+1+10=20>>20 inches total last week.
+20 inches/5 days = <<20/5=4>>4 inches average daily rain.
+#### 4",0.8490340745936459,1
+gsm8k_90,reasoning,gsm8k,150,1.4990234375,1.5224609375,0.0816731315276439,0.75,0.8333333333333334,0.9058184345310174,0.29376220703125,"  (Hint: 1 dryer sheet = 1/104 dryer balls)
+Answer:  $0.50
+
+Solution:  We are given that Sophie does...","She does 4 loads of laundry a week and used 1 dryer sheet per load for a total of 4*1 = <<4*1=4>>4 dryer sheets in a week
+She used 4 dryer sheets per week for 52 weeks for a total of 4*52 = <<4*52=208>>208 dryer sheets
+Her box of dryer sheets has 104 sheets so she needs 208/104 = 2 boxes of dryer sheets
+Each box costs $5.50 and she used 2 boxes so she now saves 5.50*2 = $<<5.50*2=11.00>>11.00 by not buying dryer sheets
+#### 11",0.7407043283110055,1
+gsm8k_91,reasoning,gsm8k,32,5.86328125,1.5224609375,0.06670049729793487,0.75,0.9583333333333334,0.9660720204886535,0.29207611083984375,<|end_of_text|>,"For the fourth-grade classes, Jessa needs 3 classes * 30 cupcakes/class = <<3*30=90>>90 cupcakes
+Adding the cupcakes for the P.E. class 50, she needs to make a total of 90 cupcakes + 50 cupcakes = <<90+50=140>>140 cupcakes
+#### 140",0.7416426199765138,1
+gsm8k_92,reasoning,gsm8k,47,2.6875,1.5244140625,0.07699205097247391,0.75,0.875,0.8737011096464515,0.29144287109375,<|end_of_text|>,"The total amount spent on food is $40 + $15 + $25 = $<<40+15+25=80>>80.
+The service charge is $80 x 10/100 = $<<80*10/100=8>>8.
+The tip is $80 x 5/100 = $<<80*5/100=4>>4.
+So, Mr. Arevalo had to pay $80 + $8 + $4 = $<<80+8+4=92>>92 in all.
+Therefore, his change will only be $100 - $92 = $<<100-92=8>>8.
+#### 8",0.7448412669120646,1
+gsm8k_93,reasoning,gsm8k,29,8.5546875,1.5166015625,0.06266635678505289,0.75,0.8333333333333334,0.8982259757777346,0.29219818115234375,<|end_of_text|>,"Joan has (180/3)*2 = <<(180/3)*2=120>>120 white socks.
+The number of blue socks Joan has is 180-120 = <<180-120=60>>60.
+#### 60",0.5767641435722769,1
+gsm8k_94,reasoning,gsm8k,61,3.51171875,1.5263671875,0.08223972566338444,0.75,0.75,0.9149778531754832,0.29343414306640625,<|end_of_text|>,"If ""x"" is the number of European swallows, then, for every one European swallow, there would be 2x American swallows.
+Thus, the total number of swallows would be 2x+x=90 swallows
+Thus, the number of European swallows x=<<30=30>>30.
+And the number of American swallows is 90-30=<<90-30=60>>60.
+A European swallow can carry twice what an American swallow can carry, or 2*5=<<2*5=10>>10 pounds.
+30 European swallows can carry a maximum of 30*10=<<30*10=300>>300 pounds.
+60 American swallows can carry a maximum of 60*5=<<60*5=300>>300 pounds.
+Thus, a flock of 90 birds, with 30 European and 60 American swallows, can carry 300+300=600 pounds
+#### 600",0.6846918465369526,1
+gsm8k_95,reasoning,gsm8k,81,1.158203125,1.5263671875,0.06869872287547585,0.75,0.8333333333333334,0.9234527935203789,0.29229736328125,  1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27....,"Since someone running twice as fast a mile as another person would mean they complete the mile in half as much time, this means Tony would run a mile in 6/2= <<6/2=3>>3 minutes since Tina's time was 6 minutes.
+Since Tom is three times as fast as Tina, for the same reasons as above this means his time is 6/3= <<6/3=2>>2 minutes.
+Altogether then, the total time for all three is then 6+3+2= <<6+3+2=11>>11 minutes.
+#### 11",0.6404228953540051,1
+gsm8k_96,reasoning,gsm8k,31,2.35546875,1.4921875,0.06879243944639372,0.75,0.875,0.9280773473321027,0.29236602783203125,<|end_of_text|>,"First we calculate the number of flowers: 250 + 375 + 320 = <<250+375+320=945>>945€
+Then the expense: 945 X 2 = <<945*2=1890>>1890€
+So, the total expenditure is €<<1890=1890>>1890.
+#### 1890",0.6807311340505073,1
+gsm8k_97,reasoning,gsm8k,133,1.1201171875,1.5341796875,0.061734928461076845,0.75,0.875,0.9417522200526022,0.29254150390625," (1 point)
+Solve: Mark has two dozen eggs to split with his three siblings. How many eggs does each ...","There are 24 eggs because 2 x 12 = <<2*12=24>>24
+There are four eaters because 1 + 3 = <<1+3=4>>4
+They get 6 eggs each because 24 / 4 = <<24/4=6>>6
+#### 6",0.611251780129139,1
+gsm8k_98,reasoning,gsm8k,149,1.681640625,1.5380859375,0.08284419848781524,0.75,0.9166666666666666,0.8894643028124184,0.29315185546875,"  I know that the total number of picks is 12, but I'm not sure how to get the number of yellow pick...","If one third (1/3) of his picks are blue, then 3 times the total number of blue picks equals his total pick count, or 3*12=36 picks
+If half of the picks are red, then he has 36/2=<<36/2=18>>18 red picks
+If the rest of the picks are yellow, then he has 36-18-12=<<36-18-12=6>>6 yellow picks
+#### 6",0.8185574219550147,1
+gsm8k_99,reasoning,gsm8k,136,2.337890625,1.4990234375,0.07431613715674842,0.75,0.75,0.9514410978372551,0.29181671142578125,  (Hint:  Use the formula:  Balance = (Amount in) - (Amount out) + (Amount returned) - (Amount of ga...,"Her gas is half the price as her $60.00 groceries so that's 60/2 = $<<60/2=30.00>>30.00 in gas
+Her card has a balance of $126.00 and she added $60.00 in groceries and $30.00 in gas for a total of 126+60+30 = $<<126+60+30=216.00>>216.00
+Her balance is $216.00 and she returns $45.00 worth of merchandise for a new balance of 216-45 = $<<216-45=171.00>>171.00
+#### 171",0.6448796951157841,1
+gsm8k_100,reasoning,gsm8k,66,3.041015625,1.541015625,0.08186928671489964,0.75,0.9583333333333334,0.9052515791265122,0.29141998291015625,<|end_of_text|>,"If there were 4000 whales in the sea three years ago, and their number doubled this year, then there are 2*4000 = <<4000*2=8000>>8000 whales in the sea this year.
+If the predictions come true, there will be 8000+800 = <<8000+800=8800>>8800 whales in the water next year.
+#### 8800",0.8681574648536591,1
+gsm8k_101,reasoning,gsm8k,46,4.86328125,1.53125,0.0750065731213498,0.75,0.9583333333333334,0.9014626732601441,0.2932891845703125,<|end_of_text|>,"There are 24/3=<<24/3=8>>8 students in the program.
+And 8/2=<<8/2=4>>4 go to the tournament.
+#### 4",0.7820481935818987,1
+gsm8k_102,reasoning,gsm8k,66,4.5703125,1.5048828125,0.08115392252122085,0.75,0.8333333333333334,0.9173605885368032,0.29358673095703125,<|end_of_text|>,"There are 5 school days in a week, so the probability Karen packs a ham sandwich is 3/5 and the probability she packs cake is 1/5
+Multiply the two probabilities to find the probability both things happen: 3/5 * 1/5 = 3/25
+Now divide 3 by 25 and multiply by 100% to express this probability as a percentage: 3/25 * 100% = 12%
+#### 12",0.7443014393841642,1
+gsm8k_103,reasoning,gsm8k,116,1.421875,1.5166015625,0.07436050814007254,0.75,0.8333333333333334,0.8874064729935528,0.29186248779296875,"  (Hint:  Use the formula:  P = 100% of S - 10% of S.  Then solve for P.)
+Solve: James decides to bu...","The combined cost of everything was 2500+3500+2000=$<<2500+3500+2000=8000>>8000
+So he gets an 8000*.1=$<<8000*.1=800>>800 discount
+That means he pays 8000-800=$<<8000-800=7200>>7200
+#### 7200",0.6872574021057479,1
+gsm8k_104,reasoning,gsm8k,123,1.31640625,1.513671875,0.06842919887293629,0.8125,0.875,0.9421592090969285,0.2925262451171875,"  (Hint: 1 year = 52 weeks, 3 times = 156 weeks, 52 weeks + 156 weeks = 208 weeks, 208 weeks - 52 we...","He finished high school in 4-1=<<4-1=3>>3 years
+It takes him 3*3=<<3*3=9>>9 years to finish tertiary education
+So he spends 3+9=<<3+9=12>>12 years on this education
+#### 12",0.09525807501915785,1
+gsm8k_105,reasoning,gsm8k,41,5.37890625,1.544921875,0.07007598031032397,0.75,0.9166666666666666,0.9612114048701015,0.29262542724609375,<|end_of_text|>,"Faye's mother gave her 2 x $20 = $<<2*20=40>>40.
+So, Faye had a total of $20 + $40 = $<<20+40=60>>60.
+Ten cupcakes cost 10 x $1.50 = $<<10*1.5=15>>15.
+Five boxes of cookies cost 5 x $3 = $<<5*3=15>>15.
+Thus, Faye spent $15 + $15 = $<<15+15=30>>30.
+Therefore, Faye has $60 - $30 = $<<60-30=30>>30 left.
+#### 30",0.7286346684386773,1
+gsm8k_106,reasoning,gsm8k,64,3.59375,1.517578125,0.08179488101324317,0.75,0.9583333333333334,0.9305763411688869,0.292877197265625,<|end_of_text|>,"The birds' flying distance between Lake Jim through lake Disney to lake London is 50+60 = <<50+60=110>>110 miles.
+Since each bird flies the 110 miles distance while migrating, the combined distance they fly together is 110*20 = <<110*20=2200>>2200 miles.
+#### 2200",0.8632059397397542,1
+gsm8k_107,reasoning,gsm8k,39,8.3203125,1.529296875,0.07064613094562135,0.75,0.875,0.9218170112320737,0.29174041748046875,<|end_of_text|>,"There are 100 cents in each $1 so $5 gives 5*100 cents = <<5*100=500>>500 cents
+To recover her capital of 500 cents from a selling price of 20 cents per egg she has to sell 500/20 = <<500/20=25>>25 eggs
+There were 30 eggs in the crate to start with so she will have 30-25 = <<30-25=5>>5 eggs left
+#### 5",0.6980876906302851,1
+gsm8k_108,reasoning,gsm8k,42,3.294921875,1.513671875,0.07637380310363874,0.75,0.875,0.9475236640331047,0.292022705078125,<|end_of_text|>,"To find out how much the saleswoman should give her back, we have to find out first how much she spent. She bought apples for 5€, sugar for 3€ and carrots for 17€, so she spent 5€ + 3€ +17€ = <<5+3+17=25>>25€.
+She pays 50€ and the saleswoman must keep 25€, so the seller must give her back 50€ - 25€ = <<50-25=25>>25€
+#### 25",0.7603913475915852,1
+gsm8k_109,reasoning,gsm8k,93,4.08203125,1.5302734375,0.09575740965127554,0.8125,0.9583333333333334,0.8922840455656819,0.29062652587890625,<|end_of_text|>,"Taking the boxes of pans out of the total attic boxes shows that 26 boxes – 6 boxes of pans = 20 boxes are either decorations or teacups.
+Since half of these boxes are decorations, the other half must be made up of 20 boxes / 2 = <<20/2=10>>10 boxes of teacups.
+Each box of cups initially has 5 rows x 4 cups = <<5*4=20>>20 teacups inside.
+Samuel breaks cups each time he picks up a box, which means each box now contains 20 – 2 = <<20-2=18>>18 teacups.
+Therefore, there are 10 boxes * 18 teacups = <<10*18=180>>180 teacups left.
+#### 180",0.4228803333428055,1
+gsm8k_110,reasoning,gsm8k,117,1.150390625,1.5166015625,0.06466645813447613,0.75,0.8333333333333334,0.8800598609628089,0.29225921630859375," (Hint: Use the distributive property.)
+Solve: Emani has $30 more money than Howard. If Emani has $1...","If Emani has $150, Howard has $150 - $30 = $<<150-30=120>>120
+In total, they have $120 + $150 = $<<120+150=270>>270
+When they share this money equally, each gets $270 / 2 people = $<<270/2=135>>135/person
+#### 135",0.5884604555842724,1
+gsm8k_111,reasoning,gsm8k,45,3.59375,1.52734375,0.07297406886012589,0.75,0.8333333333333334,0.8978191042990772,0.29319000244140625,<|end_of_text|>,"First find the total cost of the accident: $40,000 + $70,000 = $<<40000+70000=110000>>110,000
+Then multiply the total cost by the percentage Carl has to pay to find his personal cost: $110,000 * .2 = $<<110000*.2=22000>>22,000
+#### 22000",0.6613985273047184,1
+gsm8k_112,reasoning,gsm8k,58,4.16796875,1.51953125,0.08531420076827272,0.75,0.9583333333333334,0.9548385041119057,0.29282379150390625,<|end_of_text|>,"Pouring the 5-liter bucket into the 3-liter bucket leaves 5-3=2 liters, which go into the 6-liter bucket.
+Then there are 6-2=<<6-2=4>>4 liters that can be added.
+#### 4",0.9055389588094721,1
+gsm8k_113,reasoning,gsm8k,76,6.43359375,1.541015625,0.08440686591718398,0.75,0.9166666666666666,0.9005449612930304,0.29248046875,<|end_of_text|>,"If the ship traveled 100 miles to the north, it sailed for a distance of 3 * 100 miles = 300 miles to the east on the second day.
+On the third day, the sheep sailed for 300 miles + 110 miles = <<300+110=410>>410 miles.
+The distance covered by the ship in the three days is 410 miles + 300 miles + 100 miles = <<410+300+100=810>>810 miles
+#### 810",0.8445235314418839,1
+gsm8k_114,reasoning,gsm8k,146,1.111328125,1.533203125,0.07248447597797107,0.75,0.875,0.875948304620576,0.2935028076171875," (Round to the nearest dollar.)
+Ali and Leila reserve their places for a trip to Egypt. The price is...","After the discount, the price will be $147 - 14 = $<<147-14=133>>133.
+For both Ali and Leila together, it will cost $133* 2 = $<<133*2=266>>266.
+#### 266",0.678503643133369,1
+gsm8k_115,reasoning,gsm8k,120,1.083984375,1.5625,0.07248580129790559,0.75,0.9583333333333334,0.968109209764415,0.2925567626953125," Show steps.
+Solve: Danielle's apartment has 6 rooms. Heidi's apartment has 3 times as many rooms as...","Heidi's apartment has 6*3=<<6*3=18>>18 rooms.
+Grant's apartment has 18/9=<<18/9=2>>2 rooms.
+#### 2",0.7862277188225965,1
+gsm8k_116,reasoning,gsm8k,49,2.30078125,1.515625,0.07471569685976774,0.75,0.875,0.9572279157322529,0.29193115234375,<|end_of_text|>,"Jaylen has 2 * 2 = <<2*2=4>>4 bell peppers
+Jaylen has (20 / 2) - 3 = <<20/2-3=7>>7 green beans
+Jaylen has a total of 4 + 7 + 5 + 2 = <<4+7+5+2=18>>18 vegetables
+#### 18",0.7489716722330818,1
+gsm8k_117,reasoning,gsm8k,140,1.421875,1.5400390625,0.0776869036601828,0.75,0.875,0.877619310478634,0.29434967041015625,"  (a) 3 (b) 4 (c) 5 (d) 6
+Answer: (a) 3
+Explanation:  The number of weeks Cody took to read his seri...","Cody needs to read 54 books - 6 books - 3 books = <<54-6-3=45>>45 books.
+Cody read 9 books each week after = 45 books / 9 books per week = <<45/9=5>>5 weeks.
+Cody read for 1 week + 1 week + 5 weeks = <<1+1+5=7>>7 weeks total.
+#### 7",0.7177798368445815,1
+gsm8k_118,reasoning,gsm8k,98,1.1533203125,1.560546875,0.06811116565346309,0.8125,0.9166666666666666,0.8521586242198076,0.2915496826171875, (1 point) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33...,"Twice the number of Aaron's brothers is 6+2=<<6+2=8>>8.
+Aaron has 8/2=<<8/2=4>>4 brothers.
+#### 4",0.09858472669465462,1
+gsm8k_119,reasoning,gsm8k,60,4.8046875,1.5390625,0.08714470407358625,0.75,0.8333333333333334,0.9475366023896936,0.29210662841796875,<|end_of_text|>,"The capacity of the first tank is 7000 gallons, and if it is filled up to 3/4 full, it carries 3/4*7000 = 5250 gallons.
+When the second tank is filled up to 4/5 of its capacity, it carries 4/5*5000 = <<4/5*5000=4000>>4000 gallons.
+The total amount of water in the first two tanks is 5250+4000 = <<5250+4000=9250>>9250 gallons.
+If Mr. Finnegan fills the third tank with water up to half its capacity, the tank fills up with 1/2*3000 = <<1500=1500>>1500 gallons.
+In total, the three tanks have 9350+1500 = <<9350+1500=10850>>10850 gallons of water.
+#### 10850",0.8239392717956604,1
+gsm8k_120,reasoning,gsm8k,32,6.75390625,1.521484375,0.06336854949479714,0.75,0.7916666666666666,0.9171122383773981,0.2927398681640625,<|end_of_text|>,"Corveus lacks 6 - 4 = <<6-4=2>>2 hours of sleep every day.
+Therefore, Corveus' total hours of lack of sleep every week is 2 x 7 = <<2*7=14>>14.
+#### 14",0.5494670146230256,1
+gsm8k_121,reasoning,gsm8k,139,1.4453125,1.51953125,0.07652701308720486,0.75,0.9166666666666666,0.9375421681121859,0.294342041015625,"  (Hint: 1 serving = 6 ounces)
+Answer:  $6.00
+
+Solution:  We are given that Tricia buys large bottle...","She drinks half a container of a 6 serving bottle of iced coffee a day so she drinks 6/2 = <<6/2=3>>3 servings a day
+There are 7 days in a week and she needs enough bottles to last for 2 weeks so that's 7*2 = <<7*2=14>>14 days
+She drinks 3 servings a day for 14 days so that's 3*14 = <<3*14=42>>42 servings
+Each bottle holds 6 servings and she drinks 42 servings in a week so she needs 42/6 = <<42/6=7>>7 bottles
+The iced coffee is on sale for $3.00 a bottle and she needs 7 bottles for a total of 3*7 = $<<3*7=21.00>>21.00
+#### 21",0.7651139490867775,1
+gsm8k_122,reasoning,gsm8k,62,8.3203125,1.5458984375,0.08030016390218,0.75,0.8333333333333334,0.8690323868993394,0.2927703857421875,<|end_of_text|>,"In her old company, if she worked for three years, the total number of months she was paid for is 3 years*12, which is the number of months in a year = <<3*12=36>>36 months.
+If each month she was paid $5000, her total earnings in the old company were $5000* 36 =$<<5000*36=180000>>180000
+In her new company, she is paid 20% more, which is 20/100*$5000 = $<<20/100*5000=1000>>1000 per month more than what she was paid at the old company.
+In total, she earns $5000+$1000 = $<<5000+1000=6000>>6000 per month in her new company.
+Since she's worked five months more in the new company than the old company, she has worked for 36+5 = <<36+5=41>>41 months in the new company.
+The total amount she's earned in the new company is $6000*41 = $<<6000*41=246000>>246000
+The combined total for both companies is $246000+$180000 = $<<246000+180000=426000>>426000
+#### 426000",0.7225812760460464,1
+gsm8k_123,reasoning,gsm8k,35,3.25,1.5263671875,0.07379236371654702,0.75,0.9166666666666666,0.8774948743667516,0.29254150390625,<|end_of_text|>,"60% of female alligators are adults because 100 - 40 = <<100-40=60>>60
+There are 25 female alligators because 15 / .6 = <<15/.6=25>>25
+There are 50 alligators in total because 25 / .5 = <<25/.5=50>>50
+There are 25 male alligators because 50 / 2 = <<50/2=25>>25
+#### 25",0.7371635040126231,1
+gsm8k_124,reasoning,gsm8k,37,2.689453125,1.5302734375,0.06682158636682516,0.75,0.9583333333333334,0.9215498754452952,0.29254150390625,<|end_of_text|>,"A year has 12 months. If 1 month costs $10, then a year will cost $12 * 10 = $<<12*10=120>>120 per year without an annual subscription
+If the annual subscription has a 20% discount then you would pay $120 * (1-20%) = $<<120*(1-20*.01)=96>>96 for the annual subscription
+#### 96",0.7204699349808554,1
+gsm8k_125,reasoning,gsm8k,57,2.859375,1.529296875,0.08193261261326026,0.75,0.9166666666666666,0.9339919853703967,0.2936248779296875,<|end_of_text|>,"Each dog would eat 250 grams so 4 will would eat 4 x 250 grams = <<4*250=1000>>1000 grams of food per day.
+1.000 grams is equal a 1 kilogram.
+Emily is going on vacation for 14 days and with the 4 dogs together eating 1 kilogram of food per day, 14 days x 1 kg of food/day = <<14*1=14>>14 kg of food would be enough for two weeks.
+#### 14",0.8217584564603412,1
+gsm8k_126,reasoning,gsm8k,69,3.162109375,1.529296875,0.08559339772573374,0.75,0.9166666666666666,0.9150344971462401,0.29283905029296875,<|end_of_text|>,"Bryan spends 5+20+5 =<<5+20+5=30>>30 minutes traveling to work.
+He does this twice a day, so he spends 30*2=<<30*2=60>>60 minutes traveling per day.
+Thus, he spends 60/60=<<60/60=1>>1 hour traveling to and from work every day.
+Thus, he spends 1 hour*365 days =<<1*365=365>>365 hours traveling per year.
+#### 365",0.8584670938954617,1
+gsm8k_127,reasoning,gsm8k,61,3.18359375,1.53515625,0.0791893983149189,0.75,0.875,0.8722264646802648,0.29221343994140625,<|end_of_text|>,"Barbara will be able to sell all her stuffed animals for 9 x $2 = $<<9*2=18>>18.
+Trish has 9 x 2 = <<9*2=18>>18 stuffed animals.
+Trish will be able to sell all her stuffed animals for 18 x $1.50 = $<<18*1.5=27>>27.
+Therefore, they will donate a total of $18 + $27 = $<<18+27=45>>45 to their class funds.
+#### 45",0.7549094429386033,1
+gsm8k_128,reasoning,gsm8k,55,4.08984375,1.52734375,0.08345129524152727,0.75,0.875,0.9314005242420215,0.29215240478515625,<|end_of_text|>,"First find the final number of green M&Ms by subtracting 12 from the starting number: 20 M&Ms - 12 M&Ms = <<20-12=8>>8 green M&Ms
+Then find the final number of red M&Ms by dividing the starting number by half: 20 M&Ms / 2 = <<20/2=10>>10 red M&Ms
+Then find the total number of M&Ms at the end by adding the number of red, green and yellow M&Ms: 8 M&Ms + 10 M&Ms + 14 M&Ms = <<8+10+14=32>>32 M&Ms
+Then divide the number of green M&Ms by the total number of M&Ms and multiply by 100 to find the percentage chance Carter gets a green M&M: 8 M&Ms / 32 M&Ms * 100 = <<8/32*100=25>>25%
+#### 25",0.8182080018856479,1
+gsm8k_129,reasoning,gsm8k,79,2.390625,1.5126953125,0.09284574721069806,0.75,0.875,0.904624787806578,0.29273223876953125,<|end_of_text|>,"Javier ate 7.5 ounces of meat ravioli because 5 x 1.5 = <<7.5=7.5>>7.5
+He ate 2.5 ounces of pumpkin ravioli because 2 x 1.25 = <<2*1.25=2.5>>2.5
+He ate 4 ounces of cheese ravioli because 4 x 1 = <<4*1=4>>4
+Javier ate 14 ounces in total because 7.5 + 2.5 + 4 = <<7.5+2.5+4=14>>14
+His brother ate 15 ounces of pumpkin ravioli because 12 x 1.25 = 15
+The winner ate 15 ounces in total because 15 > 14
+#### 15",0.8928312735113778,1
+gsm8k_130,reasoning,gsm8k,43,7.65234375,1.5283203125,0.07379638734036288,0.75,0.7916666666666666,0.939829428708793,0.29219818115234375,<|end_of_text|>,"Since the hypotenuse of a triangle is found by the square root of the base squared plus the height squared.
+The square of the base of the first triangle is 4*4=<<4*4=16>>16 square inches
+The square of the height of the first triangle is 3*3=<<3*3=9>>9 square inches.
+The sum of the squares of the base and the height of the first triangle is 16+9=<<16+9=25>>25
+The square root of the sum of the base and the height of the first triangle, which is the hypotenuse of the triangle, is √25=5 inches.
+Since the perimeter of a triangle is found by adding the sides of the triangle, the base and height of the triangle sum up to 3+4=<<3+4=7>>7 inches
+If you add the hypotenuse of the triangle the perimeter of the triangle becomes 7+5=<<7+5=12>>12 inches.
+#### 12",0.6614422295864767,1
+gsm8k_131,reasoning,gsm8k,126,1.1435546875,1.5419921875,0.06821609994176485,0.75,0.8333333333333334,0.9514937161277452,0.2919158935546875,  Carter can read 20 pages in 1 hour.  Carter can read 20 pages in 1 hour.  Carter can read 20 pages...,"Lucy can read 20 more pages than Oliver who can read 40 pages so Lucy can read 40+20 = <<20+40=60>>60 pages
+Carter can read half as many pages as Lucy who can read 60 pages so he can read 60/2 = <<30=30>>30 pages in 1 hour
+#### 30",0.6481425810096001,1
+gsm8k_132,reasoning,gsm8k,135,1.1201171875,1.53515625,0.06274604982401982,0.75,0.875,0.9478515371247326,0.2922821044921875," (1 point)
+Solve: Four small boxes can fit in one big box. If 50 big boxes can fit four small boxes ...","If 50 big boxes are fit 4 small boxes each, the number of small boxes is 4*50 = <<50*4=200>>200
+Since the small boxes have 40 candles each, there are 40*200 = <<40*200=8000>>8000 candles in total.
+#### 8000",0.6258100359406357,1
+gsm8k_133,reasoning,gsm8k,43,9.5078125,1.5283203125,0.07246325037172047,0.75,0.875,0.8926824708383454,0.29195404052734375,<|end_of_text|>,"The second laptop costs $500*3=$<<500*3=1500>>1500.
+Adam needs to spend $1500+$500=$<<1500+500=2000>>2000 for both.
+#### 2,000",0.7025175839713307,1
+gsm8k_134,reasoning,gsm8k,34,5.1640625,1.53515625,0.07016921969260403,0.75,0.875,0.9735546639944942,0.29325103759765625,<|end_of_text|>,"There were 10000 - 7000 = <<10000-7000=3000>>3000 women and children.
+There were 3000 ÷ (5+1) = <<3000/(5+1)=500>>500 women.
+There are 500 × 5 = <<500*5=2500>>2500 children at the basketball match.
+#### 2500",0.6942564012363895,1
+gsm8k_135,reasoning,gsm8k,124,1.1015625,1.5302734375,0.058242392380494876,0.75,0.875,0.9613076971667632,0.29262542724609375," (Round to the nearest tenth.)
+Solve: Tyler weighs 25 pounds more than Sam. Peter weighs half as muc...","Tyler weighs 65*2=<<65*2=130>>130 pounds.
+Sam weighs 130-25=<<130-25=105>>105 pounds.
+#### 105",0.5848276908264215,1
+gsm8k_136,reasoning,gsm8k,60,2.796875,1.55078125,0.07969300149783357,0.8125,0.875,0.9372244715402713,0.29418182373046875,<|end_of_text|>,"She will spend 3*$8=$<<3*8=24>>24 on small light bulbs.
+In total she will spend $24+$12=$<<24+12=36>>36 on the 4 light bulbs.
+She will have $60-$36=$<<60-36=24>>24 left over.
+#### 24",0.17622757641523912,1
+gsm8k_137,reasoning,gsm8k,138,1.2197265625,1.5302734375,0.07514979070370542,0.75,0.9166666666666666,0.9455005710401726,0.29253387451171875,"  (Hint: 1 pound = 0.453 kg)
+Lindsey bought 2 exercise bands to intensify her workout.  Each band ad...","She has 2 exercise bands that are both 5 pounds of resistance so that’s 2*5 = <<2*5=10>>10 pounds
+She has a pair of 10-pound dumbbells so that’s 2*10 = <<10*2=20>>20 pounds
+With both the bands and dumbbells, she will squat 10+20 = <<10+20=30>>30 pounds
+#### 30",0.7739831396417415,1
+gsm8k_138,reasoning,gsm8k,37,4.66015625,1.5595703125,0.06732059534385278,0.75,0.8333333333333334,0.9554292010607801,0.29332733154296875,<|end_of_text|>,"Jose collected 80 - 14 = <<80-14=66>>66 rocks.
+Albert collected 66 + 20 = <<66+20=86>>86 rocks.
+Thus, Albert collected 86 - 80 = <<86-80=6>>6 more rocks than Joshua.
+#### 6",0.6227258480006099,1
+gsm8k_139,reasoning,gsm8k,176,1.2587890625,1.5146484375,0.09641403135923281,0.75,0.875,0.8960043700063802,0.291748046875,"  (Hint:  You will need to use the formula for the sum of a geometric series.)
+Solve: Zach was a wai...","The twins ordered a cheeseburger each so 2*13.50 = $<<2*13.50=27.00>>27.00 for both cheeseburgers
+Everyone ordered a dessert so 4*6 = $<<4*6=24.00>>24.00 for dessert
+When you add all the meals together they spent 25.50+35.00+27.00+8.50+24.00 = $<<25.50+35.00+27.00+8.50+24.00=120.00>>120.00
+Zach's tip was 20% so .20*120.00 = $<<20*.01*120=24.00>>24.00
+When you add up the meals $120.00 and Zach's tip of $24.00 then the total cost is 120.00 + 24.00 = $<<120+24.00=144.00>>144.00
+#### 144",0.9343614176241456,1
+gsm8k_140,reasoning,gsm8k,99,1.38671875,1.521484375,0.07525170358734883,0.75,0.875,0.9478152294997152,0.29248809814453125,"  (a)  50,000 (b)  25,000 (c)  12,500 (d)  6,250
+Answer:  (a)  50,000
+(b)  25,000
+(c)  12,500
+(d)  6...","He got 100,000*.7=<<100000*.7=70000>>70,000 votes from the first area
+He got 70,000*2=<<70000*2=140000>>140,000 votes in the remaining areas
+So in total he got 140,000+70,000=<<140000+70000=210000>>210,000 votes
+#### 210,000",0.7435588996996677,1
+gsm8k_141,reasoning,gsm8k,27,7.95703125,1.53125,0.06294672181497556,0.75,0.8333333333333334,0.9575730641178288,0.292633056640625,<|end_of_text|>,"He spent 17 + 11 = €<<17+11=28>>28.
+So, he still has 100 – 28 = €<<100-28=72>>72 remaining.
+#### 72",0.5938263703851866,1
+gsm8k_142,reasoning,gsm8k,112,1.490234375,1.5283203125,0.06992266580000904,0.75,0.8333333333333334,0.9702419563270176,0.29312896728515625,"  (a) 1 (b) 2 (c) 3 (d) 4 (e) 5
+Answer: (a) 1
+Explanation:  The number of sodas James drinks a day i...","He bought 5*12=<<5*12=60>>60 sodas
+So he had 60+10=<<60+10=70>>70 sodas
+So he drank 70/7=<<70/7=10>>10 sodas per day
+#### 10",0.6591166228236346,1
+gsm8k_143,reasoning,gsm8k,58,3.763671875,1.5234375,0.08337265558451963,0.75,0.9583333333333334,0.8710860275238801,0.2935943603515625,<|end_of_text|>,"When Jerry reads 30 pages on Saturday, he would be remaining with 93-30 = <<93-30=63>>63 pages.
+After reading an additional 20 pages on Sunday, he would be remaining with 63 – 20 = <<63-20=43>>43 pages.
+#### 43",0.8478427373891096,1
+gsm8k_144,reasoning,gsm8k,123,1.1162109375,1.513671875,0.06329292882038401,0.75,0.875,0.9199003239582312,0.29250335693359375," (Round to the nearest tenth.)
+Archibald and his brother are playing tennis against each other. Arch...","They have played 30 total games because 12 + 18 = <<12+18=30>>30
+The proportion won by Archibald is .4 because 12 / 30 = <<12/30=.4>>.4
+The percentage he has won in 40% because .4 x 100% = 40%
+#### 40",0.621336236183912,1
+gsm8k_145,reasoning,gsm8k,49,4.3828125,1.5654296875,0.07606385554088517,0.75,0.8333333333333334,0.9407002398208429,0.29193115234375,<|end_of_text|>,"In the beginning, there are 30/100 * 1800 students = <<30/100*1800=540>>540 foreign students.
+In the next semester, there are going to be 540 foreign students + 200 foreign students = <<540+200=740>>740 foreign students in total.
+#### 740",0.7151348252432869,1
+gsm8k_146,reasoning,gsm8k,46,6.65625,1.5263671875,0.07351098062945652,0.75,0.9166666666666666,0.9435803897070548,0.29160308837890625,<|end_of_text|>,"The 19 fishermen who caught 400 fish each caught 400*19 = <<400*19=7600>>7600 fish.
+If they caught a total of 10000 fish, the twentieth fisherman caught 10000-7600 = <<10000-7600=2400>>2400 fish alone.
+#### 2400",0.7688691249000357,1
+gsm8k_147,reasoning,gsm8k,77,4.3203125,1.5400390625,0.08826303123383074,0.75,0.875,0.9223063580417507,0.29300689697265625,<|end_of_text|>,"Removing the time of the train ride from the journey shows that his trip to get on the train took him 8 hours – 6 hours = <<8-6=2>>2 hours.
+Converting this time into minutes shows that getting to the train took 2 hours * 60 minutes/hour = <<2*60=120>>120 minutes.
+Waiting for the train to arrive took twice as long as his walk, so 15 minutes * 2 = <<15*2=30>>30 minutes.
+This means that his bus ride must have taken 120 minutes – 30 minutes - 15 minutes = <<120-30-15=75>>75 minutes.
+#### 75",0.849045979555943,1
+gsm8k_148,reasoning,gsm8k,144,1.11328125,1.5517578125,0.07159301927217766,0.75,0.9583333333333334,0.908588365648621,0.29349517822265625," (Round to the nearest whole number.)
+Solve: An online newspaper had listed 100 visitors in October....","There was an increase of 100 x 15/100 = <<100*15/100=15>>15 visitors in November.
+So, the number of visitors in November was 100 + 15 = <<100+15=115>>115.
+In December, the number of visitors was 115 + 15 = <<115+15=130>>130
+Therefore, a total of 100 + 115 + 130 = <<100+115+130=345>>345 visitors listed in these three months.
+#### 345",0.7472276298538135,1
+gsm8k_149,reasoning,gsm8k,61,1.1455078125,1.5400390625,0.06403015203764188,0.75,0.75,0.9012811255949925,0.2926483154296875,  1.  2.  3.  4.  5.  6.  7.  8.  9.  10.  11.  12.  13.  14.  15.  16.  17.  18.  19.  20.  21.  22...,"He writes 5*2=<<5*2=10>>10 pages a day
+So he writes 10*7=<<10*7=70>>70 pages a week
+That means he writes for 70/10=<<70/10=7>>7 hours
+#### 7",0.5146446575164613,1
+gsm8k_150,reasoning,gsm8k,38,5.234375,1.5244140625,0.07127159680102685,0.75,0.875,0.9118968601688691,0.29296112060546875,<|end_of_text|>,"672/4 = <<672/4=168>>168 balloons
+168 * (1/2) = <<168*(1/2)=84>>84 balloons
+Anya took 84 balloons home.
+#### 84",0.6872695074903525,1
+gsm8k_151,reasoning,gsm8k,46,1.921875,1.529296875,0.075047428806791,0.75,0.875,0.9441724266006192,0.2919464111328125,<|end_of_text|>,"For each liter of chlorine, I can save $10 x .20 = $<<10*.20=2>>2.
+For each box of soap, I can save $16 x .25 = $<<16*.25=4>>4.
+With the 3 liters of chlorine, I can save $2 x 3 = $<<3*2=6>>6.
+With the 5 boxes of soap, I can save $4 x 5 = $<<4*5=20>>20.
+Therefore, I can save a total of $6 + $20 = $<<6+20=26>>26.
+#### 26",0.7454006907204085,1
+gsm8k_152,reasoning,gsm8k,134,1.265625,1.533203125,0.07807093902506589,0.75,0.875,0.9252141271712114,0.2925872802734375,"  (a) 1 (b) 2 (c) 3 (d) 4 (e) 5
+Answer:  (a) 1 (b) 2 (c) 3 (d) 4 (e) 5
+Solution:  Jeremy loves to pl...","Since the word score after being tripled was 30 points, then the word score before tripling was 30/3=<<30/3=10>>10 points.
+If before the word score was tripled, the first and third letters were each valued at one point apiece, then the value of the middle letter was 10-1-1=<<10-1-1=8>>8 points.
+#### 8",0.759393528558142,1
+gsm8k_153,reasoning,gsm8k,163,1.0849609375,1.541015625,0.08015686123528383,0.75,0.9166666666666666,0.9030998018455092,0.29358673095703125," (1 point)
+Solve: Emery and Serena go to their school library, and each borrows a copy of The life o...","If Emery took twenty days to read the book, then it took Serena 5*20 = <<20*5=100>>100 days to read the whole book.
+The total number of days taken by the two to read the book is 100+20 = <<100+20=120>>120 days.
+The average number of days the two take to read the book is 120/2 = <<120/2=60>>60 days.
+#### 60",0.7927221549751872,1
+gsm8k_154,reasoning,gsm8k,34,2.83984375,1.505859375,0.07199623534042539,0.75,0.875,0.9343878618115099,0.29395294189453125,<|end_of_text|>,"First find how many deer have 8 antlers: 920 deer * 10% = <<920*10*.01=92>>92 deer
+Then divide that number by 4 to find how many deer meet both criteria: 92 deer / 4 = <<92/4=23>>23 deer
+#### 23",0.6934686743718927,1
+gsm8k_155,reasoning,gsm8k,32,4.6953125,1.50390625,0.06451472823219755,0.75,0.9583333333333334,0.8886887447040624,0.293212890625,<|end_of_text|>,"First find the number of boats eaten by fish: 30 boats * 20% = <<30*20*.01=6>>6 boats
+Then subtract the two groups of boats that were destroyed from the original number to find the number left: 30 boats - 6 boats - 2 boats = <<30-6-2=22>>22 boats
+#### 22",0.6828085022206398,1
+gsm8k_156,reasoning,gsm8k,65,2.90234375,1.52734375,0.08272408327436023,0.75,0.9166666666666666,0.9166496552548757,0.29344940185546875,<|end_of_text|>,"If Anthony has 12 pets, the number of cats is 2/3 * 12 pets = <<12*2/3=8>>8 cats
+The number of dogs that Anthony have is 12 pets - 8 cats = <<12-8=4>>4 dogs
+Leonel has 1/2 * 8 cats = <<8*1/2=4>>4 cats.
+If Leonel has seven more dogs than Anthony, then he has 4 dogs + 7 dogs = <<7+4=11>>11 dogs
+The total number of pets the two have is 11 dogs for Leonel + 4 cats for Leonel + 4 dogs for Anthony + 8 cats for Anthony = <<11+4+4+8=27>>27
+#### 27",0.8252651898134346,1
+gsm8k_157,reasoning,gsm8k,40,5.265625,1.544921875,0.06973434359729883,0.75,0.8333333333333334,0.9089884754455122,0.29296112060546875,<|end_of_text|>,"Martha has 6/2=<<6/2=3>>3 yellow butterflies.
+Martha has 6+3=<<6+3=9>>9 blue and yellow butterflies.
+Martha has 19-9=<<19-9=10>>10 black butterflies.
+#### 10",0.6349959714824693,1
+gsm8k_158,reasoning,gsm8k,48,4.32421875,1.51171875,0.07400272233178799,0.75,0.7916666666666666,0.9610317924122408,0.29230499267578125,<|end_of_text|>,"The total liters of juice he has is 5 jars x 2 liters/jar = <<5*2=10>>10 liters of juice
+Then he needs to convert this amount to milliliters: 10 liters x 1000 milliliters/liter = <<10000=10000>>10,000 milliliters
+He can fill up to 10,000 ml / 250 ml/glass = <<10000/250=40>>40 glasses
+#### 40",0.6720397364045386,1
+gsm8k_159,reasoning,gsm8k,167,1.078125,1.548828125,0.07837985023167814,0.75,1.0,0.9442792437953474,0.293121337890625," (1 point)
+Solve: Max loves to play video games. He played for 2 hours on Wednesday and the same tim...","Max played on Friday three hours more than on Wednesday, so he played for 2 + 3 = <<2+3=5>>5 hours.
+In total he played 2 + 2 + 5 = <<2+2+5=9>>9 hours.
+He was playing for three days, so on average, he spent 9 / 3 = <<9/3=3>>3 hours playing video games every day.
+#### 3",0.8627756829156447,1
+gsm8k_160,reasoning,gsm8k,51,5.31640625,1.5302734375,0.07599742267728364,0.75,0.8333333333333334,0.9490784738545304,0.29294586181640625,<|end_of_text|>,"The number of square feet used for fruit is 64 / 2 = <<64/2=32>>32 square feet
+The number of square feet used for strawberries is 32 / 4 = <<32/4=8>>8 square feet
+#### 8",0.7107671396819123,1
+gsm8k_161,reasoning,gsm8k,117,1.10546875,1.5361328125,0.06997945414518554,0.75,0.9166666666666666,0.8943271327380776,0.29334259033203125," (Round to the nearest tenth.)
+Solve: If Clover goes for a 1.5-mile walk in the morning and another ...","He walks 1.5 miles in the morning and 1.5 miles in the evening so that’s 1.5+1.5 = <<1.5+1.5=3>>3 miles
+If he walks 3 miles everyday, for 30 days then he walks 3*30 = <<3*30=90>>90 miles in 30 days
+#### 90",0.6967618146902351,1
+gsm8k_162,reasoning,gsm8k,119,1.158203125,1.5498046875,0.07108486435824272,0.75,0.8333333333333334,0.9310911014701665,0.2914276123046875," (Hint: Use the Pythagorean Theorem.)
+In a triangle with angles A, B, and C, A is 60 degrees, and B ...","Since the angles in a triangle adds up to 180, and A is 40 degrees, B and C have a total of 180-60 = <<180-60=120>>120 degrees.
+Since B is two times bigger than C, the total of the angles of B and C is equal to 2C+C = 120
+3C=120
+The angle of C is C=120/3
+C is <<40=40>>40
+Since B is two times as big as C, B is 2*40 = 80 degrees.
+#### 80",0.6724175806995264,1
+gsm8k_163,reasoning,gsm8k,159,1.2666015625,1.5546875,0.08547272331403967,0.75,0.8333333333333334,0.9285004285130926,0.29161834716796875,"  (a) 10 (b) 20 (c) 30 (d) 40 (e) 50
+Answer: (a) 10
+Explanation:  Jean the jaguar has a beautiful fu...","If 30 is half the number of her spots, then she has 30*2=<<30*2=60>>60 spots total.
+If one-third of her spots are located on her back and hindquarters, then she has 60/3=<<60/3=20>>20 spots located on her back and hindquarters.
+If the reaming spots are located on her sides, then 60-30-20=<<60-30-20=10>>10 spots are located on her sides.
+#### 10",0.8047143820585991,1
+gsm8k_164,reasoning,gsm8k,71,2.859375,1.525390625,0.0844915227895559,0.75,0.875,0.897846680738125,0.29186248779296875,<|end_of_text|>,"Horatio never got to read 70 / 14 = <<70/14=5>>5 sonnets.
+He read his lady 7 sonnets, so he wrote 7 + 5 = <<7+5=12>>12 sonnets in all.
+#### 12",0.8195407575798391,1
+gsm8k_165,reasoning,gsm8k,29,4.56640625,1.5439453125,0.06781954808019225,0.75,0.875,0.8797252619794289,0.2912750244140625,<|end_of_text|>,"The area of a square is calculated as length * width. Because all a square has all sides equal then we can say that given a side S, the area is S*S
+For square A of sides A, the area is A*A=25 or A^2=25
+Solving for A we know that A=<<5=5>>5
+For square B of sides B, the area is B*B=81 or B^2=81
+Solving for B we know that B=<<9=9>>9
+The side difference between A and B is 9-5=<<9-5=4>>4
+#### 4",0.6595370686663441,1
+gsm8k_166,reasoning,gsm8k,139,1.1025390625,1.5537109375,0.06723043020664711,0.75,0.875,0.9154787759947008,0.29175567626953125," (1 point)
+Solve: Beth went shopping. She bought 15 more cans of peas than twice the number of cans ...","Let the number of cans of corn she bought be a
+Twice the number of corn cans is 2*a = 2a
+The 35 cans of peas were 15 more than twice the number of corn cans which means 15+2a = 35
+Solving the equation: 2a = 20
+a = 20/2 = <<20/2=10>>10 cans of corn
+#### 10",0.6600444251468162,1
+gsm8k_167,reasoning,gsm8k,139,1.458984375,1.5185546875,0.07558408135732303,0.75,0.9166666666666666,0.9288377603400546,0.2920074462890625,"  (a) 10 feet (b) 20 feet (c) 30 feet (d) 40 feet
+Answer: (a) 10 feet
+Explanation:  The distance fro...","He climbed 3*10=<<3*10=30>>30 feet of stairs
+He then climbed 30/2=<<30/2=15>>15 feet of rope
+Finally, he climbed a 15+10=<<15+10=25>>25 foot ladder
+So in total, he climbed 30+15+25=<<30+15+25=70>>70 feet
+#### 70",0.7796507327100888,1
+gsm8k_168,reasoning,gsm8k,75,4.13671875,1.5537109375,0.08897027752731138,0.8125,0.875,0.9046869534003329,0.29198455810546875,<|end_of_text|>,"At the meeting, 200-100=<<200-100=100>>100 people decided to have a snack.
+20 new people came in to snack and the area had 100+20=<<100+20=120>>120 of them eating.
+120/2=<<120/2=60>>60 people got full and left.
+10 more new people came to join in the snacking so 60+10=<<10+60=70>>70 people were eating.
+After 30 people left, 70-30=<<70-30=40>>40 people who were eating remained.
+In the end, only 40/2=<<40/2=20>>20 kept eating.
+#### 20",0.2767604558641753,1
+gsm8k_169,reasoning,gsm8k,90,1.267578125,1.5666666666666667,0.054954610077387736,0.75,0.7916666666666666,0.9976468169723902,0.30700276692708334,  16 weeks = 16 × 7 = 112 days.  Sandra eats 3 beignets every morning.  How many beignets will she e...,"She eats 3 beignets every morning and there are 7 days in a week so she eats 3*7 = <<3*7=21>>21 beignets in a week
+She eats 21 beignets in a week so over 16 weeks she will have eaten 21*16 = <<336=336>>336 beignets
+#### 336",0.33115600872427037,1
+gsm8k_170,reasoning,gsm8k,116,1.12109375,1.484375,0.057005550690499514,0.75,0.8333333333333334,0.9962410411992657,0.30625152587890625," (1 point)
+Solve: Billy has $25 less than twice the money Sam has. If Sam has $75, how much money do...","Billy has $25 less than twice Sam's money, or 2 * $75 - $25 = $150 - $25 = $<<2*75-25=125>>125.
+Together they have $75 + $125 = $<<75+125=200>>200.
+#### 200",0.403589085473495,1
+gsm8k_171,reasoning,gsm8k,51,4.51171875,1.5244140625,0.07792933590406335,0.75,0.9166666666666666,0.9365311061951377,0.29248046875,<|end_of_text|>,"Kimberley and Houston collected 10+12 = <<10+12=22>>22 pounds of firewood.
+You can find how much Ela collected by subtracting that amount from the total amount collected: 35-22 = <<35-22=13>>13 pounds.
+#### 13",0.7984402423761424,1
+gsm8k_172,reasoning,gsm8k,36,5.5546875,1.521484375,0.06461304983752578,0.75,0.9166666666666666,0.9602196450186673,0.2930908203125,<|end_of_text|>,"The pie shop has 6 x 10 = <<6*10=60>>60 slices of custard pie.
+Therefore, the pie shop will earn $3 x 60 = $<<3*60=180>>180 for the 60 slices of custard pie.
+#### 180",0.6745147430042326,1
+gsm8k_173,reasoning,gsm8k,124,1.1123046875,1.5107421875,0.06660558459453549,0.75,0.875,0.8655132167174019,0.2930908203125," (Round to the nearest dollar.)
+Solve: Debby and Maggie agreed to share a sum of money so that Debby...","If Debby's share is 25% and Maggie takes the rest, then Maggie's share is 100%-25% = 75%
+75% of the total amount is Maggie's share = total amount*(75/100) = $4500
+Multiplying both sides of the equation by 100/75 gives the total amount = (100/75)*$4500 = $<<100/75*4500=6000>>6000
+#### 6000",0.6268663265724953,1
+gsm8k_174,reasoning,gsm8k,50,4.796875,1.515625,0.08048223861121195,0.75,0.875,0.8920644032945454,0.2918701171875,<|end_of_text|>,"Two pieces of snickers cost $1.5 x 2 = $<<1.5*2=3>>3.
+One pack of M&M's costs $3 so 3 packs cost $3 x 3 = $<<3*3=9>>9.
+The total amount that she needs to pay is $3 + $9 = $<<3+9=12>>12.
+Julia gave the cashier $10 x 2 = $<<10*2=20>>20.
+So, her change is $20 - $12 = $<<20-12=8>>8.
+#### 8",0.7807854163276384,1
+gsm8k_175,reasoning,gsm8k,64,4.35546875,1.5390625,0.08090225227384056,0.75,0.9166666666666666,0.9598962863729721,0.29320526123046875,<|end_of_text|>,"The squirrel steals 1/2 cup of birdseed every week, so the birds eat 2 - 1/2 = 1 1/2 cups of birdseed.
+Each cup feeds 14 birds, so Ivan’s bird feeder feeds 14 * 1 1/2 = 21 birds weekly.
+#### 21",0.8247547200588016,1
+gsm8k_176,reasoning,gsm8k,130,1.4208984375,1.5244140625,0.08059187141194064,0.75,0.9166666666666666,0.9471661672767425,0.29077911376953125,"  I got 30, but I'm not sure if I'm right.  I'm pretty sure I'm right, but I'm not sure.  I'm pretty...","Between the trolley driver and his first 10 customers, there are 1+10 = <<1+10=11>>11 people are currently on the trolley
+On his first stop, 10 people go on and twice as many people got on at the second stop so 10*2 = <<10*2=20>>20 people got on at the second stop.
+So at the second stop he had 11 people on board, 3 got off and 20 got on so he now has 11-3+20 = <<11-3+20=28>>28 people
+At his third stop 18 people got off and 2 got on so in total there are 28-18 +2 = <<28-18+2=12>>12 people on the trolley
+#### 12",0.8467097979273266,1
+gsm8k_177,reasoning,gsm8k,32,4.21875,1.513671875,0.06442544560122256,0.75,0.875,0.9240634402439637,0.29224395751953125,<|end_of_text|>,"There are 300/2 = <<300/2=150>>150 units for offices and restaurants.
+There are 150/2 = <<150/2=75>>75 restaurants in the building.
+#### 75",0.6364788020691142,1
+gsm8k_178,reasoning,gsm8k,46,5.34765625,1.5380859375,0.07381127989904131,0.75,0.9166666666666666,0.9127767050065131,0.29276275634765625,<|end_of_text|>,"Let n be the number of times Nancy steps on her partner's feet and j be the number of times Jason does. We know that n = 3j and n + j = 32.
+Substituting the first equation into the second equation, we get 3j + j = 32
+Combining like terms, we get 4j = 32
+Dividing both sides by 4, we get j = 8
+#### 8",0.7459257366531719,1
+gsm8k_179,reasoning,gsm8k,73,2.890625,1.513671875,0.08479618016463714,0.75,0.9166666666666666,0.9076179761636854,0.292327880859375,<|end_of_text|>,"Milly and Floretta have a total of 3 packs of their own water balloons + 2 packs of the neighbor’s water balloons = <<3+2=5>>5 packs of water balloons.
+So there is a total of 5 packs of water balloons * 6 balloons per pack of water balloons = <<5*6=30>>30 water balloons available.
+As they split them evenly, they each have 30 water balloons / 2 = <<30/2=15>>15 water balloons.
+After Milly steals some balloons, Floretta is left with 15 – 7 = <<15-7=8>>8 water balloons.
+#### 8",0.8561653691684662,1
+gsm8k_180,reasoning,gsm8k,50,4.39453125,1.5224609375,0.08091392615218582,0.75,0.875,0.8844484761171021,0.29217529296875,<|end_of_text|>,"Hanna can buy $300/$2 = <<300/2=150>>150 roses.
+So, Jenna will receive 1/3 x 150 = <<1/3*150=50>>50 roses.
+While Imma will receive 1/2 x 150 = <<1/2*150=75>>75 roses.
+Therefore, Hanna gives a total of 50 + 75 = <<50+75=125>>125 roses to her friends.
+#### 125",0.7777518810974767,1
+gsm8k_181,reasoning,gsm8k,151,1.2392578125,1.5078125,0.08797440914496274,0.75,0.9166666666666666,0.8958222831912112,0.2939300537109375,"  (a) 10 seconds (b) 20 seconds (c) 30 seconds (d) 40 seconds (e) 50 seconds
+Answer: (a) 10 seconds
+...","At the end of his first week, Brian now has doubled his initial time of 10 seconds to 10*2=<<10*2=20>>20 seconds
+At the end of his second week, Brian doubled the previous week's time of 20 seconds to 20*2=<<20*2=40>>40 seconds
+At the end of his third week of practice, Brian adds another 50% of 40 seconds to his time so 40*.5= <<40*.5=20>>20 seconds added
+Having added 20 seconds to his time from his second week, Brian can now hold his breath for 40+20= <<20+40=60>>60 seconds
+#### 60",0.8646221000853404,1
+gsm8k_182,reasoning,gsm8k,59,4.71875,1.51171875,0.081160924680351,0.75,0.875,0.9076088361730883,0.29361724853515625,<|end_of_text|>,"First find the number of ounces Erin serves per minute: 10 ounces/bowl * 5 bowls/minute = <<10*5=50>>50 ounces/minute
+Then find the number of ounces in the pot: 6 gallons * 128 ounces/gallon = <<6*128=768>>768 ounces
+Then divide the total amount of soup by the amount of soup Erin serves per minute: 768 minutes / 50 ounces/minute = <<768/50=15.36>>15.36 minutes, which rounds down to 15 minutes
+#### 15",0.7735209613734267,1
+gsm8k_183,reasoning,gsm8k,85,4.0390625,1.5263671875,0.08643030428809348,0.75,0.9583333333333334,0.8867388844401383,0.2928466796875,<|end_of_text|>,"Let S be the number of systems Rodney sold on the first street.
+He sold 2S systems on the second street.
+Based on his commission, he sold 175 / 25 = <<175/25=7>>7 systems.
+In all, he sold S + 2S + 0 + 1 = 3S + 1 = 7 systems.
+On the first and second streets, he sold 3S = 7 - 1 = 6 systems.
+Thus, on the first street he sold S = 6 / 3 = <<6/3=2>>2 systems.
+On the second street, Rodney sold 2 * 2 = <<2*2=4>>4 security systems.
+#### 4",0.8904513947076785,1
+gsm8k_184,reasoning,gsm8k,73,1.1787109375,1.5224609375,0.06321884894866353,0.75,0.8333333333333334,0.9251256345338991,0.29309844970703125, (1 point) 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25...,"Dante has 14 x 3 = <<14*3=42>>42 coconuts.
+Therefore, Dante was left with 42 - 10 = 32 coconuts after he sold 10 of them.
+#### 32",0.5806600109131603,1
+gsm8k_185,reasoning,gsm8k,44,2.7421875,1.525390625,0.07514087190465148,0.75,0.875,0.955338115349239,0.29358673095703125,<|end_of_text|>,"First find the annual cost of food: $10/day * 365 days = $<<10*365=3650>>3650
+Then find how much she spends a week on lessons: $60/lesson * 2 lessons = $<<60*2=120>>120
+Then multiply that weekly cost by the number of weeks per year to find the annual cost: $120/week * 52 weeks/year = $<<120*52=6240>>6240
+Then find the annual cost of the pasture: $500/month * 12 months/year = $<<500*12=6000>>6000
+Then add all the costs to find the total cost: $6000 + $6240 + $3650 = $<<6000+6240+3650=15890>>15890
+#### 15890",0.732239678718113,1
+gsm8k_186,reasoning,gsm8k,61,3.583984375,1.50390625,0.08166664156494147,0.8125,0.9583333333333334,0.9291384805026848,0.29309844970703125,<|end_of_text|>,"There are 109 fifth graders + 115 sixth graders + 118 seventh graders = <<109+115+118=342>>342 students going on the trip.
+There are 4 teachers + 2 parents = <<4+2=6>>6 adults going on the field trip for each grade.
+There are 3 grades going, so 3 grades x 6 adults/grade = <<3*6=18>>18 total adults going on the trip.
+There are 342 students + 18 adults = <<342+18=360>>360 people going on the trip.
+So, 360 people / 72 seats = <<360/72=5>>5 buses
+#### 5",0.27843583304224556,1
+gsm8k_187,reasoning,gsm8k,39,6.46875,1.5166015625,0.06948469270536334,0.75,0.9583333333333334,0.9240453393691528,0.29268646240234375,<|end_of_text|>,"First find how many days Cassidy is grounded for the low grades: 4 grades * 3 days/grade = <<4*3=12>>12 days
+Then add that time to the 14 days she's grounded for lying to find the total grounding length: 12 days + 14 days = <<12+14=26>>26 days
+#### 26",0.7467514102241904,1
+gsm8k_188,reasoning,gsm8k,56,5.0,1.5498046875,0.08099630439895404,0.75,0.8333333333333334,0.9022436774324128,0.29268646240234375,<|end_of_text|>,"There are 80/100 * 10 = <<80/100*10=8>>8 more purple flowers than yellow flowers.
+So in Mark's garden, there are 10 + 8 = <<10+8=18>>18 purple flowers.
+Purple and yellow flowers sum up to 10 + 18 = <<10+18=28>>28 flowers.
+That means in Mark's garden there are 25/100 * 28 = <<25/100*28=7>>7 green flowers.
+So in total Mark has 28 + 7 = <<28+7=35>>35 plants in his garden.
+#### 35",0.7415153965776985,1
+gsm8k_189,reasoning,gsm8k,50,4.09765625,1.5205078125,0.07520627380005268,0.75,0.9166666666666666,0.9287315122691245,0.292572021484375,<|end_of_text|>,"First, find the number of dog nails by multiplying the number of dogs by the number of nails on each leg and the number of legs on each dog: 4 dogs * 4 legs per dog * 4 nails per leg = <<4*4*4=64>>64 nails.
+Then do the same for parrots, ignoring the one parrot's extra toe for now: 8 parrots * 2 legs per parrot * 3 nails per leg = <<8*2*3=48>>48 nails
+Now add one to the previous number because one parrot has an extra toe: 48 + 1 = <<48+1=49>>49 nails.
+Now add the number of nails from the parrots and the dog: 49 nails + 64 nails = <<49+64=113>>113 nails.
+#### 113",0.7693806920631189,1
+gsm8k_190,reasoning,gsm8k,38,4.203125,1.5263671875,0.06628878174792,0.75,0.9166666666666666,0.8978468419886464,0.29271697998046875,<|end_of_text|>,"First divide the download time in half to find the install time: 10 minutes / 2 = <<10/2=5>>5 minutes
+Then add that amount of time to the download time: 5 minutes + 10 minutes = <<5+10=15>>15 minutes
+Then triple that amount of time to find the tutorial time: 15 minutes * 3 = <<15*3=45>>45 minutes
+Then add that time to the install and downtime time to find the total time: 45 minutes + 15 minutes = <<45+15=60>>60 minutes
+#### 60",0.6715337241079147,1
+gsm8k_191,reasoning,gsm8k,113,1.3828125,1.5185546875,0.06719297557332313,0.75,0.875,0.9336588897822969,0.29328155517578125,"  (Hint:  $1200 is the cost of the part.  The labor cost is $75 an hour for 16 hours.  So, the total...","The labor cost 16*$75=$<<16*75=1200>>1200
+So the total cost was $1200+$1200=$<<1200+1200=2400>>2400
+#### 2400",0.6536804734583512,1
+gsm8k_192,reasoning,gsm8k,32,5.02734375,1.5166015625,0.06377279960588814,0.75,0.9166666666666666,0.9359023241848003,0.29303741455078125,<|end_of_text|>,"Sylvia got 50/5 = <<50/5=10>>10 incorrect answers.
+This means she got 50 - 10 = <<50-10=40>>40 correct answers.
+Sergio got 50 - 4 = <<50-4=46>>46 correct answers.
+So, Sergio got 46 - 40 = <<46-40=6>>6 more correct answers than Sylvia.
+#### 6",0.6590999235942626,1
+gsm8k_193,reasoning,gsm8k,72,3.89453125,1.5361328125,0.0906818749016003,0.75,0.9583333333333334,0.8342368871529057,0.29315948486328125,<|end_of_text|>,"So far, Jesse has read 10 + 15 + 27 + 12 + 19 = <<10+15+27+12+19=83>>83 pages.
+That's 1/3 of the book, so the remainder of the book is twice as many pages, or 2 * 83 = 166 pages.
+#### 166",0.9069341117509232,1
+gsm8k_194,reasoning,gsm8k,52,7.8828125,1.5546875,0.0747498266265551,0.75,0.9166666666666666,0.9343920266398111,0.29288482666015625,<|end_of_text|>,"Half of the 2-hour practice is for running and weightlifting, so the time for running and weight lifting is 1/2 * 2 hours = <<2*1/2=1>>1 hour.
+If the time he lifts weights is x, then the time he runs is 2x.
+So the time for running and weight lifting is x + 2x = 3x = 1 hour
+Thus 3x = 60 minutes
+Thus x = 60/3 = <<60/3=20>>20 minutes spent weight lifting.
+#### 20",0.7589395609762111,1
+gsm8k_195,reasoning,gsm8k,47,4.28515625,1.5361328125,0.07397347669788164,0.75,0.9583333333333334,0.8836865328173017,0.2940216064453125,<|end_of_text|>,"Since Siena bookmarks 30 website pages from the research she does on her browser every day, at the end of March, with 31 days, she would have bookmarked 30*31 = <<30*31=930>>930 pages.
+If Siena already has 400 bookmarked pages in her bookmarks library now, she will have 930+400 = <<400+930=1330>>1330 pages in her bookmarks library at the end of March.
+#### 1330",0.7569385839442381,1
+gsm8k_196,reasoning,gsm8k,127,1.2314453125,1.529296875,0.07373486833989185,0.75,0.8333333333333334,0.9264786262688095,0.29317474365234375,"  (Hint: 20% of $5000 is $1000)
+
+Solve: Tom's cat needs an expensive surgery.  He has had pet insura...","The insurance cost 24*20=$<<24*20=480>>480
+With insurance he pays 5000*.2=$<<5000*.2=1000>>1000 for the procedure
+So he paid 1000+480=$<<1000+480=1480>>1480
+So he saved 5000-1480=$<<5000-1480=3520>>3520
+#### 3520",0.6787950409884581,1
+gsm8k_197,reasoning,gsm8k,59,4.6875,1.54296875,0.07832787398622729,0.75,0.875,0.9277812838082715,0.29158782958984375,<|end_of_text|>,"Galileo pays $20 x 12 = $<<20*12=240>>240 for renting a car every year.
+He will pay $30 x 12 = $<<30*12=360>>360 for the brand new car for a year.
+Therefore the difference between a new car and a refurbished car is $360 - $240 = $<<360-240=120>>120.
+#### 120",0.7727488301495096,1
+gsm8k_198,reasoning,gsm8k,128,1.8173828125,1.515625,0.07848988403367102,0.75,0.8333333333333334,0.9421510339123406,0.29268646240234375,"  (a)  $1,000 (b)  $1,000 (c)  $1,000 (d)  $1,000 (e)  $1,000
+Answer:  (a)  $1,000
+Solution:  We are...","Sue will drive 7-4=<<7-4=3>>3 days a week
+So she will pay 2100*3/7=$<<2100*3/7=900>>900
+#### 900",0.7367632739700275,1
+gsm8k_199,reasoning,gsm8k,80,1.146484375,1.5400390625,0.06874277510629351,0.75,0.8333333333333334,0.9480567730787633,0.29360198974609375,  90  90  90  90  90  90  90  90  90  90  90  90  90  90  90  90  90  90  90  90  90  90  90  90  90...,"The average test score was 90 and Marco scored 10% less so 90*.10 = <<90*.10=9>>9 points lower
+The average test score was 90 and Marco scored 9 points less so his test score was 90-9 = <<90-9=81>>81
+Margret received 5 more points than Marco whose test score was 81 so she made 5+81 = <<5+81=86>>86 on her test
+#### 86",0.6330510828854296,1
+strategyqa_0,reasoning,strategyqa,123,1.78125,3.453125,0.03874234544370342,0.75,0.75,0.0,0.3237827845982143," Answer: Yes, there are multiple American government holidays during winter. The government of the U...",True,-0.6591650511974699,1
+strategyqa_1,reasoning,strategyqa,13,6.12109375,2.504934210526316,0.04472760304963426,0.75,0.6666666666666666,0.0,0.3144467002467105,<|end_of_text|>,False,-0.4366416636529808,1
+strategyqa_2,reasoning,strategyqa,110,1.3994140625,3.214583333333333,0.04130043272850063,0.75,0.625,0.0,0.32057291666666665," The flag of Gabon is a tricolor flag with a blue background, a white center, and a red border. The ...",True,-0.6681817584932745,1
+strategyqa_3,reasoning,strategyqa,11,5.1015625,3.439732142857143,0.03891283781513641,0.75,0.7083333333333334,0.0,0.32241385323660715,<|end_of_text|>,True,-0.6741613274320647,1
+strategyqa_4,reasoning,strategyqa,129,1.3466796875,3.214583333333333,0.03959670071745929,0.75,0.5,0.0,0.3212646484375, The harbor seal is a marine mammal that lives in the waters of the Atlantic Ocean and the Pacific O...,True,-0.7939012176604493,1
+strategyqa_5,reasoning,strategyqa,130,1.3701171875,3.1979166666666665,0.041496162113012304,0.75,0.6666666666666666,0.0,0.32061767578125, The answer is no. Sesame seeds are not edible. They are not edible because they are not a part of t...,False,-0.6306634901203838,1
+strategyqa_6,reasoning,strategyqa,136,1.3203125,2.275297619047619,0.049707646919517914,0.75,0.7083333333333334,0.0,0.3128662109375, The tree is a species of tree in the genus of the same name. The tree is a species of tree in the g...,False,-0.3067200125979254,1
+strategyqa_7,reasoning,strategyqa,12,11.6484375,3.19375,0.03992955081638368,0.75,0.75,0.0,0.3212646484375,<|end_of_text|>,True,-0.5843947180104627,1
+strategyqa_8,reasoning,strategyqa,92,1.294921875,2.6510416666666665,0.042252029950164714,0.75,0.5416666666666666,0.0,0.3160332573784722, The answer is no. The zodiac sign of Satanism is not Capricorn. The zodiac sign of Satanism is Aqua...,True,-0.5995221944226774,1
+strategyqa_9,reasoning,strategyqa,119,1.986328125,2.8125,0.0430812066871701,0.75,0.5833333333333334,0.0,0.31810446346507354," Aloe vera is a succulent plant that is native to Africa. The leaves are thick and fleshy, and the p...",False,-0.6030191782093731,1
+strategyqa_10,reasoning,strategyqa,12,14.953125,3.2020833333333334,0.04310643153744283,0.75,0.875,0.0,0.3219278971354167,<|end_of_text|>,True,-0.4612205032386325,1
+strategyqa_11,reasoning,strategyqa,103,1.4208984375,3.191666666666667,0.04009432276635517,0.75,0.7916666666666666,0.0,0.32115071614583335, 1. The English kings were divided into two groups: the Anglo-Saxon kings and the Norman kings. 2. T...,False,-0.5473403263426971,1
+strategyqa_12,reasoning,strategyqa,13,17.34375,2.495065789473684,0.04527788066504859,0.75,0.7083333333333334,0.0,0.3137913754111842,<|end_of_text|>,False,-0.3887578575625388,1
+strategyqa_13,reasoning,strategyqa,10,12.9921875,3.7235576923076925,0.03915812988010961,0.75,0.75,0.0,0.3251295823317308,<|end_of_text|>,False,-0.7070014458369874,1
+strategyqa_14,reasoning,strategyqa,13,7.078125,2.5032894736842106,0.046085252377210256,0.75,0.6666666666666666,0.0,0.314013029399671,<|end_of_text|>,False,-0.4186692744523827,1
+strategyqa_15,reasoning,strategyqa,9,7.97265625,4.075520833333333,0.03788465588602276,0.75,0.5833333333333334,0.0,0.3289794921875,<|end_of_text|>,False,-0.9458723055365651,1
+strategyqa_16,reasoning,strategyqa,16,11.2421875,2.058423913043478,0.04921804617975841,0.75,0.7916666666666666,0.0,0.3100784965183424,<|end_of_text|>,True,-0.18264036956922233,1
+strategyqa_17,reasoning,strategyqa,13,10.484375,2.6475694444444446,0.04228300255976589,0.75,0.75,0.0,0.31524658203125,<|end_of_text|>,True,-0.42022666843457923,1
+strategyqa_18,reasoning,strategyqa,15,15.5546875,2.5016447368421053,0.04532252955530179,0.75,0.7083333333333334,0.0,0.31558388157894735,<|end_of_text|>,True,-0.409530189731294,1
+strategyqa_19,reasoning,strategyqa,11,9.5234375,3.005859375,0.040528306132351546,0.75,0.6666666666666666,0.0,0.3170013427734375,<|end_of_text|>,False,-0.5729183898594139,1
+strategyqa_20,reasoning,strategyqa,124,1.203125,2.39375,0.04625540346427078,0.75,0.7083333333333334,0.0,0.3146240234375," (1 point)
+Answer: Is nickel a better payout than mercury if given a dollar per atomic number? Show ...",False,-0.37526877571005685,1
+strategyqa_21,reasoning,strategyqa,17,6.88671875,2.1519886363636362,0.05053754748986709,0.75,0.625,0.0,0.31122103604403406,<|end_of_text|>,True,-0.331436481088659,1
+strategyqa_22,reasoning,strategyqa,13,13.5625,2.5296052631578947,0.046133260422686,0.75,0.6666666666666666,0.0,0.315294767680921,<|end_of_text|>,False,-0.4362882873021001,1
+strategyqa_23,reasoning,strategyqa,111,1.5673828125,2.9765625,0.0434087141795449,0.75,0.75,0.0,0.3197479248046875," Yes, airplanes are required to be quiet in Orange County, California. The Federal Aviation Administ...",True,-0.5049924551559477,1
+strategyqa_24,reasoning,strategyqa,56,1.5107421875,2.990234375,0.04196737951611531,0.75,0.75,0.0,0.3201904296875," A. No, because the pelvis is a strong structure. B. Yes, because the pelvis is a weak structure. C....",False,-0.5254799934131971,1
+strategyqa_25,reasoning,strategyqa,14,7.91015625,2.0692934782608696,0.04617412345924481,0.75,0.7083333333333334,0.0,0.3097932235054348,<|end_of_text|>,True,-0.27750739640004135,1
+strategyqa_26,reasoning,strategyqa,12,16.421875,2.6527777777777777,0.042887055020955876,0.75,0.7916666666666666,0.0,0.315185546875,<|end_of_text|>,False,-0.3806022551948279,1
+strategyqa_27,reasoning,strategyqa,18,8.1328125,1.90375,0.05245626092025428,0.75,0.7083333333333334,0.0,0.30937744140625,<|end_of_text|>,False,-0.1910454133083095,1
+strategyqa_28,reasoning,strategyqa,121,1.6865234375,3.435267857142857,0.038478607022900777,0.75,0.6666666666666666,0.0,0.32305908203125," Asian black bears are omnivores, meaning they eat both plants and animals. They can use chopsticks ...",False,-0.7188984153508852,1
+strategyqa_29,reasoning,strategyqa,129,1.4501953125,3.0,0.04348355977070041,0.75,0.75,0.0,0.320404052734375," Answer: No, a loaf of bread is not heavier than World of Warcraft. A loaf of bread is a solid objec...",False,-0.51488191509728,1
+strategyqa_30,reasoning,strategyqa,11,18.65625,3.1958333333333333,0.03998394012597814,0.75,0.6666666666666666,0.0,0.32120361328125,<|end_of_text|>,False,-0.6513190930000522,1
+strategyqa_31,reasoning,strategyqa,12,12.5234375,2.6631944444444446,0.0455112008956002,0.75,0.75,0.0,0.31494140625,<|end_of_text|>,False,-0.38835415158972814,1
+strategyqa_32,reasoning,strategyqa,115,1.1279296875,3.450892857142857,0.04157259993075158,0.75,0.75,0.0,0.3242972237723214," Do people with DID have a good memory? Show reasoning.
+Answer: Do people with DID have a good memor...",False,-0.6379294589810787,1
+strategyqa_33,reasoning,strategyqa,16,16.71875,2.5148026315789473,0.04470707063134022,0.8125,0.625,0.0,0.3155967310855263,<|end_of_text|>,False,-1.0675010730933563,1
+strategyqa_34,reasoning,strategyqa,127,1.3955078125,2.5115131578947367,0.048047648122354715,0.75,0.7916666666666666,0.0,0.3144113641036184," Answer: Yes, the brooms from curling are good for using on house floors. The brooms are made of woo...",False,-0.30396299462810467,1
+strategyqa_35,reasoning,strategyqa,15,4.93359375,2.6527777777777777,0.04468134489211349,0.75,0.5833333333333334,0.0,0.3159857855902778,<|end_of_text|>,False,-0.5423235241407819,1
+strategyqa_36,reasoning,strategyqa,11,20.40625,3.21875,0.04165552661887149,0.75,0.6666666666666666,0.0,0.32124837239583337,<|end_of_text|>,True,-0.6391140821307434,1
+strategyqa_37,reasoning,strategyqa,17,7.41796875,1.89375,0.05450720138208435,0.75,0.6666666666666666,0.0,0.30831787109375,<|end_of_text|>,False,-0.19222338748775583,1
+strategyqa_38,reasoning,strategyqa,117,1.6435546875,4.020833333333333,0.03709254743145104,0.75,0.6666666666666666,0.0,0.32944742838541663," Answer: No, hippos are not dangerous to humans. They are herbivores and do not pose a threat to hum...",True,-0.8834311059674868,1
+strategyqa_39,reasoning,strategyqa,89,1.375,2.638888888888889,0.04251699532320366,0.75,0.625,0.0,0.3167995876736111,"  Answer: No, they are not anatomically dissimilar.  The honey badger is a carnivore, and the hyena ...",False,-0.5362085295606865,1
+strategyqa_40,reasoning,strategyqa,12,9.8828125,3.0,0.04194804309672672,0.8125,0.6666666666666666,0.0,0.31915283203125,<|end_of_text|>,False,-1.165456206917724,1
+strategyqa_41,reasoning,strategyqa,14,16.171875,2.6371527777777777,0.04496254453267635,0.75,0.6666666666666666,0.0,0.3161349826388889,<|end_of_text|>,False,-0.4713964139697932,1
+strategyqa_42,reasoning,strategyqa,16,10.984375,2.513157894736842,0.04638238805293373,0.75,0.7083333333333334,0.0,0.3151309364720395,<|end_of_text|>,True,-0.3959317051110478,1
+strategyqa_43,reasoning,strategyqa,15,8.0078125,2.2708333333333335,0.048082118597074536,0.75,0.75,0.0,0.31270926339285715,<|end_of_text|>,True,-0.2857854116121516,1
+strategyqa_44,reasoning,strategyqa,58,1.107421875,2.5213815789473686,0.04590529924386495,0.75,0.8333333333333334,0.0,0.31506668893914475, 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. ...,True,-0.29905211487596994,1
+strategyqa_45,reasoning,strategyqa,123,1.3203125,3.435267857142857,0.04116408569631508,0.75,0.7083333333333334,0.0,0.32305908203125," The surface of Europa is covered with ice, and the ice is very cold. The surface of Europa is cover...",False,-0.6595809296030036,1
+strategyqa_46,reasoning,strategyqa,11,7.92578125,2.982421875,0.04197100431463648,0.75,0.7083333333333334,0.0,0.319671630859375,<|end_of_text|>,False,-0.552438193592079,1
+strategyqa_47,reasoning,strategyqa,11,11.1328125,3.4375,0.04219390582591796,0.75,0.7083333333333334,0.0,0.32296316964285715,<|end_of_text|>,False,-0.6490580840382268,1
+strategyqa_48,reasoning,strategyqa,8,10.859375,4.417613636363637,0.035615948244889756,0.75,0.5833333333333334,0.0,0.33147083629261365,<|end_of_text|>,False,-1.0417331189331291,1
+strategyqa_49,reasoning,strategyqa,20,12.203125,1.89875,0.05549633478985479,0.75,0.7916666666666666,0.0,0.309632568359375,<|end_of_text|>,True,-0.09666571537982882,1
+strategyqa_50,reasoning,strategyqa,127,1.2041015625,4.033854166666667,0.0379822958869178,0.75,0.6666666666666666,0.0,0.3282470703125, A diary is a book that is kept by a person. A diary is a book that is kept by a person. A diary is ...,False,-0.8631776552596321,1
+strategyqa_51,reasoning,strategyqa,107,1.369140625,3.7163461538461537,0.038990628151141064,0.75,0.7083333333333334,0.0,0.3263408954326923, Birds are important to badminton because they are the main source of food for badminton players. Th...,True,-0.7552583745634968,1
+strategyqa_52,reasoning,strategyqa,97,1.5546875,2.2723214285714284,0.04160426764016148,0.75,0.7916666666666666,0.0,0.31184459867931547, Clouded leopards are the largest leopards in the world. They are also the fastest leopards. They ca...,False,-0.3035191921335458,1
+strategyqa_53,reasoning,strategyqa,12,4.93359375,3.0078125,0.04237126673990115,0.75,0.7916666666666666,0.0,0.319488525390625,<|end_of_text|>,True,-0.4821582642388202,1
+strategyqa_54,reasoning,strategyqa,12,7.04296875,2.829044117647059,0.04207045654352418,0.75,0.6666666666666666,0.0,0.3173181870404412,<|end_of_text|>,False,-0.5380540115092041,1
+strategyqa_55,reasoning,strategyqa,105,1.240234375,3.7163461538461537,0.036587729349891164,0.75,0.7916666666666666,0.0,0.3262939453125," Answer: No, American Independence Day occurs during summer. Show reasoning. Answer: Does American I...",False,-0.7095987561613152,1
+strategyqa_56,reasoning,strategyqa,14,7.34765625,2.518092105263158,0.04247834882413625,0.75,0.7083333333333334,0.0,0.314038728412829,<|end_of_text|>,True,-0.4211402616599866,1
+strategyqa_57,reasoning,strategyqa,109,1.3095703125,3.701923076923077,0.042633986124083735,0.75,0.75,0.0,0.3263831505408654, The brain is located in the head. The head is located in the torso. The torso is located in the bod...,False,-0.6854149143889444,1
+strategyqa_58,reasoning,strategyqa,14,4.37109375,2.2604166666666665,0.0453080485314287,0.75,0.75,0.0,0.3123052687872024,<|end_of_text|>,False,-0.30603320470791084,1
+strategyqa_59,reasoning,strategyqa,12,6.2421875,2.8106617647058822,0.04434152697880128,0.75,0.7083333333333334,0.0,0.3168729894301471,<|end_of_text|>,False,-0.47512986866759177,1
+strategyqa_60,reasoning,strategyqa,8,9.640625,3.71875,0.035916211833374075,0.75,0.7083333333333334,0.0,0.32427978515625,<|end_of_text|>,False,-0.7613044943137242,1
+strategyqa_61,reasoning,strategyqa,12,11.8984375,2.518092105263158,0.04454831628663204,0.75,0.625,0.0,0.31473260176809215,<|end_of_text|>,False,-0.47727661022159573,1
+strategyqa_62,reasoning,strategyqa,118,1.4267578125,2.2648809523809526,0.04521599281988565,0.75,0.7083333333333334,0.0,0.3121512276785714," The symbol of the chimaera is a composite of the heads of a lion, a goat, and a serpent. The chimae...",False,-0.339685742161455,1
+strategyqa_63,reasoning,strategyqa,13,5.68359375,2.98828125,0.04067333547848735,0.75,0.6666666666666666,0.0,0.3179168701171875,<|end_of_text|>,False,-0.5795453325408316,1
+strategyqa_64,reasoning,strategyqa,121,1.6279296875,2.8033088235294117,0.04634092268013939,0.75,0.6666666666666666,0.0,0.31877585018382354, Lactic acid is a byproduct of the body’s metabolism. It is produced when the body breaks down carbo...,False,-0.5107123397851794,1
+strategyqa_65,reasoning,strategyqa,13,12.3984375,2.990234375,0.04324362444161009,0.75,0.75,0.0,0.3185882568359375,<|end_of_text|>,True,-0.495262086197456,1
+strategyqa_66,reasoning,strategyqa,126,1.4072265625,4.9,0.033847011998245795,0.75,0.6666666666666666,0.0,0.33621826171875, Answer: Blue lips are a normal skin color. The lips are a part of the skin and are not a separate o...,False,-1.1095181756207078,1
+strategyqa_67,reasoning,strategyqa,13,13.859375,2.806985294117647,0.043736082446017926,0.75,0.7083333333333334,0.0,0.3170525045955882,<|end_of_text|>,True,-0.4823920395650701,1
+strategyqa_68,reasoning,strategyqa,107,1.19140625,2.8088235294117645,0.04418909029780775,0.75,0.75,0.0,0.3175515567555147,"  Answer: No, there is no evidence that the Zika virus is present in Antarctica.  Show reasoning.  A...",False,-0.4500857820308341,1
+strategyqa_69,reasoning,strategyqa,126,1.287109375,2.99609375,0.04353765688536854,0.75,0.875,0.0,0.31939697265625, The CPU is the heart of the computer. It is the brain of the computer. It is the brain of the compu...,True,-0.40066111957568085,1
+strategyqa_70,reasoning,strategyqa,118,1.7958984375,2.39375,0.048217219181579854,0.75,0.7083333333333334,0.0,0.31358642578125, The answer is no. The rainbow is a spectrum of colors. The colors are not mixed. The colors are not...,True,-0.3449640765595934,1
+strategyqa_71,reasoning,strategyqa,12,6.9296875,2.9921875,0.0403682530753932,0.75,0.7916666666666666,0.0,0.3189544677734375,<|end_of_text|>,True,-0.49293859959833375,1
+strategyqa_72,reasoning,strategyqa,11,15.3125,3.2041666666666666,0.044039814146248316,0.75,0.9166666666666666,0.0,0.3223958333333333,<|end_of_text|>,True,-0.4240525627963318,1
+strategyqa_73,reasoning,strategyqa,16,4.33203125,2.5164473684210527,0.048758998079454205,0.75,0.75,0.0,0.31442100123355265,<|end_of_text|>,False,-0.33193643533092265,1
+strategyqa_74,reasoning,strategyqa,12,7.23828125,3.1979166666666665,0.03790261346968264,0.75,0.6666666666666666,0.0,0.3209309895833333,<|end_of_text|>,True,-0.6681923529372379,1
+strategyqa_75,reasoning,strategyqa,11,19.65625,3.4620535714285716,0.036881126624142925,0.75,0.625,0.0,0.32259695870535715,<|end_of_text|>,True,-0.766309290586849,1
+strategyqa_76,reasoning,strategyqa,19,8.2578125,1.905,0.05131263871402635,0.75,0.625,0.0,0.30839111328125,<|end_of_text|>,False,-0.25870318642019596,1
+strategyqa_77,reasoning,strategyqa,16,5.546875,2.4046875,0.04458573388677161,0.75,0.75,0.0,0.31331787109375,<|end_of_text|>,True,-0.3438122382750482,1
+strategyqa_78,reasoning,strategyqa,14,18.65625,2.65625,0.046103378744727176,0.75,0.8333333333333334,0.0,0.31685384114583337,<|end_of_text|>,True,-0.33563321559062215,1
+strategyqa_79,reasoning,strategyqa,12,6.76171875,2.3828125,0.050218948182566475,0.75,0.7083333333333334,0.0,0.31134033203125,<|end_of_text|>,False,-0.2991149321597332,1
+strategyqa_80,reasoning,strategyqa,12,22.0625,2.994140625,0.0427017873923831,0.75,0.75,0.0,0.3195343017578125,<|end_of_text|>,True,-0.5116301263970379,1
+strategyqa_81,reasoning,strategyqa,122,1.421875,2.3875,0.04810555772786301,0.75,0.7916666666666666,0.0,0.31490478515625, 1. The Milky Way is a galaxy in the Local Group of galaxies. 2. The Milky Way is the only galaxy in...,True,-0.2922622374044135,1
+strategyqa_82,reasoning,strategyqa,18,5.04296875,1.98046875,0.04618119132389861,0.75,0.7083333333333334,0.0,0.30933634440104163,<|end_of_text|>,False,-0.2602727121942297,1
+strategyqa_83,reasoning,strategyqa,16,13.859375,2.3671875,0.04912436053567025,0.75,0.7916666666666666,0.0,0.31419677734375,<|end_of_text|>,False,-0.2718657544568791,1
+strategyqa_84,reasoning,strategyqa,16,11.3515625,2.261904761904762,0.049634387191664534,0.75,0.625,0.0,0.3127354213169643,<|end_of_text|>,True,-0.37197176611097693,1
+strategyqa_85,reasoning,strategyqa,12,4.05859375,2.6527777777777777,0.042647056024795606,0.75,0.75,0.0,0.31606038411458337,<|end_of_text|>,False,-0.4267065702399951,1
+strategyqa_86,reasoning,strategyqa,14,11.53125,2.801470588235294,0.04418850680124378,0.75,0.7083333333333334,0.0,0.3175910500919118,<|end_of_text|>,True,-0.4834703995679846,1
+strategyqa_87,reasoning,strategyqa,12,4.6015625,2.65625,0.04359612855826469,0.75,0.625,0.0,0.3145209418402778,<|end_of_text|>,False,-0.5025349692234102,1
+strategyqa_88,reasoning,strategyqa,15,15.25,2.3625,0.04813325500222409,0.75,0.625,0.0,0.31383056640625,<|end_of_text|>,True,-0.412153551453988,1
+strategyqa_89,reasoning,strategyqa,8,6.484375,4.036458333333333,0.036165596763952444,0.75,0.7083333333333334,0.0,0.32779947916666663,<|end_of_text|>,False,-0.8417124717345947,1
+strategyqa_90,reasoning,strategyqa,10,10.9453125,3.20625,0.043995291669552246,0.75,0.7083333333333334,0.0,0.31955973307291663,<|end_of_text|>,False,-0.5622482960251062,1
+strategyqa_91,reasoning,strategyqa,123,1.1865234375,2.396875,0.04804676400862503,0.75,0.7083333333333334,0.0,0.3142578125," If you have blonde hair and want red hair, do you need bleach? Show reasoning. If you have brown ha...",True,-0.35460351720300115,1
+strategyqa_92,reasoning,strategyqa,11,7.53515625,3.2041666666666666,0.03858965859337033,0.75,0.7083333333333334,0.0,0.3194295247395833,<|end_of_text|>,False,-0.6116059960896109,1
+strategyqa_93,reasoning,strategyqa,15,5.3203125,2.1576704545454546,0.04676990241419056,0.75,0.75,0.0,0.3101251775568182,<|end_of_text|>,True,-0.2536416729932805,1
+strategyqa_94,reasoning,strategyqa,106,1.189453125,2.261904761904762,0.044174337919753885,0.75,0.75,0.0,0.310638427734375," (1 point)
+Answer: Would Jon Brower Minnoch break a chair before Voyager 2 launch mass? Show reasoni...",False,-0.29807142181224144,1
+strategyqa_95,reasoning,strategyqa,13,7.33984375,2.5213815789473686,0.043063216072543646,0.75,0.7083333333333334,0.0,0.31475830078125,<|end_of_text|>,True,-0.4242056764315775,1
+strategyqa_96,reasoning,strategyqa,14,4.54296875,2.65625,0.04319405403163813,0.75,0.5833333333333334,0.0,0.31634521484375,<|end_of_text|>,False,-0.5609274494330588,1
+strategyqa_97,reasoning,strategyqa,16,14.296875,2.2574404761904763,0.04742250686298431,0.75,0.875,0.0,0.31295340401785715,<|end_of_text|>,False,-0.1912068358612223,1
+strategyqa_98,reasoning,strategyqa,15,10.546875,2.3640625,0.048295415105227946,0.75,0.625,0.0,0.3132080078125,<|end_of_text|>,True,-0.4037785470331691,1
+strategyqa_99,reasoning,strategyqa,97,1.6865234375,2.827205882352941,0.04036399816428868,0.75,0.7916666666666666,0.0,0.31793212890625, 1. The Ford F-350 is a full-size pickup truck manufactured by Ford. It is available in both regular...,False,-0.45912334811046307,1
+wiki_0,control,wiki,110,1.970703125,1.521484375,0.052066478802068834,0.75,0.5,0.9905236925494094,0.29116058349609375," He was a member of the Confessing Church, a group of German Protestants who refused to cooperate wi...",,0.2493847166977036,0
+wiki_1,control,wiki,112,2.3671875,2.174715909090909,0.049632033250733384,0.8125,0.9583333333333334,0.0,0.31074107776988635," All 50 states and the District of Columbia held elections for Senate, House, Governor, and various ...",,-0.6486151027280957,0
+wiki_2,control,wiki,105,1.744140625,1.7581018518518519,0.04699723980503533,0.75,0.625,0.0,0.3076126663773148," He was drafted by the Florida Panthers in the first round, 14th overall, in the 2004 NHL Entry Draf...",,-0.2708571487479179,0
+wiki_3,control,wiki,99,2.373046875,2.40625,0.043650042505183236,0.75,0.4583333333333333,0.0,0.311376953125, It was the first Soviet film to be made in color. The film was based on the 1945 musical comedy of ...,,-0.5683541265527131,0
+wiki_4,control,wiki,119,1.52734375,1.7453703703703705,0.05331003111644531,0.75,0.4583333333333333,0.0,0.30623259367766203," It is located on the Macau Peninsula, near the Macau Ferry Terminal. The temple is dedicated to Maz...",,-0.32951003051028877,0
+wiki_5,control,wiki,25,1.8837890625,1.515625,0.06889727709221882,0.75,0.875,0.9530332105971943,0.29183197021484375,<|end_of_text|>,,0.6935714543133562,0
+wiki_6,control,wiki,99,2.166015625,2.7886029411764706,0.041652574244596376,0.75,0.625,0.0,0.3175084731158088," The population was 28, 000 at the 2010 census. It is part of the Austin–Round Rock–San Marcos Metro...",,-0.5726255222305529,0
+wiki_7,control,wiki,145,1.2744140625,1.7008928571428572,0.06014210393281767,0.75,0.4166666666666667,0.33119979160587204,0.3078744070870536, The bow is the part of the hull that is closest to the water. The bow is the part of the hull that ...,,-0.19247187664145568,0
+wiki_8,control,wiki,21,2.607421875,1.7020089285714286,0.05482004915819388,0.75,0.625,0.0,0.3072335379464286,<|end_of_text|>,,-0.1850190619052711,0
+wiki_9,control,wiki,139,1.26953125,2.00390625,0.05560302343253001,0.75,0.2916666666666667,0.0,0.31060791015625, Forgiveness is a choice that a person makes to let go of the past and move on with their life. Forg...,,-0.5279959987256793,0
+wiki_10,control,wiki,111,1.9970703125,5.635416666666667,0.031995691350827526,0.75,0.4166666666666667,0.0,0.34116617838541663, Bone tumors can be benign or malignant. Benign tumors are not cancerous. They are not likely to spr...,,-1.4859101314191994,0
+wiki_11,control,wiki,127,1.8076171875,1.596875,0.056787491034842125,0.75,0.25,0.9997516865254519,0.3068461100260417," He was born in New Orleans, Louisiana, and died in Chicago, Illinois. He was the son of a white fat...",,-0.09407793223015831,0
+wiki_12,control,wiki,143,1.6845703125,1.5234375,0.07137449254762178,0.75,0.4166666666666667,0.9599481083330123,0.291717529296875," He was the first Governor-General of India, serving from 1856 to 1860. He was the first British Gov...",,0.3465519545356439,0
+wiki_13,control,wiki,120,1.7978515625,2.526315789473684,0.04151982127340558,0.75,0.6666666666666666,0.0,0.31429893092105265, It is located in the North Caucasus region. The capital is Grozny. Chechnya is the 12th largest fed...,,-0.46818618080594443,0
+wiki_14,control,wiki,92,4.65234375,1.51171875,0.09252673506237104,0.75,0.5,0.9319944927133349,0.29300689697265625,<|end_of_text|>,,0.5913456579725325,0
+wiki_15,control,wiki,115,1.4873046875,4.403409090909091,0.03563282908980511,0.75,0.5416666666666666,0.0,0.3318259499289773, It is a silent film with a running time of 1 hour and 30 minutes. It is a comedy film. It is a musi...,,-1.0776030580757705,0
+wiki_16,control,wiki,103,1.70703125,1.9986979166666667,0.04788652884859281,0.75,0.4583333333333333,0.0,0.30913289388020837," She was a member of the National Assembly for the Nord department from 2007 to 2012, and a member o...",,-0.4478503651545749,0
+wiki_17,control,wiki,28,1.986328125,2.1605113636363638,0.046414273573258905,0.75,0.9583333333333334,0.0,0.31031383167613635," He plays for JEF United Ichihara.
+This page was last changed on 13 April 2019, at 17:32.<|end_of_te...",,-0.08990302502901058,0
+wiki_18,control,wiki,124,1.3330078125,2.5592105263157894,0.04486112788320076,0.75,0.4166666666666667,0.0,0.31673391241776316," It is a form of art that involves sending and receiving letters, postcards, and other forms of mail...",,-0.6721639127208842,0
+wiki_19,control,wiki,109,1.81640625,1.90625,0.0477918352921979,0.75,0.5,0.0,0.309837646484375," The song was released on March 26, 2013, as the album's lead single. The song was written by guitar...",,-0.41032380689116915,0
+wiki_20,control,wiki,112,1.59375,1.89875,0.04779590291739649,0.75,0.4583333333333333,0.0,0.30926513671875," He is best known for his 1988 hit single ""I Used to Love H.E.R."" and his 1990 hit single ""Ain't No ...",,-0.43671154885149854,0
+wiki_21,control,wiki,42,2.083984375,1.5068359375,0.07569831890700712,0.75,0.8333333333333334,0.9551354973991916,0.29184722900390625,<|end_of_text|>,,0.7257244353463879,0
+wiki_22,control,wiki,152,1.3720703125,1.5263671875,0.07376113030244219,0.75,0.625,0.9980841909104782,0.2830352783203125, The film was released on 1993-07-02 and has a run time of 2 hr 3 min. It has received mostly positi...,,0.6503992832678042,0
+wiki_23,control,wiki,106,1.5498046875,2.180397727272727,0.04702821754064658,0.75,0.5416666666666666,0.0,0.3120561079545454, He was a member of the House of Representatives from 1977 to 1994 and from 1994 to 2002. He was a m...,,-0.4457640112403793,0
+wiki_24,control,wiki,114,2.095703125,1.7511574074074074,0.05016880009814886,0.75,0.625,0.0,0.3075991030092593, He currently plays for the Philadelphia Flyers of the National Hockey League (NHL). He was drafted ...,,-0.23977662373835174,0
+wiki_25,control,wiki,38,2.27734375,1.50390625,0.06358222275653914,0.8125,0.8333333333333334,0.9356353774153007,0.2924041748046875," Retrieved on 2010-07-15.
+
+Wikimedia Commons has media related to Jahanna.<|end_of_text|>",,0.01586031507020837,0
+wiki_26,control,wiki,24,3.466796875,1.513671875,0.0620729927269776,0.8125,0.9583333333333334,0.9113816851283579,0.29082489013671875,<|end_of_text|>,,0.11122408391732204,0
+wiki_27,control,wiki,117,2.064453125,2.5098684210526314,0.04377613210301907,0.75,0.4583333333333333,0.0,0.3137753135279605," It is located on the coast of the Great Sandy Strait, 1,000 kilometres north of Brisbane, Queenslan...",,-0.6083209521822547,0
+wiki_28,control,wiki,99,1.2900390625,2.267857142857143,0.044712453144289274,0.75,0.375,0.0,0.31288655598958337, It is a black solid with a metallic luster. It is a member of the perovskite family of compounds. C...,,-0.6245743112301673,0
+wiki_29,control,wiki,119,1.3935546875,3.4308035714285716,0.04132975140035577,0.75,0.375,0.0,0.3205479213169643, He is a member of the Department of Computer Science and Engineering at the Indian Institute of Tec...,,-0.9003595024354757,0
+wiki_30,control,wiki,102,1.7666015625,3.533482142857143,0.038856471872573295,0.75,0.4583333333333333,0.0,0.3234427315848214," They are spoken in the Levant, the Arabian Peninsula, and the Sinai Peninsula. The West Semitic lan...",,-0.9025534607156921,0
+wiki_31,control,wiki,114,1.923828125,1.8341346153846154,0.04892282099171295,0.75,0.375,0.0,0.30834021935096156," The community area is bounded by the Chicago River to the north, the Calumet River to the east, the...",,-0.474703060648946,0
+wiki_32,control,wiki,107,1.89453125,2.96875,0.042846912167177835,0.75,0.5833333333333334,0.0,0.3176422119140625," It is located in the province of Almería, in the south of Spain. It is the capital of the comarca o...",,-0.6210931384302899,0
+wiki_33,control,wiki,120,2.0625,1.5576171875,0.06788602869151408,0.75,0.25,0.9755340168842089,0.292205810546875," It is a member of the honeysuckle family, Caprifoliaceae. It is native to the northern hemisphere, ...",,0.17332030573807047,0
+wiki_34,control,wiki,120,2.89453125,1.530241935483871,0.053924542356422835,0.75,0.5,0.9970533543429597,0.3045457409274194," It is situated on the A30 road, 1.5 miles north of the A30/A350 junction at the village of Stinsfor...",,0.11648388852015061,0
+wiki_35,control,wiki,128,1.9287109375,1.8533653846153846,0.05431891333346011,0.75,0.5,0.0,0.3108943058894231," The sites are selected by UNESCO's World Heritage Committee, which is made up of 21 independent exp...",,-0.353436151545165,0
+wiki_36,control,wiki,114,1.8359375,2.5,0.04751760724351852,0.75,0.3333333333333333,0.0,0.3129947060032895, The dispute was between the Anglican Church and the Presbyterians. The Presbyterians were a group o...,,-0.6645405501511032,0
+wiki_37,control,wiki,14,2.14453125,2.1576704545454546,0.04778380440284155,0.75,0.875,0.0,0.3103498979048296,<|end_of_text|>,,-0.14482701200795967,0
+wiki_38,control,wiki,119,1.60546875,4.431818181818182,0.03360256426871135,0.75,0.3333333333333333,0.0,0.33059969815340906," It is the indigenous religion of Japan, and is the oldest religion in Japan. It is the religion of ...",,-1.2563666539568448,0
+wiki_39,control,wiki,187,1.453125,1.5107421875,0.09311585718485695,0.8125,0.75,0.9529627292903453,0.29035186767578125," 1242)
+ August 15 — King Henry III of Castile (d. 1272)
+ August 15 — King John I of Portugal (d. 135...",,0.255822455523064,0
+wiki_40,control,wiki,30,1.634765625,6.1875,0.0267978593078942,0.8125,1.0,0.0,0.341949462890625," It is found in the region Alsace in the Haut-Rhin department in the northeastern France.
+This page ...",,-1.725907445893298,0
+wiki_41,control,wiki,127,1.873046875,2.2663690476190474,0.04761767780874267,0.75,0.3333333333333333,0.0,0.3116338820684524, It was passed in response to the apartheid regime in South Africa. The law was signed into law by P...,,-0.6166360526010396,0
+wiki_42,control,wiki,126,1.8427734375,2.5296052631578947,0.04419657378005316,0.75,0.5416666666666666,0.0,0.3152562191611842, It is based on the 1982 novel of the same name by Sarah Waters. The film stars Anthony Hopkins as J...,,-0.5559375567500603,0
+wiki_43,control,wiki,93,1.53125,3.4285714285714284,0.03682324828703811,0.75,0.625,0.0,0.31966727120535715," It is situated on the A428 road, 5 miles (8 km) north of Cambridge. The village is in the civil par...",,-0.7291473897191864,0
+wiki_44,control,wiki,32,1.517578125,3.737980769230769,0.03564828985114733,0.8125,1.0,0.0,0.32048621544471156," It is found in the region of Picardie in the Aisne department in the north of France.
+This page was...",,-1.0683685369564855,0
+wiki_45,control,wiki,119,1.7470703125,3.7524038461538463,0.038498769297937795,0.75,0.4583333333333333,0.0,0.32296048677884615," It is located in the Lower Mainland of British Columbia, and is the second-largest city in the prov...",,-0.9300290720019923,0
+wiki_46,control,wiki,69,1.333984375,1.668103448275862,0.05779825045371587,0.75,0.7083333333333334,0.0,0.3077571474272629," current time
+Current (physics)
+Current (electricity)
+Current (electricity)
+Current (electricity)
+Cu...",,-0.09036340548983583,0
+wiki_47,control,wiki,21,2.837890625,1.5380859375,0.06078092469818947,0.8125,0.9583333333333334,0.9279023748587459,0.2899322509765625,<|end_of_text|>,,0.11175640686316984,0
+wiki_48,control,wiki,104,1.4921875,1.8269230769230769,0.048542485683597765,0.75,0.7083333333333334,0.0,0.3075303297776442, He is the 1992 Olympic champion and the 1993 World Champion. He is the 1994 European Champion and t...,,-0.19675567282698644,0
+wiki_49,control,wiki,135,1.6083984375,1.92375,0.048904794614645704,0.75,0.3333333333333333,0.0,0.31023315429687504," She was the first woman to be elected to the Royal Society of London, and the first woman to be ele...",,-0.5423408006560182,0
+wiki_50,control,wiki,98,2.046875,1.6303879310344827,0.052633075469943724,0.75,0.5,0.999333500789166,0.3072394009294181," He is best known for his roles as C. J. Cregg on the television series The West Wing (2000–2006), a...",,0.061055548139731845,0
+wiki_51,control,wiki,99,1.984375,3.4285714285714284,0.039119443891970127,0.75,0.375,0.0,0.3227626255580357, It is based on the novel of the same name by Ruchika Sharma. The series premiered on 15 September 2...,,-0.9460472893804507,0
+wiki_52,control,wiki,105,1.822265625,2.3875,0.046026235435496506,0.75,0.5,0.0,0.31326904296875," It was released on September 21, 1987, by Geffen Records. The album was produced by Mike Clink and ...",,-0.5308641674090778,0
+wiki_53,control,wiki,32,1.5146484375,4.403409090909091,0.03496903777553946,0.8125,1.0,0.0,0.3291404030539773," It is found in the Aisne department in the Hauts-de-France region of the north of France.
+This page...",,-1.2626685124252963,0
+wiki_54,control,wiki,118,2.02734375,1.5372983870967742,0.05489131240974652,0.75,0.4166666666666667,0.9974986538851285,0.3046845466859879, It is bordered by the Italian province of South Tyrol and the Italian regions of Trentino-Alto Adig...,,0.05541134314334267,0
+wiki_55,control,wiki,25,1.5390625,7.227678571428571,0.0266465979468993,0.8125,1.0,0.0,0.35110037667410715," It is found in the region Languedoc-Roussillon in southern France.
+This page was last changed on 13...",,-1.971436634114473,0
+wiki_56,control,wiki,43,1.1220703125,1.533203125,0.06553060753013067,0.8125,0.7083333333333334,0.9193291099313239,0.29196929931640625," League||rowspan=""5""|J. League Cup||rowspan=""5""|J. League Cup||rowspan=""5""|J. League Cup||rowspan=""5...",,-0.07237508496542076,0
+wiki_57,control,wiki,125,1.3818359375,1.5107421875,0.05634743347539392,0.75,0.5,0.9831692392325743,0.2910308837890625," The series stars Cameron Boyce, Cameron Monaghan, and Kiana Madeira. The series is based on the 201...",,0.2901422595120792,0
+wiki_58,control,wiki,137,2.4375,1.5166015625,0.07148589504250819,0.75,0.4583333333333333,0.945362812778873,0.2927093505859375," His father, Pietro Barbo, was a nobleman and a member of the powerful Barbo family. His mother, Mar...",,0.36597837250815024,0
+wiki_59,control,wiki,120,1.57421875,1.5413306451612903,0.05608652069278256,0.75,0.2916666666666667,0.9995499600801924,0.3054996613533266, He was the recipient of the 2010 Caldecott Medal for his book The Lion and the Mouse. He was also t...,,-0.04410198837775858,0
+wiki_60,control,wiki,108,1.984375,2.6840277777777777,0.040469389903893004,0.75,0.5416666666666666,0.0,0.31569417317708337," Alma formed on September 1, 2008, from a tropical wave that moved off the coast of Africa. The syst...",,-0.6169904188271571,0
+wiki_61,control,wiki,99,2.3046875,3.23125,0.043665775970697936,0.75,0.4166666666666667,0.0,0.3186564127604167," It is located in the north of the country, in the north-western part of the Alentejo region. The di...",,-0.7959770058569475,0
+wiki_62,control,wiki,58,2.310546875,2.5213815789473686,0.04635011067026382,0.75,0.8333333333333334,0.0,0.31314568770559215," The population was 1,000 at the 2010 census. It is the county seat of Emmet County. The city is loc...",,-0.27308416165296623,0
+wiki_63,control,wiki,31,1.4130859375,6.1875,0.02806125660842201,0.8125,1.0,0.0,0.341888427734375, It is found in the region Nord-Pas-de-Calais in the Pas-de-Calais department in the north of France...,,-1.7132697111516644,0
+wiki_64,control,wiki,129,1.2275390625,3.12109375,0.045722924791422245,0.75,0.20833333333333334,0.0,0.320587158203125, Chinese Canadians are a minority group in Canada. Chinese Canadians are a minority group in Canada....,,-0.9531475721387475,0
+wiki_65,control,wiki,75,1.0224609375,1.5126953125,0.08717725249663474,0.75,0.7083333333333334,0.941312853624241,0.2923126220703125,<|end_of_text|>,,0.7214646696325646,0
+wiki_66,control,wiki,121,2.474609375,2.2976190476190474,0.048901977110010396,0.75,0.5,0.0,0.31271798270089285," The floods affected 33 million people in Pakistan, and killed 2,500 people. The floods were the wor...",,-0.48529464867366584,0
+wiki_67,control,wiki,97,2.033203125,1.6986607142857142,0.05617849188871466,0.75,0.4166666666666667,0.9974447392731752,0.30658394949776785, It was written by John and Bernie Taupin and produced by John. The song was released as the album's...,,0.024260540981400753,0
+wiki_68,control,wiki,84,2.185546875,1.5029296875,0.05613243106370465,0.75,0.3333333333333333,0.25087258126002177,0.29262542724609375," He is best known for his satirical novel, Gargantua and Pantagruel, which is considered to be one o...",,-0.12761159557749482,0
+wiki_69,control,wiki,106,2.037109375,2.6597222222222223,0.04183043820900215,0.75,0.4583333333333333,0.0,0.3138495551215278," It is found in the tropical rainforests of Central America and Mexico. It is a small frog, about 2....",,-0.6477914736985054,0
+wiki_70,control,wiki,115,1.9541015625,1.8975,0.047417166499505496,0.75,0.2916666666666667,0.0,0.30909545898437496, He is best known for his work at the Stanford Research Institute (SRI) and the University of Califo...,,-0.5738994772441303,0
+wiki_71,control,wiki,27,1.5673828125,1.5244140625,0.06443040938293382,0.75,0.875,0.9368037516300758,0.29228973388671875,<|end_of_text|>,,0.6391327282111101,0
+wiki_72,control,wiki,119,1.6943359375,1.9856770833333333,0.05437040099530129,0.75,0.4583333333333333,0.0,0.31114705403645837," It is a form of identity theft and is often used to harass, intimidate, or threaten individuals or ...",,-0.40760020674649927,0
+wiki_73,control,wiki,131,2.17578125,1.5166015625,0.057837521692767284,0.75,0.2916666666666667,0.9620887841152864,0.29251861572265625, He was elected in 1986 and re-elected in 1990. He was the first elected Governor of the CNMI to be ...,,0.10939392643198963,0
+wiki_74,control,wiki,69,1.3056640625,4.026041666666667,0.03487452194256174,0.75,0.875,0.0,0.32438151041666663," It is a tributary of the Volga. The Belokurikha is 1,000 km long. The Belokurikha is a tributary of...",,-0.6780962228539438,0
+wiki_75,control,wiki,369,1.91015625,1.5244140625,0.12881276492290175,0.75,0.4166666666666667,0.9547450697885775,0.2938079833984375,<|end_of_text|>,,0.8639886541688367,0
+wiki_76,control,wiki,104,1.798828125,2.481907894736842,0.046176518695508664,0.75,0.2916666666666667,0.0,0.3139134457236842, The album was released on 26th September 2006. The album was produced by James Lavelle and was rele...,,-0.7191111863296902,0
+wiki_77,control,wiki,120,1.673828125,1.515625,0.0585097047895438,0.75,0.25,0.9897065951539457,0.2926025390625, He was a professor at the University of Latvia and the University of Latvia's Institute of Mathemat...,,0.09092590631624171,0
+wiki_78,control,wiki,112,2.37890625,2.8051470588235294,0.045962442727846754,0.75,0.5416666666666666,0.0,0.31592514935661764," The list is based on the 2010 IAU definition of a mountain, which is a mountain that is at least 1,...",,-0.5840185528828951,0
+wiki_79,control,wiki,121,1.86328125,2.3921875,0.04381855277190149,0.75,0.5833333333333334,0.0,0.312744140625," She is known for her roles as FBI Special Agent Carrie Mathison on the television series Homeland, ...",,-0.4785770442985082,0
+wiki_80,control,wiki,119,1.83984375,1.59375,0.0543330294659581,0.75,0.6666666666666666,0.9996311368015096,0.30555419921875," He was a member of the Democratic Party, and served in the United States House of Representatives f...",,0.23697150940720213,0
+wiki_81,control,wiki,111,1.4287109375,1.6863839285714286,0.05551706865749946,0.75,0.4583333333333333,0.9999525130144148,0.30846732003348215," The attack was the deadliest in the state since 2011, when 1,000 people were killed in a similar at...",,0.033153259333479235,0
+wiki_82,control,wiki,156,2.62109375,1.5166015625,0.08551212997169863,0.75,0.5,0.9777687791979518,0.29282379150390625," These toothpastes are often marketed as ""sensitive toothpaste"" or ""sensitive toothpaste for sensiti...",,0.5428732125948496,0
+wiki_83,control,wiki,126,1.265625,4.853125,0.03665587447766031,0.75,0.25,0.0,0.3358154296875, It is a way of understanding the world and the universe. It is a way of understanding the world and...,,-1.4113105683113627,0
+wiki_84,control,wiki,16,2.005859375,1.5244140625,0.060660326564171245,0.8125,0.9583333333333334,0.9245909972576823,0.2895965576171875,svg<|end_of_text|>,,0.11507544826294495,0
+wiki_85,control,wiki,120,2.869140625,1.505859375,0.06624995930355522,0.8125,0.4166666666666667,0.9641370944921888,0.2888031005859375," The monument was built in the center of the city, in front of the National Museum of Iraq, and was ...",,-0.247390871100393,0
+wiki_86,control,wiki,105,1.76953125,1.8413461538461537,0.048105410204365436,0.75,0.4583333333333333,0.0,0.3087792029747596," He competed in the 1948 Winter Olympics and in the 1952 Winter Olympics.
+Lundström was born in Stoc...",,-0.420530042491744,0
+wiki_87,control,wiki,114,2.154296875,3.00390625,0.040023923602441724,0.75,0.4583333333333333,0.0,0.3190155029296875," It is set in the 1790s in the fictional town of Mansfield Park, in the county of Hampshire, England...",,-0.7698633571824253,0
+wiki_88,control,wiki,99,1.3154296875,2.986328125,0.042599874042573066,0.8125,0.8333333333333334,0.0,0.314727783203125," It is located in the Massif Central, in the foothills of the Pyrenees. The commune is located in th...",,-0.971620300332113,0
+wiki_89,control,wiki,116,1.32421875,2.6631944444444446,0.042007054373640544,0.75,0.5,0.0,0.3134765625, It is located in the department of the Loire-Atlantique in the Pays de la Loire region of western F...,,-0.6084403859180706,0
+wiki_90,control,wiki,139,1.5263671875,1.528225806451613,0.05628101531476855,0.75,0.20833333333333334,0.9993974569929911,0.3062557097404234," He was born in Boston, Massachusetts, the son of Benjamin Franklin and his mistress, Deborah Read. ...",,-0.11696208966121907,0
+wiki_91,control,wiki,58,1.8173828125,4.4375,0.03525601519360185,0.75,0.75,0.0,0.32953990589488635," state of Kentucky. As of the 2010 census, the population was 17,000. Its county seat is Corbin. The...",,-0.8902492811471242,0
+wiki_92,control,wiki,39,2.0546875,4.044270833333333,0.03131914724273705,0.75,0.5416666666666666,0.0,0.32491048177083337, He competed in the men's coxless four event at the 1928 Summer Olympics. He was born on 1 January 1...,,-0.991563601729026,0
+wiki_93,control,wiki,31,1.4208984375,3.7451923076923075,0.036846123635557164,0.8125,1.0,0.0,0.3205613356370192, It is found in the region Nord-Pas-de-Calais in the Pas-de-Calais department in the north of France...,,-1.0588668004087487,0
+wiki_94,control,wiki,120,1.341796875,2.98046875,0.03853519958532907,0.75,0.5416666666666666,0.0,0.3172149658203125, It is a species of tree frog. It is found in the Andes Mountains. It is a small tree frog. It is a ...,,-0.6925299008107961,0
+wiki_95,control,wiki,124,1.6171875,1.6336206896551724,0.05958674757464484,0.75,0.3333333333333333,0.9977760897315616,0.30831277781519395," It is a place where you can find everything from spices to electronics, from carpets to jewellery, ...",,-0.022045799935898985,0
+wiki_96,control,wiki,130,1.3896484375,2.2529761904761907,0.04492459528675631,0.75,0.3333333333333333,0.0,0.31238374255952384, He was the first President of the Central African Republic from 1960 to 1965. He was the first Pres...,,-0.648787620731472,0
+wiki_97,control,wiki,134,1.6767578125,3.05859375,0.04317942611361213,0.75,0.375,0.0,0.3203887939453125," The cables are attached to a cable car system, which is a network of cables that run between the ca...",,-0.8308152556864931,0
+wiki_98,control,wiki,122,2.080078125,2.2589285714285716,0.046322498165256625,0.75,0.625,0.0,0.31071544828869047," It is located in the heart of the Ardennes, in the village of Pairi, in the province of Namur. The ...",,-0.38000302413048487,0
+wiki_99,control,wiki,231,8.65625,1.5478515625,0.12514960878276998,0.75,0.8333333333333334,0.9758755380119846,0.28823089599609375,<|end_of_text|>,,1.236199840332196,0
+wiki_100,control,wiki,103,2.134765625,3.037109375,0.04036469195509077,0.75,0.5833333333333334,0.0,0.31744384765625," It is located in the central part of the state. It is bounded by the districts of Bhopal, Seoni, an...",,-0.6515462219008278,0
+wiki_101,control,wiki,69,2.546875,4.4602272727272725,0.033039547470822335,0.75,0.5,0.0,0.33004483309659094, It is a non-departmental public body sponsored by the Department of Health. It is responsible for t...,,-1.1235424346468987,0
+wiki_102,control,wiki,107,2.07421875,3.009765625,0.039160335522669766,0.75,0.2916666666666667,0.0,0.3177490234375, She is a former member of the Justice League of America and the Justice League International. She i...,,-0.9001706690176633,0
+wiki_103,control,wiki,99,1.4091796875,1.7476851851851851,0.04957960695597754,0.75,0.5416666666666666,0.0,0.30649820963541663, It is the 13th game in the WWE SmackDown! series and the 13th game in the SmackDown! series overall...,,-0.3002564962879836,0
+wiki_104,control,wiki,111,1.8359375,4.026041666666667,0.0354088848563459,0.75,0.375,0.0,0.32639567057291663, It is the largest mosque in Morocco and the second largest in the world. It is located in the city ...,,-1.1029537177268791,0
+wiki_105,control,wiki,134,1.46875,2.5115131578947367,0.0454070937258306,0.75,0.2916666666666667,0.0,0.3147679379111842, It is a type of drama that uses documentary footage and interviews to tell a story. It is a genre t...,,-0.7400636731165423,0
+wiki_106,control,wiki,113,1.419921875,2.6510416666666665,0.044624835641980484,0.75,0.375,0.0,0.31571451822916663, It is the 13th movie in the Doraemon series. It is the first movie to be released in 3D. It is also...,,-0.7091725030040862,0
+wiki_107,control,wiki,167,1.474609375,1.5185546875,0.08490762623579477,0.75,0.5416666666666666,0.9486373897966264,0.29056549072265625," It is home to the Oxford University, the oldest university in the English-speaking world, and the B...",,0.5859380305265544,0
+wiki_108,control,wiki,125,2.140625,2.390625,0.04356651745900274,0.75,0.375,0.0,0.312127685546875, The train was carrying 40 passengers and 3 crew members. The train was travelling from the town of ...,,-0.6433878582321254,0
+wiki_109,control,wiki,109,1.638671875,3.424107142857143,0.03927344855527161,0.75,0.375,0.0,0.3228846958705357," It was a subsidiary of Wesfarmers, which was a large Australian company. Bi-Lo was a supermarket ch...",,-0.9453712164241964,0
+wiki_110,control,wiki,119,2.068359375,2.5460526315789473,0.04800881588697807,0.75,0.6666666666666666,0.0,0.31441457648026316, President Dwight D. Eisenhower in 1950. The DCI is the principal intelligence agency of the United ...,,-0.4108029490968759,0
+wiki_111,control,wiki,14,1.8515625,1.9869791666666667,0.04880058876348796,0.75,0.8333333333333334,0.0,0.30745442708333337,<|end_of_text|>,,-0.11329101431343815,0
+wiki_112,control,wiki,114,2.26953125,8.697916666666666,0.022286777949886774,0.75,0.625,0.0,0.36018880208333337," Louis, Missouri, 1941) is a writer and artist. She is the author of the novels The World Made Strai...",,-2.037053883981649,0
+wiki_113,control,wiki,69,1.5166015625,4.389204545454546,0.03365150022358227,0.75,0.75,0.0,0.3283913352272727," state of Texas. The population was 1,000 at the 2000 census. It is part of the Lubbock, Texas Metro...",,-0.8858892578412184,0
+wiki_114,control,wiki,118,2.171875,1.9817708333333333,0.050526696824385375,0.75,0.4166666666666667,0.0,0.3065185546875, It was the first Soviet film to be shot in color. The film was based on the 1952 novel of the same ...,,-0.42490845590687903,0
+wiki_115,control,wiki,15,5.375,1.54296875,0.05764128644434865,0.8125,0.875,0.9635664458144974,0.290985107421875,<|end_of_text|>,,0.014442899563757808,0
+wiki_116,control,wiki,25,1.53125,7.214285714285714,0.02629683770151999,0.8125,1.0,0.0,0.35036795479910715," It is found in the region Languedoc-Roussillon in southern France.
+This page was last changed on 13...",,-1.9646385078237287,0
+wiki_117,control,wiki,108,1.9892578125,1.7569444444444444,0.04938502681986046,0.75,0.5833333333333334,0.0,0.3102247450086806," The event takes place at the Barclays Center in Brooklyn, New York. The event is the second of two ...",,-0.31163789502956596,0
+wiki_118,control,wiki,134,1.40234375,1.525390625,0.06266571256943008,0.75,0.25,0.9908343621716801,0.29228973388671875, She was a professor at the Institute of Linguistics of the Russian Academy of Sciences. She was the...,,0.1328540571422512,0
+wiki_119,control,wiki,31,2.970703125,1.5068359375,0.0693494066410396,0.8125,0.9583333333333334,0.9135240317429988,0.29106903076171875,<|end_of_text|>,,0.1789542778068872,0
+wiki_120,control,wiki,101,1.939453125,1.7766203703703705,0.0515072469343521,0.75,0.2916666666666667,0.0,0.3074374728732639," He was a tenor saxophonist, flautist, and composer. He was born in Chicago, Illinois, and died in L...",,-0.5001226986274377,0
+wiki_121,control,wiki,128,1.4287109375,1.915,0.05300186315018269,0.75,0.4166666666666667,0.0,0.309931640625, The stadium was home to the Atlanta Falcons and the Atlanta Dream of the WNBA. The stadium was also...,,-0.4311543276088207,0
+wiki_122,control,wiki,113,2.47265625,2.5032894736842106,0.042906600841078855,0.75,0.4166666666666667,0.0,0.31497674239309215," She is best known for her role as the title character in the BBC One soap opera EastEnders, which s...",,-0.6631894915466844,0
+wiki_123,control,wiki,138,1.384765625,1.501953125,0.06882331372747043,0.75,0.5416666666666666,0.9686985376882363,0.2937164306640625, The CHOP was established by a group of protesters who occupied the Capitol Hill neighborhood of Sea...,,0.4076010020640566,0
+wiki_124,control,wiki,135,1.607421875,1.5146484375,0.0693173413451246,0.75,0.4583333333333333,0.9251486032412166,0.29262542724609375," He was the first American to win the Australian Open since 1938, and the first American to win Wimb...",,0.3394273894768207,0
+wiki_125,control,wiki,273,1.4892578125,1.5126953125,0.10689856196541385,0.8125,0.7083333333333334,0.8673541222405249,0.29100799560546875," Lee surrenders to Union General Ulysses S. Grant at Appomattox Court House, Virginia.
+1870 - The fi...",,0.31377902812669206,0
+wiki_126,control,wiki,82,2.4765625,2.293154761904762,0.043111272671842824,0.75,0.25,0.0,0.3099888392857143," He is the author of several books on the history of the African diaspora, including the award-winni...",,-0.712076617131448,0
+wiki_127,control,wiki,146,1.8193359375,1.5126953125,0.07114591718882378,0.75,0.4166666666666667,0.8739619600143462,0.29325103759765625, He played for the Seahawks from 1988 to 1991. He was also a member of the Montreal Alouettes of the...,,0.2975855557257965,0
+wiki_128,control,wiki,60,1.29296875,2.089673913043478,0.04792259284234466,0.75,0.5,0.0,0.31082020635190216," She was born in Paris, France. She died on 15 September 2021, at the age of 92.
+Marthe Mercadier (2...",,-0.44498212674527154,0
+wiki_129,control,wiki,129,1.6318359375,1.9661458333333333,0.05395029544132361,0.75,0.375,0.0,0.310882568359375, It is a style of architecture that was popular in the 1950s and 1960s. It is characterized by brigh...,,-0.47378832376080177,0
+wiki_130,control,wiki,94,1.984375,2.8051470588235294,0.04100149009852849,0.75,0.625,0.0,0.31653909122242646, It is situated 3 miles (4.8 km) south of Aldeburgh and 5 miles (8.0 km) north of Southwold. The pop...,,-0.5700339918881855,0
+wiki_131,control,wiki,132,1.15234375,1.5009765625,0.08247286443988368,0.75,0.5,0.9236648965492238,0.29217529296875," 1968
+Karl Landsteiner, discovered that there are different types of human blood; had a Nobel Prize;...",,0.504158689053785,0
+wiki_132,control,wiki,42,1.6318359375,1.53515625,0.08001015233502387,0.75,0.7083333333333334,0.9591981595432121,0.29097747802734375,<|end_of_text|>,,0.6722111719763237,0
+wiki_133,control,wiki,117,1.6943359375,2.375,0.04656917708210083,0.75,0.4583333333333333,0.0,0.31409912109375," It was directed by John Landis and stars Eddie Murphy, Martin Lawrence, and Damon Wayans. The movie...",,-0.5673705716904763,0
+wiki_134,control,wiki,119,1.2822265625,2.990234375,0.038763376927892196,0.75,1.0,0.0,0.3134918212890625, It is located in the Gers region in the southwest of France. The commune is located in the Gers reg...,,-0.2763447860988451,0
+wiki_135,control,wiki,81,1.5546875,4.40625,0.0330130454029873,0.75,0.75,0.0,0.32977294921875, It is located in the canton of Diekirch. The commune was merged into the commune of Neunhausen on 1...,,-0.9098791142291467,0
+wiki_136,control,wiki,125,1.7724609375,2.0815217391304346,0.051390680286336254,0.75,0.4583333333333333,0.0,0.3113761570142663," It is bordered by the Caribbean Sea to the north, the North Pacific Ocean to the east, the South Pa...",,-0.4513107978639948,0
+wiki_137,control,wiki,93,1.5029296875,4.4289772727272725,0.03546849241910371,0.75,0.75,0.0,0.3293845436789773," It is located in the southern part of Uusimaa, in the region of Uusimaa. The municipality has a pop...",,-0.8853295055223457,0
+wiki_138,control,wiki,13,3.50390625,3.25,0.04284397001086607,0.75,0.8333333333333334,0.0,0.31984049479166665,<|end_of_text|>,,-0.4804488312950619,0
+wiki_139,control,wiki,106,1.412109375,1.7662037037037037,0.055292297112307716,0.75,0.6666666666666666,0.0,0.3086287887008102," It is the county seat of Maricopa County, Arizona.
+Scottsdale, New Zealand, a suburb of Auckland, N...",,-0.17110209426173775,0
+wiki_140,control,wiki,121,1.646484375,3.730769230769231,0.04031118109581114,0.75,0.2916666666666667,0.0,0.32187593900240385," It is located in the city of Dhaka, the capital of Bangladesh. The temple is dedicated to the Hindu...",,-1.033382011993249,0
+wiki_141,control,wiki,99,1.6845703125,2.2485119047619047,0.04782562155992331,0.75,0.5416666666666666,0.0,0.3115408761160714," The county is the northernmost county in Sweden, and the northernmost county in the Nordic countrie...",,-0.44158324326727,0
+wiki_142,control,wiki,104,1.45703125,2.673611111111111,0.039204520237133174,0.75,0.5,0.0,0.31404622395833337, She is a member of the Kazakhstani national team. She won a gold medal at the 2018 Asian Games in t...,,-0.6428000173337588,0
+wiki_143,control,wiki,123,1.6240234375,2.2723214285714284,0.045677330077292674,0.75,0.3333333333333333,0.0,0.3133719308035714, It is a white crystalline solid. It is a semiconductor with a band gap of 2.2 eV. It is a very stab...,,-0.6554764006066663,0
+wiki_144,control,wiki,130,1.2802734375,4.119791666666667,0.040850523314997264,0.75,0.375,0.0,0.32769775390625, It is a way of finding out whether something is true or not. An experiment is a way of finding out ...,,-1.078906890783023,0
+wiki_145,control,wiki,126,1.4130859375,4.046875,0.03906546703566457,0.75,0.4166666666666667,0.0,0.32773844401041663, It was designed to recognize the bravery of soldiers who had distinguished themselves in combat. Th...,,-1.052477987418225,0
+wiki_146,control,wiki,31,1.5361328125,4.451704545454546,0.030387516527177555,0.8125,1.0,0.0,0.327392578125, It is found in the region Auvergne-Rhône-Alpes in the Rhône department in the eastern France region...,,-1.292710167135247,0
+wiki_147,control,wiki,114,1.1064453125,3.733173076923077,0.03457987946493935,0.8125,1.0,0.0,0.3202185997596154, It is found in the region Pays de la Loire in the department of Maine-et-Loire in the region Pays d...,,-1.0747903515654833,0
+wiki_148,control,wiki,25,1.55078125,1.537109375,0.06010662625349781,0.75,0.875,0.24062161358536402,0.29283905029296875,<|end_of_text|>,,0.34026822371100063,0
+wiki_149,control,wiki,120,2.251953125,1.5283203125,0.05900258746370502,0.75,0.4583333333333333,0.9921356287256612,0.29286956787109375, She was best known for her role as the first African-American female lead on the American televisio...,,0.26134194722826803,0
+wiki_150,control,wiki,31,2.14453125,1.513671875,0.06928509239802116,0.8125,0.9166666666666666,0.8934753483603607,0.29119873046875,<|end_of_text|>,,0.13482876367790333,0
+wiki_151,control,wiki,94,1.97265625,4.40625,0.033748236790801085,0.75,0.6666666666666666,0.0,0.32809725674715906," state of Vermont. The population was 3,000 at the 2010 census. It is the county seat of Bennington ...",,-0.9517932109276224,0
+wiki_152,control,wiki,97,1.5859375,1.52734375,0.05375115175079055,0.75,0.3333333333333333,0.9922926655479349,0.290771484375," He was the son of the French animator and director Jean Raimbaud. He was born in Paris, France. He ...",,0.13386898572906272,0
+wiki_153,control,wiki,143,1.849609375,1.509765625,0.05856585173463877,0.75,0.375,0.9518203853804262,0.2931671142578125," He has also worked for ESPN, Fox Sports, and NBC. He is the voice of the New York Mets and the New ...",,0.17401802231026675,0
+wiki_154,control,wiki,64,1.802734375,4.052083333333333,0.03572351190783482,0.75,0.8333333333333334,0.0,0.32590738932291663," state of Wisconsin. As of the 2010 census, the population was 27,000. Its county seat is Langlade. ...",,-0.7247945319675403,0
+wiki_155,control,wiki,120,1.705078125,1.5205078125,0.055106661606914374,0.75,0.5833333333333334,0.997235123967345,0.29158782958984375, He was the commander of the Black Sea Fleet from 1842 to 1846 and the Baltic Fleet from 1846 to 185...,,0.34368290479999447,0
+wiki_156,control,wiki,80,1.3359375,4.4375,0.031104176127082977,0.75,0.9583333333333334,0.0,0.32807506214488635, It is now a part of the commune of Sainte-Croix-sur-Savoie. It is located in the Savoie department ...,,-0.7432913423204309,0
+wiki_157,control,wiki,113,1.3759765625,4.005208333333333,0.03543240525865948,0.75,0.5,0.0,0.32761637369791663, The country is ranked 179 out of 180 countries in the 2019 World Report on Human Rights by the US S...,,-1.0119740534665855,0
+wiki_158,control,wiki,131,1.7236328125,1.6975446428571428,0.05181293137584251,0.75,0.4583333333333333,0.9995158280380408,0.3080836704799107, He is a member of the boy band EXO. He is the leader of the group's sub-unit EXO-K. He is also a me...,,0.0008105764793987456,0
+wiki_159,control,wiki,98,2.205078125,2.6527777777777777,0.042984781618009726,0.75,0.4583333333333333,0.0,0.3135850694444444," It is located in the north of the country, bordering Slovakia and Ukraine. The county is divided in...",,-0.6329425805720827,0
+wiki_160,control,wiki,26,1.45703125,1.51953125,0.06981675575639461,0.75,0.9583333333333334,0.9348496192019149,0.2901611328125,<|end_of_text|>,,0.7819843175627342,0
+wiki_161,control,wiki,115,1.7578125,2.00390625,0.0518509145798665,0.75,0.875,0.0,0.31184895833333337," Trinity County is a county in the U.S. state of Texas. As of the 2010 census, the population was 6,...",,-0.10259214374469938,0
+wiki_162,control,wiki,120,1.68359375,1.603125,0.05555261448588642,0.75,0.7083333333333334,0.9957999631518183,0.30703328450520834, The season began on 5 August 2023 and will end on 28 May 2024. The season will be contested by 20 t...,,0.2630304916293362,0
+wiki_163,control,wiki,83,1.62890625,1.9674479166666667,0.04788227636558666,0.75,0.375,0.0,0.31006876627604163," He is best known for his novels The Commitments (1987), The Van (1990), Paddy Clarke Ha Ha Ha (1993...",,-0.5221223537874219,0
+wiki_164,control,wiki,112,1.451171875,2.986328125,0.04181505144328167,0.75,1.0,0.0,0.31787109375, The station is owned by the CBS Television Stations subsidiary of ViacomCBS. WBZ-TV's studios are l...,,-0.296572034328577,0
+wiki_165,control,wiki,68,1.7109375,1.5078125,0.09137262127498381,0.75,0.75,0.9480922538203073,0.29189300537109375,<|end_of_text|>,,0.8029069578416702,0
+wiki_166,control,wiki,31,1.4150390625,4.067708333333333,0.03187796683818512,0.8125,1.0,0.0,0.32305908203125, It is found in the region Nord-Pas-de-Calais in the Pas-de-Calais department in the north of France...,,-1.177682275723113,0
+wiki_167,control,wiki,122,1.5810546875,3.46875,0.03398547856443321,0.75,0.7916666666666666,0.0,0.32308523995535715, It is based on the play of the same name by David Mamet. The movie is directed by James Foley and s...,,-0.6644275457617653,0
+wiki_168,control,wiki,13,5.1484375,2.3859375,0.04636210778042132,0.75,0.875,0.0,0.31326904296875,<|end_of_text|>,,-0.2221575803954133,0
+wiki_169,control,wiki,123,1.62109375,1.525390625,0.056344327501465466,0.75,0.375,0.9978628998369845,0.29268646240234375," He was the first American to win the 5000 metres at the Olympic Games, and the first American to wi...",,0.1728842794884258,0
+wiki_170,control,wiki,105,2.259765625,4.815625,0.03349999434264073,0.75,0.5833333333333334,0.0,0.33338623046875," It is located on the Antarctic Peninsula, 1,000 km (620 mi) south of the South Pole. The station is...",,-1.1371744242477901,0
+wiki_171,control,wiki,131,1.2724609375,4.0859375,0.0386383561272127,0.75,0.375,0.0,0.32814534505208337, It is a branch of mathematics that deals with the probability of an event occurring. It is a branch...,,-1.100324370851548,0
+wiki_172,control,wiki,125,1.265625,3.4419642857142856,0.03871016698477927,0.75,0.9583333333333334,0.0,0.3209228515625, It is located in the county of Jefferson. It is the county seat of Jefferson County. It is the coun...,,-0.45594186831249733,0
+wiki_173,control,wiki,121,1.62109375,3.4799107142857144,0.035728207369610784,0.75,0.20833333333333334,0.0,0.32211739676339285," He was born in 1898 in Berlin, Germany. He was a student of Max Horkheimer and Theodor Adorno. He w...",,-1.1134332707729357,0
+wiki_174,control,wiki,112,1.736328125,1.525390625,0.056310737191165736,0.75,0.2916666666666667,0.9949101958227962,0.29235076904296875," He was a member of the Italian Resistance during World War II. He was killed in action in 1942.
+Car...",,0.10746021026549087,0
+wiki_175,control,wiki,109,1.8662109375,1.5166015625,0.056757522208811084,0.75,0.5416666666666666,0.9473080769473862,0.29154205322265625," It is found in the mountains of Hokkaido, Japan. It is a small salamander, about 2.5 cm (1 in) long...",,0.30848250544697614,0
+wiki_176,control,wiki,70,2.111328125,1.6390086206896552,0.05526312067221003,0.75,0.375,0.9976873115492676,0.3057524582435345, The song was written by Bowie and Tony Visconti and produced by Visconti. The song was released as ...,,-0.0007591617305803376,0
+wiki_177,control,wiki,34,1.484375,6.19921875,0.025847781904150848,0.8125,1.0,0.0,0.3419189453125, It is found in the region Picardie in the Nord department in the region of Hauts-de-France in north...,,-1.7361275078321483,0
+wiki_178,control,wiki,117,2.029296875,2.275297619047619,0.04803094550129736,0.75,0.4583333333333333,0.0,0.3119841076078869, The movie is based on the 2011 novel of the same name by Katherine Applegate. The movie stars Helen...,,-0.5161280216931636,0
+wiki_179,control,wiki,121,2.130859375,1.5161290322580645,0.055055582964745484,0.75,0.4583333333333333,0.9994483694879911,0.30513837260584675," It was a large, carnivorous reptile that was about 20 feet long and weighed about 1,000 pounds. It ...",,0.08930622623461427,0
+wiki_180,control,wiki,121,1.80859375,2.0910326086956523,0.05295202509153273,0.75,0.4583333333333333,0.0,0.31051237686820654," The electrodes are connected to a power supply, and the gas is allowed to flow through the tube. Th...",,-0.4280459632784624,0
+wiki_181,control,wiki,97,1.78125,2.390625,0.04562363418337086,0.75,0.5,0.0,0.3140625," It is bordered by the counties of Cheshire to the north, Derbyshire to the east, Staffordshire Moor...",,-0.5440815774077673,0
+wiki_182,control,wiki,112,1.9755859375,2.654513888888889,0.042145708723765204,0.75,0.3333333333333333,0.0,0.3134765625," He is a large, yellow, and very friendly bear. He is the main character of the show, and is often s...",,-0.7416550178698355,0
+wiki_183,control,wiki,118,1.865234375,3.4575892857142856,0.038224435452435514,0.75,0.3333333333333333,0.0,0.3225184849330357, It was released in 1975 and is considered one of the greatest rock albums of all time. The album wa...,,-0.9895865663802876,0
+wiki_184,control,wiki,147,1.376953125,1.529296875,0.06097095193175874,0.75,0.2916666666666667,0.9361544193878734,0.2941131591796875, The problem is that the government is not doing enough to help these women and girls. The governmen...,,0.10993034077162117,0
+wiki_185,control,wiki,116,1.9716796875,2.255952380952381,0.04859348351447394,0.75,0.5833333333333334,0.0,0.3099365234375," It was the first of the three major schools of Zen, and the first to be founded in China. The found...",,-0.3832278729227471,0
+wiki_186,control,wiki,98,1.9619140625,1.9934895833333333,0.04837176745124426,0.75,0.5416666666666666,0.0,0.310302734375, He was known for his roles in the 1970s and 1980s. He was also a television host and a radio person...,,-0.3879625668637237,0
+wiki_187,control,wiki,125,1.51953125,1.5244140625,0.05397277664730972,0.75,0.375,0.985903255446523,0.29305267333984375, The event is organized by the Bat-Yam Municipality and the Bat-Yam International Biennale of Landsc...,,0.14214739112214222,0
+wiki_188,control,wiki,119,1.609375,10.7125,0.022821709661594837,0.75,0.4166666666666667,0.0,0.37607421875, He was born in 1906 in Tokyo. He was a professor at the University of Tokyo. He was a member of the...,,-2.6535613996612883,0
+wiki_189,control,wiki,31,1.3955078125,6.26171875,0.027678353935490563,0.8125,1.0,0.0,0.342376708984375, It is found in the region Nord-Pas-de-Calais in the Pas-de-Calais department in the north of France...,,-1.7324419763707644,0
+wiki_190,control,wiki,59,2.806640625,4.072916666666667,0.03946583402745255,0.75,0.5833333333333334,0.0,0.32645670572916663," It was created in 1998, and is named after the former Prime Minister of Australia, John Howard. The...",,-0.9019903388331656,0
+wiki_191,control,wiki,54,1.458984375,1.5185546875,0.07759450405416207,0.75,0.75,0.9372643159078947,0.29322052001953125,<|end_of_text|>,,0.6522472984625426,0
+wiki_192,control,wiki,97,2.458984375,1.528225806451613,0.0546303646695187,0.75,0.625,0.9985492665620388,0.3041499968497984," 1740–1812) was a leader of the Seneca Nation of Indians. He was the son of the Seneca chief, Joseph...",,0.23022380932259387,0
+wiki_193,control,wiki,69,2.07421875,2.147727272727273,0.04897868829390264,0.75,0.375,0.0,0.31046641956676135," She is best known for her 2011 single ""I'm Not the Only One"" which reached number 1 on the Billboar...",,-0.5405991155308821,0
+wiki_194,control,wiki,98,1.236328125,15.5,0.0184621745264217,0.8125,0.7083333333333334,0.0,0.39434814453125," Coyote and the Road to the End of the World
+Wile E. Coyote and the Road to the End of the World
+Wil...",,-3.8930633702652,0
+wiki_195,control,wiki,127,1.251953125,2.1676136363636362,0.05158682047087514,0.75,0.5,0.0,0.3116233132102273, The Parliament consists of the Legislative Assembly and the Legislative Council. The Legislative As...,,-0.4299548039155339,0
+wiki_196,control,wiki,89,1.3056640625,4.846875,0.03215520480084883,0.75,0.25,0.0,0.33448486328125," It is a fast, lightweight, and feature-rich web browser. Epiphany is a fast, lightweight, and featu...",,-1.4379504852233609,0
+wiki_197,control,wiki,155,1.73828125,1.51171875,0.0701447806186774,0.75,0.4166666666666667,0.9388550170098268,0.2922210693359375, The term is also used to refer to the regalia of the monarch of the United Kingdom of Great Britain...,,0.32322611294737363,0
+wiki_198,control,wiki,130,1.4287109375,1.84375,0.05175001067515136,0.8125,0.875,0.0,0.30857027493990385," Pershing during World War I. The AEF was the first American military force to fight in Europe, and ...",,-0.627161839536745,0
+wiki_199,control,wiki,14,1.36328125,2.2782738095238093,0.04869245085852822,0.75,0.9166666666666666,0.0,0.3124302455357143,<|end_of_text|>,,-0.1421603301969181,0
