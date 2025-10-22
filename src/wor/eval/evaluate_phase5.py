@@ -59,8 +59,11 @@ def compute_baseline_metrics_phase5(
     print("Computing baseline metrics...")
     
     rows = []
+    total = len(all_data)
     
-    for item in all_data:
+    for idx, item in enumerate(all_data):
+        if (idx + 1) % 10 == 0 or idx == 0:
+            print(f"  Processing sample {idx + 1}/{total}...")
         try:
             # Generate text and get activations
             result = runner.generate(item["prompt"])
