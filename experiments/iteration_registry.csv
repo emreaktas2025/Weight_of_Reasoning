@@ -1,0 +1,3 @@
+iteration_id,date,code_hash,models,datasets,delta_auc_mean,ci_low,ci_high,partial_r_mean,comments
+iteration_002,2025-10-23T17:35:25.722264,571edeea,smollm-135m,,0.0,nan,nan,nan,
+iteration_003,2025-10-23T20:34:56.407372,571edeea,"smollm-135m,smollm-350m,smollm-1.7b",,0.0,0.0,0.0,nan,

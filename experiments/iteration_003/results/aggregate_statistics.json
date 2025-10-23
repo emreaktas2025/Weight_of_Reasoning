@@ -1,0 +1,26 @@
+{
+  "models": [
+    "smollm-135m",
+    "smollm-350m",
+    "smollm-1.7b"
+  ],
+  "n_models": 3,
+  "delta_auc_mean": 0.0,
+  "delta_auc_std": 0.0,
+  "auroc_rev_mean": 0.5,
+  "auroc_baseline_mean": 0.7609005787037036,
+  "partial_r_mean": NaN,
+  "n_params": [
+    134515008,
+    361821120,
+    1711376384
+  ],
+  "ci_low": 0.0,
+  "ci_high": 0.0,
+  "success_criteria": {
+    "REV improves baseline by >=0.05 AUC": false,
+    "Monotonic scaling": true,
+    "No NaN values": true,
+    "Significant effect size (d>0.5)": false
+  }
+}

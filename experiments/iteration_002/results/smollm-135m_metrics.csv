@@ -1,0 +1,138 @@
+id,label,dataset,token_len,ppl,AE,APE,APL,CUD,SIB,FL,generated_text,answer,REV,label_num
+gsm8k_0,reasoning,gsm8k,96,9.74515008,3.2,0.64,9.6,,4.8,1.6,The 1960s was a time of great change in the United States. The Civil Rights Movement was a major eve...,"Mimi has 2 x 12 = <<2*12=24>>24 sea shells.
+Kyle has 24 x 2 = <<24*2=48>>48 sea shells.
+Leigh has 48 / 3 = <<48/3=16>>16 sea shells.
+#### 16",0.0,1
+gsm8k_1,reasoning,gsm8k,98,9.74515008,3.2,0.64,9.6,,4.8,1.6,"The 1960s was a decade of change in the American economy, and the economy was in a state of flux. Th...","He has 6 - 2 = <<6-2=4>>4 cats.
+He has 4 - 1 = <<4-1=3>>3 parrots.
+He has 4 + 6 = <<4+6=10>>10 snakes.
+He has a total of 2 + 4 + 3 + 10 = <<2+4+3+10=19>>19 pets.
+#### 19",0.0,1
+gsm8k_2,reasoning,gsm8k,83,9.74515008,3.2,0.64,9.6,,4.8,1.6," of which were his own. Olaf's collection was 150 cars. How many cars did Olaf have?
+
+Step 1: Write ...","Dad gave Olaf 10 toy cars,
+Mom has given Olaf 5 more toy cars than Dad, so 10 + 5 = <<10+5=15>>15 toy cars
+Auntie gave Olaf 6 toy cars,
+Uncle has given 1 less toy than Auntie, so 6 - 1 = <<6-1=5>>5 toy cars
+Grandpa gave Olaf 2 * 5 = <<2*5=10>>10 toy cars.
+All the family together gave Olaf 10 +15 + 6 + 5 + 10 = <<10+15+6+5+10=46>>46.
+Adding the cars Olaf already had, Olaf's collection has 150 + 46 = <<150+46=196>>196 cars.
+#### 196",0.0,1
+gsm8k_3,reasoning,gsm8k,100,9.74515008,3.2,0.64,9.6,,4.8,1.6," does Emma have left?
+
+Answer: Emma has $100 in her account. Each day of the week, she spends $8. At...","She spend $56 because 7 x 8 = <<7*8=56>>56
+She has $44 left in the bank because 100 - 56 = <<100-56=44>>44
+She can get 8 five dollar bills because 44 / 5 = <<44/5=8.8>>8.8
+This is equal to $40 because 8 x 5 = <<8*5=40>>40
+She has $4 left in the account because 44 - 40 = <<44-40=4>>4
+#### 4",0.0,1
+gsm8k_4,reasoning,gsm8k,79,9.74515008,3.2,0.64,9.6,,4.8,1.6," long did it take him to complete the hike?
+
+A. 3.5 hours
+B. 4.5 hours
+C. 5.5 hours
+D. 6.5 hours
+E. ...","After the first day, Ezekiel had 50 - 10 = <<50-10=40>>40 kilometers of the hike left.
+On the second day, he covered 50 / 2 = <<50/2=25>>25 kilometers.
+Therefore, on the third day, he had 40 - 25 = <<40-25=15>>15 kilometers left to finish the hike.
+#### 15",0.0,1
+gsm8k_5,reasoning,gsm8k,92,9.74515008,3.2,0.64,9.6,,4.8,1.6," the first day. On the fourth day, he collects 20 tins less than the first day. On the fifth day, he...","On the second day, he collected 3 times the number of tins he collected on the first day, which is 3*50 = <<3*50=150>>150 tins.
+On the third day, he collected 50 tins fewer than the second day, which is 150-50 = <<150-50=100>>100 tins
+The total for the three days is 150+100+50 = <<150+100+50=300>>300 tins.
+To reach his goal, he still needs 500-300 = <<500-300=200>>200 tins.
+Since the total number of days left in the week is 4, he'll need to collect 200/4 = <<200/4=50>>50 tins per day to reach his goal
+#### 50",0.0,1
+gsm8k_6,reasoning,gsm8k,101,9.74515008,3.2,0.64,9.6,,4.8,1.6,The first step in the process of writing a research paper is to decide on a topic. The topic should ...,"The third dart earned Don 50 / 2 = <<50/2=25>>25 points.
+Thus, his total score is 50 + 0 + 25 = <<50+0+25=75>>75 points.
+#### 75",0.0,1
+gsm8k_7,reasoning,gsm8k,82,9.74515008,3.2,0.64,9.6,,4.8,1.6,"1/4 a meter wide.
+
+The answer is 1/2 a meter wide.
+
+The answer is 1/4 a meter wide.
+
+The answer is 1...","The pebble's total splash width is 1.5 meters because 6 times 1/4 equals <<6*1/4=1.5>>1.5.
+The rock's total splash width is 1.5 meters because 3 times 1/2 equals <<3*1/2=1.5>>1.5.
+The boulder's total splash width is 4 because 2 times 2 equals four.
+The total splash width for all the rocks is 7 because 1.5 plus 1.5 plus 4 equals 7.
+#### 7",0.0,1
+gsm8k_8,reasoning,gsm8k,93,9.74515008,3.2,0.64,9.6,,4.8,1.6,"The following is a list of the most common types of cancer in the United States.
+- Breast cancer is ...","He has 36 eggs because 3 x 12 = <<3*12=36>>36
+He can make 9 omelets because 36 / 4 = <<36/4=9>>9
+Each person gets 3 omelets because 9 / 3 = <<9/3=3>>3
+#### 3",0.0,1
+gsm8k_9,reasoning,gsm8k,79,9.74515008,3.2,0.64,9.6,,4.8,1.6," stack was 10 blocks taller than the third stack, how many blocks were in the fifth stack?
+
+(a) 10
+
+...","The second stack has 7 blocks + 3 blocks = <<7+3=10>>10 blocks.
+The third stack has 10 blocks - 6 blocks = <<10-6=4>>4 blocks.
+The fourth stack has 4 blocks + 10 blocks = <<4+10=14>>14 blocks.
+The fifth stack has 10 blocks x 2 = <<10*2=20>>20 blocks.
+In total there are 7 blocks + 10 blocks + 4 blocks + 14 blocks + 20 blocks = <<7+10+4+14+20=55>>55 blocks.
+#### 55",0.0,1
+strategyqa_0,reasoning,strategyqa,70,9.74515008,3.2,0.64,9.6,,4.8,1.6,"The first step in the study of the history of the history of the United States of America, the Unite...",True,0.0,1
+strategyqa_1,reasoning,strategyqa,30,9.74515008,3.2,0.64,9.6,,4.8,1.6,"#1.1: The 1984-2017
+The 1984-2017
+The 1984-2017 is the 20th anniversary of the 1984-2017, the 20",False,0.0,1
+strategyqa_2,reasoning,strategyqa,26,9.74515008,3.2,0.64,9.6,,4.8,1.6,"The 19th century, 1880s, 1900s, 19th century, 19th century, 19th century, 19th century, 19th century...",False,0.0,1
+strategyqa_3,reasoning,strategyqa,77,9.74515008,3.2,0.64,9.6,,4.8,1.6,# How to use the K-12 education system in the United States is a complex and complex system that has...,True,0.0,1
+strategyqa_4,reasoning,strategyqa,62,9.74515008,3.2,0.64,9.6,,4.8,1.6,"# How to write a good essay on the 19th century
+The 19th century was a time of great change in the w...",True,0.0,1
+strategyqa_5,reasoning,strategyqa,45,9.74515008,3.2,0.64,9.6,,4.8,1.6,"#1.1: The Importance of the 1970s
+The 1970s was a decade of great change in the world. The 1970s was...",True,0.0,1
+strategyqa_6,reasoning,strategyqa,65,9.74515008,3.2,0.64,9.6,,4.8,1.6,"The first step in the 1980s, the first time that the United States was in the forefront of the globa...",False,0.0,1
+strategyqa_7,reasoning,strategyqa,65,9.74515008,3.2,0.64,9.6,,4.8,1.6,"#1.1: The 19th Century
+The first 19th century was a time of great change in the United States. The C...",False,0.0,1
+strategyqa_8,reasoning,strategyqa,68,9.74515008,3.2,0.64,9.6,,4.8,1.6,"# How to write a 5 paragraph essay on the importance of the 5 paragraph essay
+The 5-paragraph essay ...",False,0.0,1
+strategyqa_9,reasoning,strategyqa,66,9.74515008,3.2,0.64,9.6,,4.8,1.6,"# How to write a 100% accurate and concise summary of the book of Job.
+The book of Job is a book of ...",False,0.0,1
+wiki_0,control,wiki,84,9.74515008,3.2,0.64,9.6,,4.8,1.6,The term “Aristotle’s theory of the human body is a very old one. It is a theory that has been aroun...,,0.0,0
+wiki_1,control,wiki,58,9.74515008,3.2,0.64,9.6,,4.8,1.6,# How to write a 3D model of a 3D model of a 3D model of a 3D model of a 3D model of a 3D model of a...,,0.0,0
+wiki_2,control,wiki,65,9.74515008,3.2,0.64,9.6,,4.8,1.6,"# How to write a function that returns a list of all the numbers in a list of numbers
+
+# How to find...",,0.0,0
+wiki_3,control,wiki,54,9.74515008,3.2,0.64,9.6,,4.8,1.6,The following is a list of the most common types of water-based and water-based materials for the co...,,0.0,0
+wiki_4,control,wiki,91,9.74515008,3.2,0.64,9.6,,4.8,1.6," 1968). She was the first African American woman to serve on the commission.
+Frankie was born in New...",,0.0,0
+wiki_5,control,wiki,69,9.74515008,3.2,0.64,9.6,,4.8,1.6,"#1.1: The Importance of the 19th Century
+The 19th century was a time of great change in the world. T...",,0.0,0
+wiki_6,control,wiki,62,9.74515008,3.2,0.64,9.6,,4.8,1.6,")
+ Donkey Kong (Game & Watch) (2003)
+ Donkey Kong (2004)
+ Donkey Kong (2005)
+ Donkey Kong (2006)
+ Do...",,0.0,0
+wiki_7,control,wiki,52,9.74515008,3.2,0.64,9.6,,4.8,1.6,"# How to write a 100% accurate and concise summary of the book of Job 1:1-10
+1. The Book of Job
+1. T...",,0.0,0
+wiki_8,control,wiki,48,9.74515008,3.2,0.64,9.6,,4.8,1.6,The first step in the development of the 1998-2000 National Science Foundation (NSF) has awarded a g...,,0.0,0
+wiki_9,control,wiki,48,9.74515008,3.2,0.64,9.6,,4.8,1.6,"# How do you find the area of the region of the circle with centre (1, 1) and radius 2?
+
+$A = \frac{...",,0.0,0
+wiki_10,control,wiki,74,9.74515008,3.2,0.64,9.6,,4.8,1.6,The 1000-year-old remains of the ancient city of Pompeii were discovered in 1995 by a team of archae...,,0.0,0
+wiki_11,control,wiki,28,9.74515008,3.2,0.64,9.6,,4.8,1.6,"# How to use the following code to calculate the probability of a number of the following:
+
+$1000000...",,0.0,0
+wiki_12,control,wiki,55,9.74515008,3.2,0.64,9.6,,4.8,1.6,"# How to use the following code to create a new file in Python
+
+# How do I create a file with a file...",,0.0,0
+wiki_13,control,wiki,67,9.74515008,3.2,0.64,9.6,,4.8,1.6,"# How to write a program to find the area of a circle with a circle with a diameter of 10 cm
+In this...",,0.0,0
+wiki_14,control,wiki,66,9.74515008,3.2,0.64,9.6,,4.8,1.6,", and Jean-Luc Dreyfus. The film was released on 11 October 1948.
+The movie was directed by Maurice ...",,0.0,0
+wiki_15,control,wiki,51,9.74515008,3.2,0.64,9.6,,4.8,1.6," Championship
+
+FIFA U-17 World Championship
+
+FIFA U-17 World Championship
+
+FIFA U-17 World Champions...",,0.0,0
+wiki_16,control,wiki,67,9.74515008,3.2,0.64,9.6,,4.8,1.6,"# How do you find the derivative of f(x) = x^3 + 2x^2 - 2x + 1?
+
+$f \left(x\right) = x^3 + 2x^2 - 2x...",,0.0,0
+wiki_17,control,wiki,30,9.74515008,3.2,0.64,9.6,,4.8,1.6,# How to use the following code to create a list of all the most common errors in the Python program...,,0.0,0
+wiki_18,control,wiki,65,9.74515008,3.2,0.64,9.6,,4.8,1.6,The first step in the study of the history of the history of the United States of America is the his...,,0.0,0
+wiki_19,control,wiki,66,9.74515008,3.2,0.64,9.6,,4.8,1.6,"# How to write a 5 paragraph essay
+The following are some tips on how to write a good introduction f...",,0.0,0

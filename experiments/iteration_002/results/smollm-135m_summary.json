@@ -1,0 +1,77 @@
+{
+  "n_params": 134515008,
+  "n_reasoning": 20,
+  "n_control": 20,
+  "means": {
+    "AE_reasoning": 3.2000000000000006,
+    "AE_control": 3.2000000000000006,
+    "APE_reasoning": 0.6400000000000001,
+    "APE_control": 0.6400000000000001,
+    "APL_reasoning": 9.599999999999998,
+    "APL_control": 9.599999999999998,
+    "CUD_reasoning": NaN,
+    "CUD_control": NaN,
+    "SIB_reasoning": 4.799999999999999,
+    "SIB_control": 4.799999999999999,
+    "FL_reasoning": 1.6000000000000003,
+    "FL_control": 1.6000000000000003,
+    "REV_reasoning": 0.0,
+    "REV_control": 0.0
+  },
+  "stds": {
+    "AE_reasoning": 4.556259157007654e-16,
+    "AE_control": 4.556259157007654e-16,
+    "APE_reasoning": 1.1390647892519134e-16,
+    "APE_control": 1.1390647892519134e-16,
+    "APL_reasoning": 1.8225036628030615e-15,
+    "APL_control": 1.8225036628030615e-15,
+    "CUD_reasoning": NaN,
+    "CUD_control": NaN,
+    "SIB_reasoning": 9.112518314015307e-16,
+    "SIB_control": 9.112518314015307e-16,
+    "FL_reasoning": 2.278129578503827e-16,
+    "FL_control": 2.278129578503827e-16,
+    "REV_reasoning": 0.0,
+    "REV_control": 0.0
+  },
+  "cohens_d": {
+    "AE": 0.0,
+    "APE": 0.0,
+    "APL": 0.0,
+    "CUD": NaN,
+    "SIB": 0.0,
+    "FL": 0.0,
+    "REV": 0.0
+  },
+  "auroc_REV": 0.5,
+  "dataset_metrics": {},
+  "partial_corr": {},
+  "baseline_comparison": {
+    "auroc_baseline": 0.7625,
+    "auroc_rev": 0.5,
+    "auroc_combined": 0.7625,
+    "delta_auc": 0.0,
+    "n_samples": 40,
+    "baseline_features": [
+      "token_len",
+      "avg_logprob",
+      "perplexity",
+      "cot_len"
+    ],
+    "feature_importances": {
+      "baseline": [
+        0.7529462798072608,
+        0.0,
+        0.0,
+        0.5287135452425998
+      ],
+      "combined": [
+        0.7529462798072608,
+        0.0,
+        0.0,
+        0.5287135452425998,
+        0.0
+      ]
+    }
+  }
+}
