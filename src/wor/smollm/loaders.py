@@ -282,7 +282,6 @@ def load_smollm_dataset(name: str, n: int, seed: int = 42) -> List[Dict[str, Any
         else:
             raise ValueError(f"Unknown dataset: {name}")
         
-        print(f"Loaded {len(data)} samples from {name}")
         return data
         
     except Exception as e:
