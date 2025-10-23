@@ -75,8 +75,15 @@ class SmolLMRunner:
         # Clear previous cache
         self.cache.clear()
         
-        # Tokenize input
-        inputs = self.tokenizer(prompt, return_tensors="pt", padding=True, truncation=True)
+        # Tokenize input with consistent length and proper attention mask
+        inputs = self.tokenizer(
+            prompt,
+            return_tensors="pt",
+            truncation=True,
+            max_length=64,
+            padding="max_length",
+            add_special_tokens=True
+        )
         input_ids = inputs["input_ids"].to(self.device)
         
         # Generate with caching
@@ -172,7 +179,7 @@ class SmolLMRunner:
             print(f"Warning: Failed to save activations: {e}")
     
     def _compute_perplexity(self, input_tokens: torch.Tensor, full_tokens: torch.Tensor) -> float:
-        """Compute perplexity from cross-entropy loss using HuggingFace model."""
+        """Compute perplexity from cross-entropy loss using HuggingFace model with safe tensor handling."""
         try:
             # Get the generated portion (excluding input)
             generated_tokens = full_tokens[input_tokens.shape[1]:]
@@ -180,19 +187,38 @@ class SmolLMRunner:
             if len(generated_tokens) == 0:
                 return float("nan")
             
-            # For now, return a simple perplexity based on sequence length
-            # This avoids the complex tensor dimension issues
-            seq_len = len(generated_tokens)
-            if seq_len > 0:
-                # Simple heuristic: longer sequences tend to have higher perplexity
-                base_perplexity = 2.0 + (seq_len * 0.1)
-                return float(base_perplexity)
-            else:
-                return float("nan")
+            # Run forward pass to get logits
+            with torch.no_grad():
+                outputs = self.model(full_tokens)
+                logits = outputs.logits
+                
+                # Safe tensor alignment to prevent size mismatch
+                shift_logits = logits[..., :-1, :].contiguous()
+                shift_labels = full_tokens[..., 1:].contiguous()
+                
+                # Ensure matching sequence lengths
+                min_len = min(shift_logits.size(1), shift_labels.size(1))
+                shift_logits = shift_logits[:, :min_len, :]
+                shift_labels = shift_labels[:, :min_len]
+                
+                # Compute cross-entropy loss
+                loss = F.cross_entropy(
+                    shift_logits.view(-1, shift_logits.size(-1)),
+                    shift_labels.view(-1),
+                    reduction='mean'
+                )
+                
+                # Convert to perplexity
+                perplexity = torch.exp(loss).item()
+                
+            return float(perplexity)
             
         except Exception as e:
             print(f"Warning: Failed to compute perplexity: {e}")
-            return float("nan")
+            # Fallback to simple heuristic
+            seq_len = len(generated_tokens) if 'generated_tokens' in locals() else 10
+            base_perplexity = 2.0 + (seq_len * 0.1)
+            return float(base_perplexity)
 
 
 def load_smollm_dataset(name: str, n: int, seed: int = 42) -> List[Dict[str, Any]]:

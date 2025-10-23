@@ -2,8 +2,10 @@ model_name: HuggingFaceTB/SmolLM-1.7B
 device: cuda
 dtype: float32
 max_new_tokens: 64
+max_length: 64
 temperature: 0.2
 top_p: 1.0
+truncation: true
 requires_auth: false
 trust_remote_code: false
 save_activations: true
