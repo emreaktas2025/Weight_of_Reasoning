@@ -51,7 +51,7 @@ def main():
         # Configure quantization
         model_kwargs = {
             "trust_remote_code": True,
-            "torch_dtype": torch.float16 if device == "cuda" else torch.float32,
+            "dtype": torch.float16 if device == "cuda" else torch.float32,  # Use dtype instead of torch_dtype
         }
         
         if use_4bit and device == "cuda":
@@ -68,8 +68,11 @@ def main():
                 print("   Warning: bitsandbytes not available, loading without quantization")
         
         # Load model with device_map for automatic GPU placement
+        # Use device_map="auto" to load directly to GPU and avoid CPU memory issues
         if device == "cuda":
             model_kwargs["device_map"] = "auto"
+            # Don't set low_cpu_mem_usage with quantization, but do set max_memory
+            model_kwargs["max_memory"] = {0: "20GiB"}  # Reserve some GPU memory
         else:
             model_kwargs["device_map"] = None
         
