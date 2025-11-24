@@ -67,6 +67,8 @@ def main():
         
         if use_4bit and device == "cuda":
             try:
+                import bitsandbytes as bnb
+                print(f"   bitsandbytes version: {bnb.__version__}")
                 quantization_config = BitsAndBytesConfig(
                     load_in_4bit=True,
                     bnb_4bit_compute_dtype=torch.float16,
@@ -77,17 +79,28 @@ def main():
                 print("   Using 4-bit quantization")
             except ImportError:
                 print("   Warning: bitsandbytes not available, loading without quantization")
+                use_4bit = False
+            except Exception as e:
+                print(f"   ⚠️  Error setting up quantization: {e}")
+                print("   Falling back to loading without quantization...")
+                use_4bit = False
+                # Remove quantization config if it was added
+                model_kwargs.pop("quantization_config", None)
         
         # Load model with device_map for automatic GPU placement
         # Use device_map="auto" to load directly to GPU and avoid CPU memory issues
         if device == "cuda":
             model_kwargs["device_map"] = "auto"
-            model_kwargs["max_memory"] = {0: "20GiB"}  # Reserve some GPU memory
+            # Don't set max_memory with quantization - let bitsandbytes handle it
+            if not use_4bit:
+                model_kwargs["max_memory"] = {0: "20GiB"}  # Reserve some GPU memory
             # Always use low_cpu_mem_usage to minimize CPU RAM usage during loading
             model_kwargs["low_cpu_mem_usage"] = True
         else:
             model_kwargs["device_map"] = None
         
+        print("   Loading model (this may take a few minutes)...")
+        print("   This step downloads ~16GB if not cached...")
         model = AutoModelForCausalLM.from_pretrained(
             model_name,
             **model_kwargs
