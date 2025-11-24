@@ -23,7 +23,22 @@ if command -v nvidia-smi &> /dev/null; then
     echo "nvidia-smi output:"
     nvidia-smi --query-gpu=name,memory.total --format=csv,noheader || echo "nvidia-smi failed"
 else
-    echo "⚠️  nvidia-smi not found - GPU drivers may not be installed"
+    echo "❌ nvidia-smi not found"
+    echo ""
+    echo "This means:"
+    echo "  1. No GPU is attached to this RunPod pod, OR"
+    echo "  2. The container doesn't have NVIDIA drivers"
+    echo ""
+    echo "To fix this:"
+    echo "  1. Go to RunPod dashboard: https://www.runpod.io/console/pods"
+    echo "  2. Find your pod and check if it has a GPU attached"
+    echo "  3. If no GPU: Stop pod → Edit → Add GPU → Start"
+    echo "  4. Or create a new pod with GPU support"
+    echo ""
+    echo "For DeepSeek-8B, you need at least:"
+    echo "  - RTX 3090 (24GB) with 4-bit quantization, OR"
+    echo "  - A100 (40GB) for full precision"
+    echo ""
 fi
 
 # Check PyTorch CUDA support
