@@ -42,6 +42,17 @@ def main():
         print(f"   GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB")
     print(f"   4-bit quantization: {use_4bit}")
     
+    # Check available memory
+    try:
+        import psutil
+        ram_gb = psutil.virtual_memory().total / (1024**3)
+        ram_available_gb = psutil.virtual_memory().available / (1024**3)
+        print(f"   System RAM: {ram_gb:.1f} GB total, {ram_available_gb:.1f} GB available")
+        if ram_available_gb < 8:
+            print("   ⚠️  Warning: Low RAM available, model loading may fail")
+    except ImportError:
+        pass  # psutil not available, skip check
+    
     try:
         # Load tokenizer
         tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
@@ -72,9 +83,8 @@ def main():
         if device == "cuda":
             model_kwargs["device_map"] = "auto"
             model_kwargs["max_memory"] = {0: "20GiB"}  # Reserve some GPU memory
-            # low_cpu_mem_usage helps avoid loading into CPU RAM first
-            if not use_4bit:  # Only use if not quantizing (quantization handles this)
-                model_kwargs["low_cpu_mem_usage"] = True
+            # Always use low_cpu_mem_usage to minimize CPU RAM usage during loading
+            model_kwargs["low_cpu_mem_usage"] = True
         else:
             model_kwargs["device_map"] = None
         
