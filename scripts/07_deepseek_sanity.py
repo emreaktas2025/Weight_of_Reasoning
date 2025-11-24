@@ -101,10 +101,35 @@ def main():
         
         print("   Loading model (this may take a few minutes)...")
         print("   This step downloads ~16GB if not cached...")
-        model = AutoModelForCausalLM.from_pretrained(
-            model_name,
-            **model_kwargs
-        )
+        
+        # Clear GPU cache before loading
+        if device == "cuda":
+            torch.cuda.empty_cache()
+            print(f"   GPU memory before loading: {torch.cuda.memory_allocated(0) / 1e9:.2f} GB")
+        
+        # Try loading with explicit error handling
+        try:
+            model = AutoModelForCausalLM.from_pretrained(
+                model_name,
+                **model_kwargs
+            )
+        except RuntimeError as e:
+            if "out of memory" in str(e).lower() or "bad_alloc" in str(e).lower():
+                print(f"   ❌ Memory error during loading: {e}")
+                print("   Trying alternative loading method...")
+                # Try without device_map, load to CPU first then move
+                if "device_map" in model_kwargs:
+                    del model_kwargs["device_map"]
+                if "max_memory" in model_kwargs:
+                    del model_kwargs["max_memory"]
+                model = AutoModelForCausalLM.from_pretrained(
+                    model_name,
+                    **model_kwargs
+                )
+                if device == "cuda":
+                    model = model.to(device)
+            else:
+                raise
         model.eval()
         print("   ✅ Model loaded successfully")
     except Exception as e:
