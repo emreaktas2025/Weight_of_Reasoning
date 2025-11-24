@@ -100,6 +100,8 @@ fi
 # Run sanity check
 echo ""
 echo "Running DeepSeek sanity check..."
+# Ensure hf_transfer is disabled if not available
+export HF_HUB_ENABLE_HF_TRANSFER=0
 python3 scripts/07_deepseek_sanity.py
 
 echo ""

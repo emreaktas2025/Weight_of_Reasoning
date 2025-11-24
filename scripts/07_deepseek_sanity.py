@@ -7,8 +7,15 @@ parses the reasoning tags, and prints CUD metrics for reasoning vs response port
 
 import sys
 import os
-import yaml
 from pathlib import Path
+
+# Disable hf_transfer early if not available (must be before any huggingface imports)
+if os.environ.get("HF_HUB_ENABLE_HF_TRANSFER") == "1":
+    try:
+        import hf_transfer
+    except ImportError:
+        os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "0"
+        print("⚠️  hf_transfer enabled but not installed, disabling it...")
 
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
@@ -23,14 +30,6 @@ def main():
     print("=" * 80)
     print("DeepSeek-R1-Distill-Llama-8B Sanity Check")
     print("=" * 80)
-    
-    # Disable hf_transfer if not available (common on RunPod)
-    if os.environ.get("HF_HUB_ENABLE_HF_TRANSFER") == "1":
-        try:
-            import hf_transfer
-        except ImportError:
-            print("⚠️  hf_transfer enabled but not installed, disabling it...")
-            os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "0"
     
     model_name = "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
     device = "cuda" if torch.cuda.is_available() else "cpu"
