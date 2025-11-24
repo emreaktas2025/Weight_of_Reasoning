@@ -30,6 +30,7 @@ from ..metrics.circuit_utilization_density import (
 from ..metrics.stability_intermediate_beliefs import compute_sib_simple
 from ..metrics.feature_load import compute_feature_load
 from ..metrics.rev_composite import compute_rev_scores
+from ..utils.parser import parse_reasoning_trace, find_token_ranges_for_reasoning
 from ..stats.partial_corr import compute_partial_correlations
 from ..baselines.predictors import evaluate_baseline_vs_rev, get_roc_curves
 from ..mech.patchout import (
@@ -74,34 +75,91 @@ def compute_baseline_metrics_phase5(
             label = item.get("label", "control")
             dataset = item["id"].split("_")[0]  # Extract dataset from ID
             
-            # Compute reasoning window length
+            # Parse reasoning trace from generated text
+            parsed = parse_reasoning_trace(generated_text)
+            has_reasoning = parsed["has_reasoning"]
+            
+            # Find token ranges for reasoning vs response
+            tokenizer = result.get("tokenizer")
+            input_tokens_length = result.get("input_tokens_length", 0)
+            full_tokens = result.get("tokens")
+            
+            token_ranges = None
+            if tokenizer is not None:
+                token_ranges = find_token_ranges_for_reasoning(
+                    generated_text,
+                    parsed["reasoning_content"],
+                    parsed["final_response"],
+                    tokenizer,
+                    input_tokens_length,
+                    full_tokens.tolist() if full_tokens is not None else None
+                )
+            
+            # Compute reasoning window length (fallback for legacy behavior)
             reasoning_len = min(32, model_cfg.get("max_new_tokens", 64) - 1)
             
-            # Compute all metrics
-            ae = activation_energy(result["hidden_states"], reasoning_len)
-            ape = attention_process_entropy(result["attention_probs"], reasoning_len)
-            apl = compute_apl(runner.model, result["cache"], apl_thresholds, result["input_tokens"])
-            cud = compute_cud(runner.model, result["cache"], circuit_heads, cud_thresholds, result["input_tokens"])
-            sib = compute_sib_simple(runner.model, result["cache"], result["input_tokens"], item["prompt"], reasoning_len)
-            fl = compute_feature_load(runner.model, result["cache"], result["input_tokens"], reasoning_len)
+            # Compute metrics separately for reasoning and response if tags found
+            if has_reasoning and token_ranges is not None:
+                reasoning_range = token_ranges.get("reasoning_range")
+                response_range = token_ranges.get("response_range")
+                
+                # Compute reasoning metrics
+                ae_reasoning = activation_energy(result["hidden_states"], token_range=reasoning_range) if reasoning_range else float("nan")
+                ape_reasoning = attention_process_entropy(result["attention_probs"], token_range=reasoning_range) if reasoning_range else float("nan")
+                
+                # Compute response metrics
+                ae_response = activation_energy(result["hidden_states"], token_range=response_range) if response_range else float("nan")
+                ape_response = attention_process_entropy(result["attention_probs"], token_range=response_range) if response_range else float("nan")
+                
+                # For metrics that need full sequence (APL, CUD, SIB, FL), compute on full sequence for now
+                # TODO: These need to be updated to support token ranges
+                apl = compute_apl(runner.model, result["cache"], apl_thresholds, result["input_tokens"])
+                cud = compute_cud(runner.model, result["cache"], circuit_heads, cud_thresholds, result["input_tokens"])
+                sib = compute_sib_simple(runner.model, result["cache"], result["input_tokens"], item["prompt"], reasoning_len)
+                fl = compute_feature_load(runner.model, result["cache"], result["input_tokens"], reasoning_len)
+                
+                # Also compute CUD separately if possible (requires modification to compute_cud)
+                cud_reasoning = float("nan")  # TODO: Implement token-range-aware CUD
+                cud_response = float("nan")  # TODO: Implement token-range-aware CUD
+            else:
+                # Fallback to legacy behavior if no reasoning tags found
+                ae_reasoning = float("nan")
+                ape_reasoning = float("nan")
+                ae_response = activation_energy(result["hidden_states"], reasoning_len)
+                ape_response = attention_process_entropy(result["attention_probs"], reasoning_len)
+                apl = compute_apl(runner.model, result["cache"], apl_thresholds, result["input_tokens"])
+                cud = compute_cud(runner.model, result["cache"], circuit_heads, cud_thresholds, result["input_tokens"])
+                sib = compute_sib_simple(runner.model, result["cache"], result["input_tokens"], item["prompt"], reasoning_len)
+                fl = compute_feature_load(runner.model, result["cache"], result["input_tokens"], reasoning_len)
+                cud_reasoning = float("nan")
+                cud_response = float("nan")
             
             # Count tokens and get perplexity
             token_count = len(text.split())
             ppl = result["perplexity"]
             
-            # Store results
+            # Store results with both reasoning and response metrics
             rows.append({
                 "id": item["id"],
                 "label": label,
                 "dataset": dataset,
                 "token_len": token_count,
                 "ppl": ppl,
-                "AE": ae,
-                "APE": ape,
+                # Legacy combined metrics (for backward compatibility)
+                "AE": ae_response if not has_reasoning else (ae_reasoning + ae_response) / 2,
+                "APE": ape_response if not has_reasoning else (ape_reasoning + ape_response) / 2,
                 "APL": apl,
                 "CUD": cud,
                 "SIB": sib,
                 "FL": fl,
+                # New split metrics
+                "AE_reasoning": ae_reasoning,
+                "AE_response": ae_response,
+                "APE_reasoning": ape_reasoning,
+                "APE_response": ape_response,
+                "CUD_reasoning": cud_reasoning,
+                "CUD_response": cud_response,
+                "has_reasoning_tags": has_reasoning,
                 "generated_text": generated_text[:100] + "..." if len(generated_text) > 100 else generated_text,
                 "answer": item.get("answer", "")
             })
@@ -120,6 +178,13 @@ def compute_baseline_metrics_phase5(
                 "CUD": float("nan"),
                 "SIB": float("nan"),
                 "FL": float("nan"),
+                "AE_reasoning": float("nan"),
+                "AE_response": float("nan"),
+                "APE_reasoning": float("nan"),
+                "APE_response": float("nan"),
+                "CUD_reasoning": float("nan"),
+                "CUD_response": float("nan"),
+                "has_reasoning_tags": False,
                 "generated_text": "ERROR",
                 "answer": item.get("answer", "")
             })

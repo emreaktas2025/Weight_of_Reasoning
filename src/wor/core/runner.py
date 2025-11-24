@@ -15,8 +15,17 @@ class ModelRunner:
     def __init__(self, cfg: Dict[str, Any]):
         """Initialize model runner with configuration."""
         self.cfg = cfg
-        self.device = cfg.get("device", "cpu")
-        self.dtype = getattr(torch, cfg.get("dtype", "float32"))
+        # Auto-detect GPU if device not specified
+        if "device" not in cfg:
+            self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        else:
+            self.device = cfg.get("device", "cpu")
+        
+        # Auto-detect dtype if not specified and GPU available
+        if "dtype" not in cfg and self.device == "cuda":
+            self.dtype = torch.float16 if torch.cuda.is_available() else torch.float32
+        else:
+            self.dtype = getattr(torch, cfg.get("dtype", "float32"))
         
         # Set seed for reproducibility
         set_seed(cfg.get("seed", 1337))
@@ -40,9 +49,24 @@ class ModelRunner:
             else:
                 print(f"Warning: {cfg['model_name']} requires auth but no token found")
         
-        # Add trust_remote_code if specified
-        if cfg.get("trust_remote_code", False):
+        # Add trust_remote_code if specified (required for DeepSeek models)
+        if cfg.get("trust_remote_code", True):  # Default to True for DeepSeek
             model_kwargs["trust_remote_code"] = True
+        
+        # Add 4-bit quantization if specified
+        if cfg.get("load_in_4bit", False):
+            try:
+                from transformers import BitsAndBytesConfig
+                quantization_config = BitsAndBytesConfig(
+                    load_in_4bit=True,
+                    bnb_4bit_compute_dtype=self.dtype,
+                    bnb_4bit_use_double_quant=True,
+                    bnb_4bit_quant_type="nf4"
+                )
+                model_kwargs["quantization_config"] = quantization_config
+                print(f"Using 4-bit quantization for {cfg['model_name']}")
+            except ImportError:
+                print("Warning: bitsandbytes not available, loading without quantization")
         
         self.model = HookedTransformer.from_pretrained(
             cfg["model_name"],
@@ -114,6 +138,8 @@ class ModelRunner:
             "attention_probs": attention_probs,
             "cache": cache,
             "perplexity": perplexity,
+            "tokenizer": self.model.tokenizer,  # Expose tokenizer for parsing
+            "input_tokens_length": tokens.shape[1],  # Length of input tokens
         }
     
     def _extract_hidden_states(self, cache: Dict[str, torch.Tensor]) -> Optional[np.ndarray]:
