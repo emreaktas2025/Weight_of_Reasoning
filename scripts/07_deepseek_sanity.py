@@ -71,8 +71,10 @@ def main():
         # Use device_map="auto" to load directly to GPU and avoid CPU memory issues
         if device == "cuda":
             model_kwargs["device_map"] = "auto"
-            # Don't set low_cpu_mem_usage with quantization, but do set max_memory
             model_kwargs["max_memory"] = {0: "20GiB"}  # Reserve some GPU memory
+            # low_cpu_mem_usage helps avoid loading into CPU RAM first
+            if not use_4bit:  # Only use if not quantizing (quantization handles this)
+                model_kwargs["low_cpu_mem_usage"] = True
         else:
             model_kwargs["device_map"] = None
         
