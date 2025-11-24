@@ -16,30 +16,71 @@ else
     WORKSPACE="$PWD"
 fi
 
-# Check GPU
+# Check GPU hardware first
 echo ""
-echo "Checking GPU..."
+echo "Checking GPU hardware..."
+if command -v nvidia-smi &> /dev/null; then
+    echo "nvidia-smi output:"
+    nvidia-smi --query-gpu=name,memory.total --format=csv,noheader || echo "nvidia-smi failed"
+else
+    echo "⚠️  nvidia-smi not found - GPU drivers may not be installed"
+fi
+
+# Check PyTorch CUDA support
+echo ""
+echo "Checking PyTorch CUDA support..."
 python3 -c "
 import torch
+print(f'PyTorch version: {torch.__version__}')
 print(f'CUDA available: {torch.cuda.is_available()}')
 if torch.cuda.is_available():
+    print(f'CUDA version: {torch.version.cuda}')
     print(f'GPU: {torch.cuda.get_device_name(0)}')
     print(f'GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB')
 else:
-    print('⚠️  No GPU detected!')
-    exit(1)
+    print('⚠️  PyTorch CUDA not available')
+    print('This could mean:')
+    print('  1. No GPU attached to this pod')
+    print('  2. PyTorch installed without CUDA support')
+    print('  3. Need to install PyTorch with CUDA')
 " || {
-    echo "❌ GPU check failed"
-    exit 1
+    echo "⚠️  PyTorch check failed"
 }
 
-# Install bitsandbytes if needed (for 4-bit quantization)
+# Check if we should continue
 echo ""
-echo "Checking bitsandbytes..."
-python3 -c "import bitsandbytes" 2>/dev/null || {
-    echo "Installing bitsandbytes..."
-    pip install bitsandbytes
-}
+if python3 -c "import torch; exit(0 if torch.cuda.is_available() else 1)" 2>/dev/null; then
+    echo "✅ GPU detected and available!"
+    USE_GPU=true
+else
+    echo "⚠️  No GPU available. Options:"
+    echo "  1. Continue on CPU (will be very slow for DeepSeek-8B)"
+    echo "  2. Install PyTorch with CUDA support"
+    echo "  3. Check RunPod dashboard to ensure GPU is attached"
+    echo ""
+    read -p "Continue on CPU anyway? (y/N): " -n 1 -r
+    echo
+    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+        echo "Exiting. Please:"
+        echo "  1. Check RunPod dashboard - ensure GPU is attached to pod"
+        echo "  2. Or install PyTorch with CUDA: pip install torch --index-url https://download.pytorch.org/whl/cu118"
+        exit 1
+    fi
+    USE_GPU=false
+fi
+
+# Install bitsandbytes if needed (for 4-bit quantization) - only if GPU available
+if [ "$USE_GPU" = true ]; then
+    echo ""
+    echo "Checking bitsandbytes..."
+    python3 -c "import bitsandbytes" 2>/dev/null || {
+        echo "Installing bitsandbytes..."
+        pip install bitsandbytes
+    }
+else
+    echo ""
+    echo "⚠️  Skipping bitsandbytes (no GPU available)"
+fi
 
 # Run sanity check
 echo ""
