@@ -24,6 +24,14 @@ def main():
     print("DeepSeek-R1-Distill-Llama-8B Sanity Check")
     print("=" * 80)
     
+    # Disable hf_transfer if not available (common on RunPod)
+    if os.environ.get("HF_HUB_ENABLE_HF_TRANSFER") == "1":
+        try:
+            import hf_transfer
+        except ImportError:
+            print("⚠️  hf_transfer enabled but not installed, disabling it...")
+            os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "0"
+    
     model_name = "deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
     device = "cuda" if torch.cuda.is_available() else "cpu"
     use_4bit = True
